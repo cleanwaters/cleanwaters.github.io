@@ -2,6 +2,7 @@ import React from 'react';
 
 import {SectionOne} from "./SectionOne";
 import {SectionTwo} from "./SectionTwo";
+import {SectionThree} from "./SectionThree";
 
 export default {
   title: 'Sections/Home/Section One',
@@ -21,4 +22,5 @@ export const Basic = Template.bind({});
 //   return (<SectionTwo />)
 // };
 export const Primary = () => <SectionTwo  />;
+export const Three = () => <SectionThree  />;
 

@@ -5,16 +5,6 @@ import {Carousel} from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngleLeft, faAngleRight, faCoffee} from '@fortawesome/free-solid-svg-icons'
-// font-family: Dosis;
-// font-style: normal;
-// font-weight: bold;
-// font-size: 48px;
-// line-height: 61px;
-// /* identical to box height */
-//
-//
-// color: #00C0FF;
-
 
 
 export const StyledSectionOneDetails = styled.h2`
@@ -50,7 +40,7 @@ color: #0170B9;
 
 
 
-export function SectionTwo() {
+export function SectionThree() {
     return (
       <StyledSection>
         <StyledLayoutContainer className="px-4">

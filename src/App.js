@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar } from "./components/Navbar";
 import { SectionOne } from "./sections/SectionOne";
-import {SectionTwo} from "./sections/SectionTwo";
+import {SectionTwo, StyledSectionOneDetails} from "./sections/SectionTwo";
 
 
 function App() {
@@ -13,25 +13,13 @@ function App() {
             <SectionOne />
             {/*second section*/}
             <SectionTwo />
-            <section className="ui-section-pricing">
-                <div className="ui-layout-container">
-                    <h2>How many plastic bottles can you save?</h2>
-                    {/*<p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>*/}
 
-                    <div className="card">
-                        <div className="card-body">
-                            Genny – Saves up to 18,250 plastic bottles of water a year
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            {/*section 3*/}
             <section className="ui-section-hero">
                 <div className="ui-layout-container">
                     <div className="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
                         <div>
-                            {/*<h1>Design better.</h1>*/}
-                            <h2>What we do?</h2>
+                            <StyledSectionOneDetails> <span> What we</span> do?</StyledSectionOneDetails>
                             <p>
                                 Clean Waters Oceania provides a sustainable supply of fresh, clean and healthy water to households, communities, governments and NGOs
                             </p>
@@ -69,8 +57,7 @@ function App() {
 
             <section className="ui-section-pricing">
                 <div className="ui-layout-container">
-                    {/*<h2>How many plastic bottles can you save?</h2>*/}
-                    <h2>Target Market and Product Line</h2>
+                    <StyledSectionOneDetails> <span> Target Market and </span> Product Line</StyledSectionOneDetails>
                     <div className="row" >
                         <div className="container">
                             <div className="row row-cols-3">
@@ -97,7 +84,9 @@ function App() {
 
             <section className="ui-section-pricing">
                 <div className="ui-layout-container">
-                    <h2>How it works?</h2>
+                    {/*<h2></h2>*/}
+                    <StyledSectionOneDetails> <span>How it </span>works?</StyledSectionOneDetails>
+
                     <p className="ui-text-intro">video</p>
 
 
@@ -121,28 +110,28 @@ function App() {
             </section>
 
             {/*section 7*/}
-            <section className="ui-section-pricing">
-                <div className="ui-layout-container">
-                    <h2>For the first time</h2>
-                    <p >Making water from air 24/7/365 is a true economic reality
-                        Our technology is set not only to have a significant impact on the lives of countless people and communities around the world, but provides a solution that is both commercially available and affordable. It will also have a major economic impact on the water industry and will help solve drinking water stress in major global geographies.
-                    </p>
-                    <p >
-                        Watergen’s solution is a new drinking water source for our earth. Production is at the point of use; no water transportation is needed.
-                    </p>
-                    <p >
-                        As the only company in our field with mass manufacturing facilities on 3 continents, we are able to offer a reliable supply of units, for small or large orders, either from stock or made-to-meet demand. As well as reducing the lead time between order and delivery, mass production also ensures the reliability of our technology.
+            {/*<section className="ui-section-pricing">*/}
+            {/*    <div className="ui-layout-container">*/}
+            {/*        <h2>For the first time</h2>*/}
+            {/*        <p >Making water from air 24/7/365 is a true economic reality*/}
+            {/*            Our technology is set not only to have a significant impact on the lives of countless people and communities around the world, but provides a solution that is both commercially available and affordable. It will also have a major economic impact on the water industry and will help solve drinking water stress in major global geographies.*/}
+            {/*        </p>*/}
+            {/*        <p >*/}
+            {/*            Watergen’s solution is a new drinking water source for our earth. Production is at the point of use; no water transportation is needed.*/}
+            {/*        </p>*/}
+            {/*        <p >*/}
+            {/*            As the only company in our field with mass manufacturing facilities on 3 continents, we are able to offer a reliable supply of units, for small or large orders, either from stock or made-to-meet demand. As well as reducing the lead time between order and delivery, mass production also ensures the reliability of our technology.*/}
 
-                    </p>
+            {/*        </p>*/}
 
 
-                </div>
-            </section>
+            {/*    </div>*/}
+            {/*</section>*/}
 
             {/*section 8*/}
             <section className="ui-section-pricing">
                 <div className="ui-layout-container">
-                    <h2>Media Report</h2>
+                    <StyledSectionOneDetails> <span>Media </span>Report</StyledSectionOneDetails>
 
                     <div className="container">
                         <div className="row row-cols-3">
@@ -176,7 +165,7 @@ function App() {
             {/*section 9*/}
             <section className="ui-section-pricing">
                 <div className="ui-layout-container">
-                    <h2>Award record</h2>
+                    <StyledSectionOneDetails> <span>Award </span>Record</StyledSectionOneDetails>
 
                     <div className="container">
                         <div className="row row-cols-3">
