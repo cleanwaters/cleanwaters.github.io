@@ -13,3 +13,16 @@ font-weight: 500;
 font-size: 16px;
 line-height: 24px;
 `
+
+export const StyledLayoutContainer = styled.div`
+    padding-left: var(--ui-layout-container);
+    padding-right: var(--ui-layout-container);
+`
+
+export const StyledSection = styled.section`
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    text-align: center;
+`
+
+

@@ -1,24 +1,53 @@
+import {StyledLayoutContainer} from "../components/styled-shared";
+import {Button} from "../components/button/Button";
+import styled from "styled-components";
 
 
 
+
+export const StyledHeaderH1 = styled.h1`
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 65px;
+    
+    color: #0170B9;
+`
+
+
+export const StyledSectionOneP = styled.p`
+font-weight: 600;
+font-size: 36px;
+line-height: 55px;
+
+color: #081F46;
+`
+
+
+export const StyledSectionOneDetails = styled.div`
+padding: 8em 4em 2em 4em;
+`
 
 
 export function SectionOne() {
     return (
-      <section className="ui-section-hero" style={{background: '#EEF9FF'}}>
-        <div className="ui-layout-container">
-          <div className="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
-            <div>
-              <h1>Design better.</h1>
-              <p className="ui-text-intro">Lorem ipsum dolor sit amet, consectetur lit, enimad eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi.</p>
-              <div className="ui-component-cta ui-layout-flex">
-                <a href="#" role="link" aria-label="#" className="ui-component-button ui-component-button-normal ui-component-button-primary">Get Started for Free</a>
-                <p className="ui-text-note"><small>30 days free trial.</small></p>
+      <section className="p-4" style={{background: '#EEF9FF'}}>
+        <StyledLayoutContainer className="px-4">
+          <div className="d-md-flex">
+            <StyledSectionOneDetails >
+              <StyledHeaderH1>Clean Water</StyledHeaderH1>
+              <StyledSectionOneP>
+                  We use Air as a natural raw material to make top-quality drinking water through our
+atmospheric extraction technology
+              </StyledSectionOneP>
+              <div className="d-flex">
+
+                  <Button primary size="large" label="Our product" style={{marginRight: '1em'}}/>
+                <Button size="large" label="About us"/>
               </div>
-            </div>
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" className="ui-image-half-right" />
+            </StyledSectionOneDetails>
+            <img src="images/water-glass.svg" loading="lazy" alt="#" className="ui-image-half-right img-fluid" />
           </div>
-        </div>
+        </StyledLayoutContainer>
       </section>
     )
 }

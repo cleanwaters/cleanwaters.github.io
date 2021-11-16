@@ -19,12 +19,4 @@ export const navUrls = [
         title: 'Our partners',
         url: '/url'
     },
-    {
-        title: 'Back to the bush',
-        url: '/url'
-    },
-    {
-        title: 'Contact',
-        url: '/url'
-    },
 ]

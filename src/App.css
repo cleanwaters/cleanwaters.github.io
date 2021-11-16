@@ -455,7 +455,7 @@ TABLE OF CONTENT
   | 7.2 HERO
   |
   --------------------------------------------------------------*/
-  
+  /*delete*/
   .ui-section-hero {
     padding-bottom: 5rem;
     padding-top: 5rem;
@@ -463,7 +463,9 @@ TABLE OF CONTENT
   }
   
   .ui-section-hero__layout { row-gap: var(--ui-gap-hero); }
-  
+  .carousel-control-prev,  .carousel-control-next{
+    width: auto;
+  }
   /*--------------------------------------------------------------
   |
   | 7.3 CUSTOMER

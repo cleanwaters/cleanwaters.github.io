@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar } from "./components/Navbar";
 import { SectionOne } from "./sections/SectionOne";
+import {SectionTwo} from "./sections/SectionTwo";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
             <Navbar />
             <SectionOne />
             {/*second section*/}
+            <SectionTwo />
             <section className="ui-section-pricing">
                 <div className="ui-layout-container">
                     <h2>How many plastic bottles can you save?</h2>
