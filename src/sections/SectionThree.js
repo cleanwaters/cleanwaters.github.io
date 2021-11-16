@@ -23,11 +23,6 @@ export const StyledWhatWeDoDetails = styled.div`
     border-left: 1em solid #00C0FF !important;
 `
 
-
-
-
-
-
 export function SectionThree() {
     return (
       <StyledSection style={{textAlign: 'start'}}>
