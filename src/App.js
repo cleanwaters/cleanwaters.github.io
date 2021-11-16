@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar } from "./components/Navbar";
 import { SectionOne } from "./sections/SectionOne";
 import {SectionTwo, StyledSectionOneDetails} from "./sections/SectionTwo";
+import {SectionThree} from "./sections/SectionThree";
 
 
 function App() {
@@ -15,44 +16,47 @@ function App() {
             <SectionTwo />
 
             {/*section 3*/}
-            <section className="ui-section-hero">
-                <div className="ui-layout-container">
-                    <div className="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">
-                        <div>
-                            <StyledSectionOneDetails> <span> What we</span> do?</StyledSectionOneDetails>
-                            <p>
-                                Clean Waters Oceania provides a sustainable supply of fresh, clean and healthy water to households, communities, governments and NGOs
-                            </p>
-                            <p>
-                                To do this we offer our customers Watergen’s world-class and award-winning GENius atmospheric water generators that generate between 10 and 6000 litres of clean water from the air every day
+            <SectionThree />
+            {/*<section className="ui-section-hero">*/}
+            {/*    <div className="ui-layout-container">*/}
+            {/*        <div className="ui-section-hero__layout ui-layout-grid ui-layout-grid-2">*/}
+            {/*            <div>*/}
+            {/*                <StyledSectionOneDetails> <span> What we</span> do?</StyledSectionOneDetails>*/}
+            {/*                <p>*/}
+            {/*                    Clean Waters Oceania provides a sustainable supply of fresh, clean and healthy water to households, communities, governments and NGOs*/}
+            {/*                </p>*/}
+            {/*                <p>*/}
+            {/*                    To do this we offer our customers Watergen’s world-class and award-winning GENius atmospheric water generators that generate between 10 and 6000 litres of clean water from the air every day*/}
 
-                            </p>
+            {/*                </p>*/}
 
-                            <p>
-                                It is a fully zero emissions, zero infrastructure sustainable water generation solution, the first of its kind in Australia and the South Pacific
+            {/*                <p>*/}
+            {/*                    It is a fully zero emissions, zero infrastructure sustainable water generation solution, the first of its kind in Australia and the South Pacific*/}
 
-                            </p>
+            {/*                </p>*/}
 
-                            <p>
-                                here is no need to install any water infrastructure or pipelines, there is no transportation and storage, no more waste of plastic bottles
+            {/*                <p>*/}
+            {/*                    here is no need to install any water infrastructure or pipelines, there is no transportation and storage, no more waste of plastic bottles*/}
 
-                            </p>
+            {/*                </p>*/}
 
-                            <p>
-                                Less emissions, less cost, less plastic, more drinking water
+            {/*                <p>*/}
+            {/*                    Less emissions, less cost, less plastic, more drinking water*/}
 
-                            </p>
+            {/*                </p>*/}
 
 
-                            {/*<div className="ui-component-cta ui-layout-flex">*/}
-                            {/*  <a href="#" role="link" aria-label="#" className="ui-component-button ui-component-button-normal ui-component-button-primary">Get Started for Free</a>*/}
-                            {/*  <p className="ui-text-note"><small>30 days free trial.</small></p>*/}
-                            {/*</div>*/}
-                        </div>
-                        <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" className="ui-image-half-right" />
-                    </div>
-                </div>
-            </section>
+            {/*                /!*<div className="ui-component-cta ui-layout-flex">*!/*/}
+            {/*                /!*  <a href="#" role="link" aria-label="#" className="ui-component-button ui-component-button-normal ui-component-button-primary">Get Started for Free</a>*!/*/}
+            {/*                /!*  <p className="ui-text-note"><small>30 days free trial.</small></p>*!/*/}
+            {/*                /!*</div>*!/*/}
+            {/*            </div>*/}
+            {/*            <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" className="ui-image-half-right" />*/}
+            {/*        </div>*/}
+
+
+            {/*    </div>*/}
+            {/*</section>*/}
             {/*section 4*/}
 
             <section className="ui-section-pricing">

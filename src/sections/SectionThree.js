@@ -19,22 +19,10 @@ color: #00C0FF;
 }
 `
 
-export const StyledSectionCardDefault = styled.div`
-    background: #FFFFFF;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 50px;
+export const StyledWhatWeDoDetails = styled.div`
+    border-left: 1em solid #00C0FF !important;
 `
 
-
-export const StyledSectionCarouselP = styled.p`
-font-weight: bold;
-font-size: 32px;
-line-height: 44px;
-
-span {
-color: #0170B9;
-}
-`
 
 
 
@@ -42,44 +30,47 @@ color: #0170B9;
 
 export function SectionThree() {
     return (
-      <StyledSection>
+      <StyledSection style={{textAlign: 'start'}}>
         <StyledLayoutContainer className="px-4">
 
-                    <StyledSectionOneDetails> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>
+                    {/*<StyledSectionOneDetails> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>*/}
                     {/*<p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>*/}
+                    <StyledWhatWeDoDetails className="d-md-flex px-5">
+                        <div>
+                            <StyledSectionOneDetails> <span> What we</span> do?</StyledSectionOneDetails>
+                            <p>
+                                Clean Waters Oceania provides a sustainable supply of fresh, clean and healthy water to households, communities, governments and NGOs
+                            </p>
+                            <p>
+                                To do this we offer our customers Watergen’s world-class and award-winning GENius atmospheric water generators that generate between 10 and 6000 litres of clean water from the air every day
 
-                    <Carousel
-                        variant="dark"
-                        prevLabel={''}
-                        nextLabel={''}
-                        indicators={false}
-                        prevIcon={<FontAwesomeIcon className="m-0" color="black" size="2x" icon={faAngleLeft} />}
-                        nextIcon={<FontAwesomeIcon color="black" size="2x" icon={faAngleRight} />}
-                        style={{width: '0 !important'}}
-                    >
-                      <Carousel.Item>
+                            </p>
+
+                            <p>
+                                It is a fully zero emissions, zero infrastructure sustainable water generation solution, the first of its kind in Australia and the South Pacific
+
+                            </p>
+
+                            <p>
+                                here is no need to install any water infrastructure or pipelines, there is no transportation and storage, no more waste of plastic bottles
+
+                            </p>
+
+                            <p>
+                                Less emissions, less cost, less plastic, more drinking water
+
+                            </p>
 
 
-                    <StyledSectionCardDefault className="card" style={{margin: '0 8em'}}>
-                        <div className="card-body">
-                            <div className="d-flex">
-                                <img src="images/genny.svg" loading="lazy" alt="#" className="ui-image-half-right img-fluid" />
-                                <div className="flex-grow-1 align-self-center">
-
-                                <StyledSectionCarouselP>
-                                    <span>Genny</span> – Saves up to 18,250 plastic bottles of water a year
-                                </StyledSectionCarouselP>
-                                </div>
-
-                            </div>
+                            {/*<div className="ui-component-cta ui-layout-flex">*/}
+                            {/*  <a href="#" role="link" aria-label="#" className="ui-component-button ui-component-button-normal ui-component-button-primary">Get Started for Free</a>*/}
+                            {/*  <p className="ui-text-note"><small>30 days free trial.</small></p>*/}
+                            {/*</div>*/}
                         </div>
-                    </StyledSectionCardDefault>
-                                                  <Carousel.Caption>
-                          {/*<h3>First slide label</h3>*/}
-                          {/*<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>*/}
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                    </Carousel>
+
+                        <img src="/images/air-water.svg" loading="lazy" alt="#" className="ui-image-half-right" />
+                    </StyledWhatWeDoDetails>
+
 
         </StyledLayoutContainer>
 
