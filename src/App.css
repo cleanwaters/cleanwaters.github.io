@@ -210,13 +210,13 @@ TABLE OF CONTENT
   4.0 IMAGE
   --------------------------------------------------------------*/
   
-  img,
-  svg {
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    max-width: 100%;
-  }
+  /*img,*/
+  /*svg {*/
+  /*  display: block;*/
+  /*  height: auto;*/
+  /*  margin: 0 auto;*/
+  /*  max-width: 100%;*/
+  /*}*/
   
   /*--------------------------------------------------------------
   5.0 LAYOUT
@@ -1109,3 +1109,14 @@ TABLE OF CONTENT
     }
   
   }
+
+
+.header-title-color {
+    color: #0170B9;
+  font-weight: bold;
+}
+
+
+span.text-blue {
+color: #00C0FF;
+}

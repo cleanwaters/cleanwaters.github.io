@@ -1,5 +1,5 @@
-import {StyledLayoutContainer} from "../components/styled-shared";
-import {Button} from "../components/button/Button";
+import { StyledLayoutContainer } from "../components/styled-shared";
+import { Button } from "../components/button/Button";
 import styled from "styled-components";
 
 
@@ -9,8 +9,6 @@ export const StyledHeaderH1 = styled.h1`
     font-weight: 800;
     font-size: 48px;
     line-height: 65px;
-    
-    color: #0170B9;
 `
 
 
@@ -29,27 +27,27 @@ padding: 8em 4em 2em 4em;
 
 
 export function SectionOne() {
-    return (
-      <section className="p-4" style={{background: '#EEF9FF'}}>
-        <StyledLayoutContainer className="px-4">
-          <div className="d-md-flex">
-            <StyledSectionOneDetails >
-              <StyledHeaderH1>Clean Water</StyledHeaderH1>
-              <StyledSectionOneP>
-                  We use Air as a natural raw material to make top-quality drinking water through our
-atmospheric extraction technology
-              </StyledSectionOneP>
-              <div className="d-flex">
+  return (
+    <section className="p-4" style={{ background: '#EEF9FF' }}>
+      <StyledLayoutContainer className="px-4">
+        <div className="d-md-flex">
+          <StyledSectionOneDetails >
+            <StyledHeaderH1 className="header-title-color">Clean Water</StyledHeaderH1>
+            <StyledSectionOneP>
+              We use Air as a natural raw material to make top-quality drinking water through our
+              atmospheric extraction technology
+            </StyledSectionOneP>
+            <div className="d-flex">
 
-                  <Button primary size="large" label="Our product" style={{marginRight: '1em'}}/>
-                <Button size="large" label="About us"/>
-              </div>
-            </StyledSectionOneDetails>
-            <img src="images/water-glass.svg" loading="lazy" alt="#" className="ui-image-half-right img-fluid" />
-          </div>
-        </StyledLayoutContainer>
-      </section>
-    )
+              <Button primary size="large" label="Our product" style={{ marginRight: '1em' }} />
+              <Button size="large" label="About us" />
+            </div>
+          </StyledSectionOneDetails>
+          <img src="images/water-glass.svg" loading="lazy" alt="#" className="ui-image-half-right img-fluid" />
+        </div>
+      </StyledLayoutContainer>
+    </section>
+  )
 }
 
 

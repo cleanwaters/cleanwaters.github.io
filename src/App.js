@@ -2,8 +2,12 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar } from "./components/Navbar";
 import { SectionOne } from "./sections/SectionOne";
-import {SectionTwo, StyledSectionOneDetails} from "./sections/SectionTwo";
-import {SectionThree} from "./sections/SectionThree";
+import { SectionTwo, StyledSectionOneDetails } from "./sections/SectionTwo";
+import { SectionThree } from "./sections/SectionThree";
+import { SectionFour } from "./sections/SectionFour";
+import { SectionFive } from "./sections/SectionFive";
+import { SectionSix } from "./sections/SectionSix";
+import { SectionMR } from "./sections/SectionMR";
 
 
 function App() {
@@ -59,59 +63,53 @@ function App() {
             {/*</section>*/}
             {/*section 4*/}
 
-            <section className="ui-section-pricing">
-                <div className="ui-layout-container">
-                    <StyledSectionOneDetails> <span> Target Market and </span> Product Line</StyledSectionOneDetails>
-                    <div className="row" >
-                        <div className="container">
-                            <div className="row row-cols-3">
-                                {
-                                    [1, 2, 3, 4].map(item => (
-                                        <div className="card col" key={item}>
-                                            <div className="card-body">
-                                                <h5 className="card-title">Card title</h5>
-                                                Genny – Saves up to 18,250 plastic bottles of water a year
-                                            </div>
-                                        </div>
-                                    ))
-                                }
-                            </div>
-                        </div>
+            <SectionFour />
+
+            {/*<section className="ui-section-pricing">*/}
+            {/*    <div className="ui-layout-container">*/}
+            {/*        <StyledSectionOneDetails> <span> Target Market and </span> Product Line</StyledSectionOneDetails>*/}
+            {/*        <div className="row" >*/}
+            {/*            <div className="container">*/}
+            {/*                <div className="row row-cols-3">*/}
+            {/*                    {*/}
+            {/*                        [1, 2, 3, 4].map(item => (*/}
+            {/*                            <div className="card col" key={item}>*/}
+            {/*                                <div className="card-body">*/}
+            {/*                                    <h5 className="card-title">Card title</h5>*/}
+            {/*                                    Genny – Saves up to 18,250 plastic bottles of water a year*/}
+            {/*                                </div>*/}
+            {/*                            </div>*/}
+            {/*                        ))*/}
+            {/*                    }*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
 
 
-                    </div>
+            {/*        </div>*/}
 
 
-                </div>
-            </section>
+            {/*    </div>*/}
+            {/*</section>*/}
             {/*section 5*/}
 
-            <section className="ui-section-pricing">
-                <div className="ui-layout-container">
-                    {/*<h2></h2>*/}
-                    <StyledSectionOneDetails> <span>How it </span>works?</StyledSectionOneDetails>
+            <SectionFive />
 
-                    <p className="ui-text-intro">video</p>
+            {/*<section className="ui-section-pricing">*/}
+            {/*    <div className="ui-layout-container">*/}
+            {/*        /!*<h2></h2>*!/*/}
 
-
-                </div>
-            </section>
+            {/*    </div>*/}
+            {/*</section>*/}
             {/*section 6*/}
-            <section className="ui-section-pricing">
-                <div className="ui-layout-container">
-                    {/*<h2>How it works?</h2>*/}
-                    {/*<p className="ui-text-intro">video</p>*/}
+            <SectionSix />
 
+            {/*<section className="ui-section-pricing">*/}
+            {/*    <div className="ui-layout-container">*/}
+            {/*        /!*<h2>How it works?</h2>*!/*/}
+            {/*        /!*<p className="ui-text-intro">video</p>*!/*/}
 
-                    <div className="container">
-                        <div className="row row-cols-3">
-                            <div className="col">Column</div>
-                            <div className="col">Column</div>
-                            <div className="col">Column</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {/*    </div>*/}
+            {/*</section>*/}
 
             {/*section 7*/}
             {/*<section className="ui-section-pricing">*/}
@@ -133,38 +131,51 @@ function App() {
             {/*</section>*/}
 
             {/*section 8*/}
-            <section className="ui-section-pricing">
-                <div className="ui-layout-container">
-                    <StyledSectionOneDetails> <span>Media </span>Report</StyledSectionOneDetails>
-
-                    <div className="container">
-                        <div className="row row-cols-3">
+            <SectionMR />
 
 
-                            <div className="card col">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    Genny – Saves up to 18,250 plastic bottles of water a year
-                                </div>
-                            </div>
-                            <div className="card col">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    Genny – Saves up to 18,250 plastic bottles of water a year
-                                </div>
-                            </div>
-                            <div className="card col">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    Genny – Saves up to 18,250 plastic bottles of water a year
-                                </div>
-                            </div>
+            {/*            <section className="ui-section-pricing" style={{textAlign: 'start'}}>*/}
+            {/*                <div className="ui-layout-container">*/}
+            {/*                    <StyledSectionOneDetails> <span>Media </span>Report</StyledSectionOneDetails>*/}
 
-                        </div>
-                    </div>
+            {/*                    <div className="container">*/}
+            {/*                        <div className="row row-cols-3">*/}
 
-                </div>
-            </section>
+
+            {/*                            <div className="card col">*/}
+            {/*                                <div className="card-body">*/}
+            {/*                                    <h5 className="card-title">Card title</h5>*/}
+            {/*                                    Genny – Saves up to 18,250 plastic bottles of water a year*/}
+            {/*                                </div>*/}
+            {/*                            </div>*/}
+            {/*                            <div className="card" style={{width: "18rem"}}>*/}
+            {/*                                <img src="/images/mr-trash.png" className="card-img-top" alt="..."/>*/}
+            {/*                                    <div className="card-body">*/}
+            {/*                                        <h5 className="card-title">Our Oceans are Drowning… in Plastic*/}
+            {/*</h5>*/}
+            {/*                                        <p className="card-text">lastic pollution is one of the greatest threats to our oceans.</p>*/}
+            {/*                                        <a href="#">Read more</a>*/}
+            {/*                                    </div>*/}
+            {/*                            </div>*/}
+
+            {/*                            <div className="card col">*/}
+            {/*                                <div className="card-body">*/}
+            {/*                                    <h5 className="card-title">Card title</h5>*/}
+            {/*                                    Genny – Saves up to 18,250 plastic bottles of water a year*/}
+            {/*                                </div>*/}
+            {/*                            </div>*/}
+            {/*                            <div className="card col">*/}
+            {/*                                <div className="card-body">*/}
+            {/*                                    <h5 className="card-title">Card title</h5>*/}
+            {/*                                    Genny – Saves up to 18,250 plastic bottles of water a year*/}
+            {/*                                </div>*/}
+            {/*                            </div>*/}
+
+            {/*                        </div>*/}
+            {/*                    </div>*/}
+
+            {/*                </div>*/}
+            {/*            </section>*/}
 
             {/*section 9*/}
             <section className="ui-section-pricing">
