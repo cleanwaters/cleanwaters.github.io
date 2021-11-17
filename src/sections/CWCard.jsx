@@ -7,6 +7,9 @@ export const StyledCWCard = styled.div`
     border-radius: 50px;
     margin-top: 76px;
     min-height: 70vh;
+    height:840px;
+    padding:0px 20px;
+
 `
 
 export const StyledCapacityDropIconWrapper = styled.div`
@@ -16,18 +19,42 @@ z-index: 100;
 //     top: -4 em;
 `
 
-export function CWCard() {
+
+export const StyledListText = styled.ul`
+    list-style:none;
+
+    li::before {
+        content: "•"; 
+        color: #0170B9;
+        margin-left: -0.8em;
+        margin-right: 0.4em;
+        font-size: 32px;
+    }
+
+    li {
+        color:#081F46
+        ;
+        text-align:left !important;
+        font-size:20px;
+        line-height:27px;
+        margin-bottom:1.2rem;
+    }
+`
+
+export function CWCard({ title, listText, image }) {
     return (
         <StyledCWCard className="card col">
             <div className="card-body">
-                <h5 className="card-title header-title-color my-4">Card title</h5>
-                <img src={ process.env.PUBLIC_URL + "/images/genny.svg"} loading="lazy" alt="#" className="ui-image-half-right mb-4" />
+                <h5 className="card-title header-title-color my-4">{ title }</h5>
+                <img style={{padding:'10px', height:'150px'}} src={ process.env.PUBLIC_URL + `/images/${image}`} loading="lazy" alt="#" className="ui-image-half-right mb-4" />
 
-                <ul>
-                    <li>
-                        Homes and offices seeking sustainable water solution
-                    </li>
-                </ul>
+                <StyledListText>
+                    {listText.map(function(item, i){
+                        return (
+                            <li key={i}>{item}</li>
+                        )
+                    })}
+                </StyledListText>
             </div>
         </StyledCWCard>
     )
