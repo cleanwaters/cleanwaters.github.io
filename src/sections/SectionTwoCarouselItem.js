@@ -26,7 +26,7 @@ export const StyledSectionCarouselP = styled.p`
 export default function SectionTwoCarouselItem({ image, product, text }){
     return (
         // <Carousel.Item>
-            <StyledSectionCardDefault className="card" style={{margin: '0 8em'}}>
+            <StyledSectionCardDefault className="card" style={{margin: '0 15em'}}>
                 <div className="card-body" style={{position:'relative'}}>
                     <div className="d-flex">
                         <img src={process.env.PUBLIC_URL + `/images/${image}`} loading="lazy" alt="#" className="ui-image-half-right img-fluid" />

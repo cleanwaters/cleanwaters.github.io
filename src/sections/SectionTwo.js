@@ -48,11 +48,11 @@ const listCarouselItem = [
     product : 'Gen M',
     text : 'Saves up to 547,500 plastic bottles of water a year'
   },
-  // {
-  //   image : 'genl.svg',
-  //   product : 'Gen L',
-  //   text : 'Saves up to 3,650,000 plastic bottles of water a year'
-  // }
+  {
+    image : 'genl.svg',
+    product : 'Gen L',
+    text : 'Saves up to 3,650,000 plastic bottles of water a year'
+  }
 ]
 
 
