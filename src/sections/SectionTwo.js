@@ -1,3 +1,5 @@
+import SectionTwoCarouselItem from "./SectionTwoCarouselItem";
+
 import {StyledLayoutContainer, StyledSection} from "../components/styled-shared";
 import {Button} from "../components/button/Button";
 import styled from "styled-components";
@@ -18,35 +20,40 @@ import {faAngleLeft, faAngleRight, faCoffee} from '@fortawesome/free-solid-svg-i
 
 
 export const StyledSectionOneDetails = styled.h2`
-font-weight: bold;
-// font-size: 48px;
-line-height: 61px;
-color: #081F47;
-margin-bottom: 1em;
+  font-weight: bold;
+  // font-size: 48px;
+  line-height: 61px;
+  color: #081F47;
+  margin-bottom: 1em;
 
-span {
-color: #00C0FF;
-}
-`
-
-export const StyledSectionCardDefault = styled.div`
-    background: #FFFFFF;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 50px;
-`
-
-
-export const StyledSectionCarouselP = styled.p`
-font-weight: bold;
-font-size: 32px;
-line-height: 44px;
-
-span {
-color: #0170B9;
+  span {
+  color: #00C0FF;
 }
 `
 
 
+const listCarouselItem = [
+  {
+    image : 'genny.svg',
+    product : 'Genny',
+    text : 'Saves up to 18,250 plastic bottles of water a year'
+  },
+  {
+    image : 'genm1.svg',
+    product : 'Gen M1',
+    text : 'Saves up to 134,000 plastic bottles of water a year'
+  },
+  {
+    image : 'genm.svg',
+    product : 'Gen M',
+    text : 'Saves up to 547,500 plastic bottles of water a year'
+  },
+  // {
+  //   image : 'genl.svg',
+  //   product : 'Gen L',
+  //   text : 'Saves up to 3,650,000 plastic bottles of water a year'
+  // }
+]
 
 
 
@@ -67,28 +74,18 @@ export function SectionTwo() {
                         nextIcon={<FontAwesomeIcon color="black" size="2x" icon={faAngleRight} />}
                         style={{width: '0 !important'}}
                     >
-                      <Carousel.Item>
-
-
-                    <StyledSectionCardDefault className="card" style={{margin: '0 8em'}}>
-                        <div className="card-body">
-                            <div className="d-flex">
-                                <img src={process.env.PUBLIC_URL + "/images/genny.svg"} loading="lazy" alt="#" className="ui-image-half-right img-fluid" />
-                                <div className="flex-grow-1 align-self-center">
-
-                                <StyledSectionCarouselP>
-                                    <span>Genny</span> – Saves up to 18,250 plastic bottles of water a year
-                                </StyledSectionCarouselP>
-                                </div>
-
-                            </div>
-                        </div>
-                    </StyledSectionCardDefault>
-                                                  <Carousel.Caption>
-                          {/*<h3>First slide label</h3>*/}
-                          {/*<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>*/}
-                        </Carousel.Caption>
-                      </Carousel.Item>
+                      {listCarouselItem.map(function(item, i){
+                        return (
+                          <Carousel.Item key={i}>
+                            <SectionTwoCarouselItem
+                              image={item.image}
+                              product={item.product}
+                              text={item.text}
+                              />
+                          </Carousel.Item>
+                          )
+                      })}
+                      
                     </Carousel>
 
         </StyledLayoutContainer>
