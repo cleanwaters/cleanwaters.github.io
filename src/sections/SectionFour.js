@@ -22,7 +22,7 @@ color: #00C0FF;
 
 export const StyledCardTopRightText = styled.div`
     position:absolute;
-    right:12px;
+    right:7px;
     top:100px;
     z-index:200;
     font-family:Dosis;
