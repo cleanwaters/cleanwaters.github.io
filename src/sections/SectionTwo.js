@@ -73,7 +73,7 @@ export function SectionTwo() {
                     <StyledSectionCardDefault className="card" style={{margin: '0 8em'}}>
                         <div className="card-body">
                             <div className="d-flex">
-                                <img src="images/genny.svg" loading="lazy" alt="#" className="ui-image-half-right img-fluid" />
+                                <img src={process.env.PUBLIC_URL + "/images/genny.svg"} loading="lazy" alt="#" className="ui-image-half-right img-fluid" />
                                 <div className="flex-grow-1 align-self-center">
 
                                 <StyledSectionCarouselP>

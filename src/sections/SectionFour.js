@@ -36,7 +36,7 @@ export function SectionFour() {
                                 [1, 2, 3, 4].map(item => (
                                     <div style={{ position: 'relative', padding: '32px' }}>
                                         <StyledCapacityDropIconWrapper>
-                                            <img src="/images/capacity-drop.svg" loading="lazy" alt="#" className="ui-image-half-right" />
+                                            <img src={process.env.PUBLIC_URL + "/images/capacity-drop.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
                                         </StyledCapacityDropIconWrapper>
 
                                         <CWCard>

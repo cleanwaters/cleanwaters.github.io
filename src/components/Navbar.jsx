@@ -4,8 +4,7 @@ import {StyledNavLink, StyledNavWrapper, styledNavWrapper} from "./styled-shared
 export function Navbar() {
     return (
         <StyledNavWrapper className="navbar navbar-expand-lg mt-4 mb-4">
-            <img src="images/nav-logo.svg" loading="lazy" alt="#" className="ui-image-half-right" />
-
+            <img src={process.env.PUBLIC_URL + "/images/nav-logo.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
             <div className="collapse navbar-collapse">
                 {/*<div className="navbar-nav">*/}
                 {/*    <a className="nav-link active" href="#">Home <span className="sr-only">(current)</span></a>*/}

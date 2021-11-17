@@ -29,7 +29,7 @@ export function Footer() {
                 <div className="d-md-flex justify-content-between">
                     <div className="d-md-flex ">
                         <div className="pr-4">
-                            <img src="/images/nav-logo.svg" className="card-img-top" alt="..." />
+                            <img src={ process.env.PUBLIC_URL + "/images/nav-logo.svg"} className="card-img-top" alt="..." />
                         </div>
                         <div>
                             <h3>

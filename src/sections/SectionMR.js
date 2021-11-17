@@ -28,7 +28,7 @@ export function SectionMR() {
             <StyledLayoutContainer className="px-4">
                 <StyledSectionOneDetails> <span>Media </span>Report</StyledSectionOneDetails>
                 <div className="card" style={{ width: "18rem", textAlign: 'start'  }}>
-                    <img src="/images/mr-trash.png" className="card-img-top" alt="..." />
+                    <img src={ process.env.PUBLIC_URL + "/images/mr-trash.png"} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">Our Oceans are Drowning… in Plastic
                         </h5>

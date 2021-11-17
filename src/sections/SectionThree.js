@@ -62,8 +62,7 @@ export function SectionThree() {
                             {/*  <p className="ui-text-note"><small>30 days free trial.</small></p>*/}
                             {/*</div>*/}
                         </div>
-
-                        <img src="/images/air-water.svg" loading="lazy" alt="#" className="ui-image-half-right" />
+                        <img src={process.env.PUBLIC_URL + "/images/air-water.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
                     </StyledWhatWeDoDetails>
 
 

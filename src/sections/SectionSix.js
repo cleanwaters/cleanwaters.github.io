@@ -44,7 +44,7 @@ export function SectionSix() {
                             featureIconItems.map(iconItem => (
                                 <div className="col py-2">
                                     <StyledIconCard className="p-4">
-                                        <img src={`/images/${iconItem.icon}.svg`} loading="lazy" alt="#" className="py-2" />
+                                        <img src={ process.env.PUBLIC_URL + `/images/${iconItem.icon}.svg`} loading="lazy" alt="#" className="py-2" />
                                         <p>{iconItem.title}</p>
 
                                     </StyledIconCard>

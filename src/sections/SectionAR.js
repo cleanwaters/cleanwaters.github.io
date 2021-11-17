@@ -29,7 +29,7 @@ export function SectionAR() {
 
                 <StyledARCard className="card" style={{ width: "18rem" }}>
                     <div className="card-body">
-                        <img src="/images/logo_award_01.png" className="card-img-top" alt="..." />
+                        <img src={ process.env.PUBLIC_URL + "/images/logo_award_01.png"} className="card-img-top" alt="..." />
                         <h5 className="card-title mt-5">Influential invention
                         </h5>
                         <p className="card-text mb-5">Watergen technology selected as one of most influential inventions</p>

@@ -43,7 +43,7 @@ export function SectionOne() {
               <Button size="large" label="About us" />
             </div>
           </StyledSectionOneDetails>
-          <img src="images/water-glass.svg" loading="lazy" alt="#" className="ui-image-half-right img-fluid" />
+          <img src={process.env.PUBLIC_URL + "/images/water-glass.svg"} loading="lazy" alt="#" className="ui-image-half-right img-fluid" />
         </div>
       </StyledLayoutContainer>
     </section>

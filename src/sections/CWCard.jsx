@@ -21,7 +21,7 @@ export function CWCard() {
         <StyledCWCard className="card col">
             <div className="card-body">
                 <h5 className="card-title header-title-color my-4">Card title</h5>
-                <img src="/images/genny.svg" loading="lazy" alt="#" className="ui-image-half-right mb-4" />
+                <img src={ process.env.PUBLIC_URL + "/images/genny.svg"} loading="lazy" alt="#" className="ui-image-half-right mb-4" />
 
                 <ul>
                     <li>
