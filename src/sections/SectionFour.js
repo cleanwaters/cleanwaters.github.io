@@ -22,8 +22,8 @@ color: #00C0FF;
 
 export const StyledCardTopRightText = styled.div`
     position:absolute;
-    right:7px;
-    top:100px;
+    right:9px;
+    top:70px;
     z-index:200;
     font-family:Dosis;
     color:white;
@@ -100,11 +100,12 @@ export function SectionFour() {
                             {
                                 targetMarketProduct.map(item => (
                                     <div style={{ position: 'relative', padding: '32px' }}>
-                                        <StyledCardTopRightText>
-                                            <div>Capacity</div>
-                                            <div>{item.capacity} L</div>
-                                        </StyledCardTopRightText>
+                                        
                                         <StyledCapacityDropIconWrapper>
+                                            <StyledCardTopRightText>
+                                                <div>Capacity</div>
+                                                <div>{item.capacity} L</div>
+                                            </StyledCardTopRightText>
                                             <img src={process.env.PUBLIC_URL + "/images/capacity-drop.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
                                         </StyledCapacityDropIconWrapper>
 
