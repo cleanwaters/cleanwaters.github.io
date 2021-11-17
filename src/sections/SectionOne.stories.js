@@ -7,6 +7,8 @@ import { SectionFour } from "./SectionFour";
 import { SectionFive } from "./SectionFive";
 import { SectionSix } from "./SectionSix";
 import { SectionMR } from "./SectionMR";
+import {SectionAR} from "./SectionAR";
+import {Footer} from "./Footer";
 
 export default {
   title: 'Sections/Home/Section One',
@@ -31,4 +33,6 @@ export const Four = () => <SectionFour />;
 export const Five = () => <SectionFive />;
 export const Six = () => <SectionSix />;
 export const Eight = () => <SectionMR />;
+export const Nine = () => <SectionAR />;
+export const FooterExample = () => <Footer />;
 

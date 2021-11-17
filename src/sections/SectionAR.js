@@ -11,31 +11,30 @@ import { StyledSectionOneDetails } from "./SectionFive";
 
 
 
-export const StyledIconCard = styled.div`
-    background: #FFFFFF;
+export const StyledARCard = styled.div`
+background: #FFFFFF;
 box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
-border-radius: 16px;
-// padding: 28px 14px;
+border-radius: 50px;
 
 p {
 line-height: 33px;
 }
 `
 
-export function SectionMR() {
+export function SectionAR() {
     return (
         <StyledSection>
             <StyledLayoutContainer className="px-4">
-                <StyledSectionOneDetails> <span>Media </span>Report</StyledSectionOneDetails>
-                <div className="card" style={{ width: "18rem", textAlign: 'start'  }}>
-                    <img src="/images/mr-trash.png" className="card-img-top" alt="..." />
+                <StyledSectionOneDetails> <span>Award </span>Record</StyledSectionOneDetails>
+
+                <StyledARCard className="card" style={{ width: "18rem" }}>
                     <div className="card-body">
-                        <h5 className="card-title">Our Oceans are Drowning… in Plastic
+                        <img src="/images/logo_award_01.png" className="card-img-top" alt="..." />
+                        <h5 className="card-title mt-5">Influential invention
                         </h5>
-                        <p className="card-text">lastic pollution is one of the greatest threats to our oceans.</p>
-                        <a href="#">Read more</a>
+                        <p className="card-text mb-5">Watergen technology selected as one of most influential inventions</p>
                     </div>
-                </div>
+                </StyledARCard>
             </StyledLayoutContainer>
 
         </StyledSection>

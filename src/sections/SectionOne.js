@@ -28,7 +28,7 @@ padding: 8em 4em 2em 4em;
 
 export function SectionOne() {
   return (
-    <section className="p-4" style={{ background: '#EEF9FF' }}>
+    <section className="p-4" style={{ background: '#EEF9FF', borderRadius: '50px' }}>
       <StyledLayoutContainer className="px-4">
         <div className="d-md-flex">
           <StyledSectionOneDetails >
