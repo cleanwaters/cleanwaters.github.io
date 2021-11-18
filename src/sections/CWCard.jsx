@@ -7,7 +7,7 @@ export const StyledCWCard = styled.div`
     border-radius: 50px;
     margin-top: 76px;
     min-height: 70vh;
-    height:840px;
+    height:800px;
     padding:0px 20px;
 
 `

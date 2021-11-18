@@ -13,8 +13,17 @@ import {SectionAR} from "./sections/SectionAR";
 import {Footer} from "./sections/Footer";
 import Video from './sections/Video';
 
+import 'aos/dist/aos.css';
+import Aos from 'aos';
+import { useEffect } from 'react';
+
 
 function App() {
+    
+    useEffect(()=>{
+        Aos.init({ duration: 2000, delay:100, anchorPlacement: 'top-center' })
+    }, [])
+
     return (
         <div className="container-fluid">
             {/*<Button/>*/}

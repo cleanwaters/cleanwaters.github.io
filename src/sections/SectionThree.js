@@ -5,6 +5,8 @@ import {Carousel} from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngleLeft, faAngleRight, faCoffee} from '@fortawesome/free-solid-svg-icons'
+import { useEffect } from "react";
+import Aos from "aos";
 
 
 export const StyledSectionOneDetails = styled.h2`
@@ -24,8 +26,12 @@ export const StyledWhatWeDoDetails = styled.div`
 `
 
 export function SectionThree() {
+    // useEffect(()=>{
+    //     Aos.init({ duration:2000 })
+    // }, [])
+
     return (
-      <StyledSection style={{textAlign: 'start'}}>
+      <StyledSection data-aos="fade-left" data-aos-delay="1000" data-aos-anchor-placement="top-center" style={{textAlign: 'start'}}>
         <StyledLayoutContainer className="px-4">
 
                     {/*<StyledSectionOneDetails> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>*/}

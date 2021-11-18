@@ -31,7 +31,7 @@ export function SectionOne() {
     <section className="p-4" style={{ background: '#EEF9FF', borderRadius: '50px' }}>
       <StyledLayoutContainer className="px-4">
         <div className="d-md-flex">
-          <StyledSectionOneDetails >
+          <StyledSectionOneDetails data-aos="fade-up">
             <StyledHeaderH1 className="header-title-color">Clean Water</StyledHeaderH1>
             <StyledSectionOneP>
               We use Air as a natural raw material to make top-quality drinking water through our

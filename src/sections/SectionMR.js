@@ -86,7 +86,11 @@ export function SectionMR() {
                     <Carousel responsive={responsive}>
                         {
                             MediaReportItems.map((item, i)=>(
-                                <StyledCardMedia className="card">
+                                <StyledCardMedia
+                                data-aos-anchor-placement="top-center" data-aos-duration="3000" data-aos-delay={`${300*i+1}`} data-aos="fade-left"
+                                className="card"
+                                key={i}
+                                >
                                     <img src={ process.env.PUBLIC_URL + `/images/mediareport/${item.image}`} className="card-img-top" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">{item.title}

@@ -93,13 +93,13 @@ export function SectionFour() {
     return (
         <StyledSection>
             <StyledLayoutContainer className="px-4">
-                <StyledSectionOneDetails> <span> Target Market and </span> Product Line</StyledSectionOneDetails>
+                <StyledSectionOneDetails data-aos="fade-up" data-aos-anchor-placement="top-center"> <span> Target Market and </span> Product Line</StyledSectionOneDetails>
                 <div className="row" >
                     <div className="container" style={{maxWidth:'1470px'}}>
                         <div className="row row-cols-3">
                             {
                                 targetMarketProduct.map(item => (
-                                    <div style={{ position: 'relative', padding: '32px' }}>
+                                    <div data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-center" style={{ position: 'relative', padding: '32px' }}>
                                         
                                         <StyledCapacityDropIconWrapper>
                                             <StyledCardTopRightText>
