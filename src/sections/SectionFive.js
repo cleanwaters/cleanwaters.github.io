@@ -68,7 +68,7 @@ export function SectionFive() {
                         <span className="text-blue">Unique, energy-efficient heat exchange module</span>, using condensation as a means of producing fresh water. One liter of water costs 7-15 cents, which depends on local electricity costs.
                     </p>
 
-                    <p style={{margin:'2rem 0px'}}>
+                    <p style={{margin:'2rem 0px 0px 0px'}}>
                         <span className="text-blue">Highly scalable and customizable drinking water solution </span> for a wide range of daily quantities, configured to any production size. By using this technology, Watergen can supply fresh, clean drinking water to an entire town or village, or it can be scaled down to supply enough premium drinking water for private homes or offices.
                     </p>
                 </StyledSectionFourContainer>

@@ -10,6 +10,7 @@ import { SectionSix } from "./sections/SectionSix";
 import { SectionMR } from "./sections/SectionMR";
 import {SectionAR} from "./sections/SectionAR";
 import {Footer} from "./sections/Footer";
+import Video from './sections/Video';
 
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
             <SectionFour />
 
             <SectionFive />
+
+            <Video
+            video={'Watergen - how it works_.mp4'}
+            />
 
             <SectionSix />
 
