@@ -40,3 +40,37 @@ export const featureIconItems = [
         description: "GENius can be configured to any size and supports a wide range of water production needs."
     }
 ]
+
+
+export const MediaReportItems = [
+    {
+        image:'mr-trash.png',
+        title:'Our Oceans are Drowning… in Plastic',
+        description:'lastic pollution is one of the greatest threats to our oceans.'
+    },
+    {
+        image:'image2.svg',
+        title:'NGOs and charities bringing drinking water to the world',
+        description:'Helping solve water shortages has been a foucs of many charities and '
+    },
+    {
+        image:'image3.svg',
+        title:'Drinking water from the air',
+        description:'We can expect atmospheric water generation system to become a fixture'
+    },
+    {
+        image:'mr-trash.png',
+        title:'Our Oceans are Drowning… in Plastic',
+        description:'lastic pollution is one of the greatest threats to our oceans.'
+    },
+    {
+        image:'image2.svg',
+        title:'NGOs and charities bringing drinking water to the world',
+        description:'Helping solve water shortages has been a foucs of many charities and '
+    },
+    {
+        image:'image3.svg',
+        title:'Drinking water from the air',
+        description:'We can expect atmospheric water generation system to become a fixture'
+    }
+]

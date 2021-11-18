@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-multi-carousel/lib/styles.css";
 import { Navbar } from "./components/Navbar";
 import { SectionOne } from "./sections/SectionOne";
 import { SectionTwo, StyledSectionOneDetails } from "./sections/SectionTwo";
