@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft, faAngleRight, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { CWCard, StyledCapacityDropIconWrapper } from "./CWCard";
 import { featureIconItems } from "./sections-data";
+import { useState } from "react";
 
 
 export const StyledSectionOneDetails = styled.h2`
@@ -22,7 +23,7 @@ color: #00C0FF;
 `
 
 export const StyledIconCard = styled.div`
-    background: #FFFFFF;
+background: #FFFFFF;
 box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
 border-radius: 16px;
 // padding: 28px 14px;
@@ -30,23 +31,50 @@ border-radius: 16px;
 p {
 line-height: 33px;
 }
+
+h5 {
+    height:51px;
+}
 `
 
 export function SectionSix() {
+    const [ idHover, setIdHover ] = useState(null)
+
+    function openCard(e){
+        e.stopPropagation()
+        const target = e.target
+        const classNames = target.className
+
+        if(classNames.includes('s5-card')){
+            setIdHover(target.id)
+            // target.style.height = '400px'
+            // target
+        }
+    }
+
+    function closeCard(e){
+        e.stopPropagation()
+        setIdHover(null)
+        // const target = e.target
+        // target.style.height = '210px';
+
+    }
+
+    
     return (
         <StyledSection style={{ textAlign: 'start' }}>
             <StyledLayoutContainer className="px-4">
                 {/*<StyledSectionOneDetails> <span>How it </span>works?</StyledSectionOneDetails>*/}
-                <div className="container">
+                <div className="container" style={{maxWidth:'1100px'}}>
                     <div className="row row-cols-3">
 
                         {
-                            featureIconItems.map(iconItem => (
-                                <div className="col py-2">
-                                    <StyledIconCard className="p-4">
-                                        <img src={ process.env.PUBLIC_URL + `/images/${iconItem.icon}.svg`} loading="lazy" alt="#" className="py-2" />
-                                        <p>{iconItem.title}</p>
-
+                            featureIconItems.map((item, i) => (
+                                <div className="col py-2 my-2">
+                                    <StyledIconCard id={i} className="s5-card p-4" style={{height: idHover == i ? '450px' : '210px'}} onMouseEnter={(e)=>openCard(e)} onMouseLeave={(e)=>closeCard(e)}>
+                                        <img src={ process.env.PUBLIC_URL + `/images/section6/${item.icon}.svg`} loading="lazy" alt="#" className="s5-image py-2 mb-2" />
+                                        <h5 className="my-2">{item.title}</h5>
+                                        <p style={{display:idHover == i ? '' : 'none'}}>{item.description}</p>
                                     </StyledIconCard>
                                 </div>
 
