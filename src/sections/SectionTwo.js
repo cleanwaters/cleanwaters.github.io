@@ -62,7 +62,7 @@ export function SectionTwo() {
       <StyledSection>
         <StyledLayoutContainer className="px-4">
 
-                    <StyledSectionOneDetails data-aos="fade-up" data-aos-anchor-placement="top-center"> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>
+                    <StyledSectionOneDetails data-aos="fade-down" data-aos-anchor-placement="top-center"> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>
                     {/*<p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>*/}
 
                     <Carousel
@@ -73,8 +73,8 @@ export function SectionTwo() {
                         prevIcon={<FontAwesomeIcon className="m-0" color="black" size="2x" icon={faAngleLeft} />}
                         nextIcon={<FontAwesomeIcon color="black" size="2x" icon={faAngleRight} />}
                         style={{width: '0 !important'}}
-                        data-aos="fade-right"
-                        data-aos-delay="1000"
+                        data-aos="fade-up"
+                        data-aos-delay="500"
                         data-aos-anchor-placement="top-center"
                     >
                       {listCarouselItem.map(function(item, i){

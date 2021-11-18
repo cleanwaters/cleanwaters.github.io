@@ -93,7 +93,7 @@ export function SectionFour() {
     return (
         <StyledSection>
             <StyledLayoutContainer className="px-4">
-                <StyledSectionOneDetails data-aos="fade-up" data-aos-anchor-placement="top-center"> <span> Target Market and </span> Product Line</StyledSectionOneDetails>
+                <StyledSectionOneDetails data-aos-anchor-placement="top-center"> <span> Target Market and </span> Product Line</StyledSectionOneDetails>
                 <div className="row" >
                     <div className="container" style={{maxWidth:'1470px'}}>
                         <div className="row row-cols-3">
