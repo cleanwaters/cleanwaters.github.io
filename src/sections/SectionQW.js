@@ -30,7 +30,7 @@ export function SectionQW(){
     return (
         <StyledSection>
             <StyledLayoutContainer>
-                <StyledQWContainer>
+                <StyledQWContainer data-aos="fade-down" data-aos-anchor-placement="top-center">
                     <StyledSectionOneDetails> <span>The quality </span>of our water</StyledSectionOneDetails>
                     <div>
                         According to the New South Wales Department of Pathology, our water is “super clean” and meets all the standards of the Australian Drinking Water Guidelines.
