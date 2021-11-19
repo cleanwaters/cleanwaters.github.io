@@ -98,8 +98,8 @@ export function SectionFour() {
                     <div className="container" style={{maxWidth:'1470px'}}>
                         <div className="row row-cols-3">
                             {
-                                targetMarketProduct.map(item => (
-                                    <div data-aos="flip-right" data-aos-delay="500" data-aos-anchor-placement="top-center" style={{ position: 'relative', padding: '32px' }}>
+                                targetMarketProduct.map((item, i) => (
+                                    <div data-aos="fade-in" data-aos-delay={200*(i+1)} data-aos-anchor-placement="top-center" style={{ position: 'relative', padding: '32px' }}>
                                         
                                         <StyledCapacityDropIconWrapper>
                                             <StyledCardTopRightText>
