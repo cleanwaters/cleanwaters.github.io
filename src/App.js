@@ -11,6 +11,7 @@ import { SectionSix } from "./sections/SectionSix";
 import { SectionMR } from "./sections/SectionMR";
 import {SectionAR} from "./sections/SectionAR";
 import {Footer} from "./sections/Footer";
+import { SectionQW } from './sections/SectionQW';
 import Video from './sections/Video';
 
 import 'aos/dist/aos.css';
@@ -49,6 +50,8 @@ function App() {
 
             {/*section 9*/}
             <SectionAR />
+
+            <SectionQW/>
 
             {/*section 10*/}
             <Footer />
