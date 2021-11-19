@@ -1,9 +1,8 @@
 import styled, { css } from 'styled-components'
 
 export const StyledNavWrapper = styled.nav`
-
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
-    border-radius: 150px;
+    opacity:1;
+    color:white;
 `
 
 export const StyledNavLink = styled.a`

@@ -26,9 +26,9 @@ function App() {
     }, [])
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" style={{padding:'1px'}}>
             {/*<Button/>*/}
-            <Navbar />
+            {/* <Navbar /> */}
             <SectionOne />
             {/*second section*/}
             <SectionTwo />
