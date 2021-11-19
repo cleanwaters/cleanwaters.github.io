@@ -36,7 +36,7 @@ export function SectionThree() {
     data-aos-delay="500" 
     data-aos-anchor-placement="top-center"
     style={{textAlign: 'start'}}>
-        <StyledLayoutContainer className="px-4">
+        <StyledLayoutContainer className="px-4" style={{marginTop:'150px'}}>
 
                     {/*<StyledSectionOneDetails> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>*/}
                     {/*<p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>*/}
