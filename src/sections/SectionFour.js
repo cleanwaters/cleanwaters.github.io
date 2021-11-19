@@ -99,7 +99,7 @@ export function SectionFour() {
                         <div className="row row-cols-3">
                             {
                                 targetMarketProduct.map(item => (
-                                    <div data-aos="fade-up" data-aos-delay="500" data-aos-anchor-placement="top-center" style={{ position: 'relative', padding: '32px' }}>
+                                    <div data-aos="flip-right" data-aos-delay="500" data-aos-anchor-placement="top-center" style={{ position: 'relative', padding: '32px' }}>
                                         
                                         <StyledCapacityDropIconWrapper>
                                             <StyledCardTopRightText>

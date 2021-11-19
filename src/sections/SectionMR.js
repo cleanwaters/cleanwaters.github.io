@@ -66,7 +66,7 @@ export function SectionMR() {
                         {
                             MediaReportItems.map((item, i)=>(
                                 <StyledCardMedia
-                                data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-delay={`${300*i+1}`} data-aos="zoom-out"
+                                data-aos-anchor-placement="top-center" data-aos-delay="1000" data-aos-duration="1000" data-aos-delay={`${300*i+1}`} data-aos="flip-left"
                                 className="card"
                                 key={i}
                                 >
