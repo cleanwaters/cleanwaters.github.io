@@ -82,3 +82,47 @@ export const MediaReportItems = [
         description:'We can expect atmospheric water generation system to become a fixture'
     }
 ]
+
+
+export const awardRecordItems = [
+    {
+        image:'logo_award_01.svg',
+        title:'Influential invention',
+        description:"Watergen technology selected as one of Israel's most influential inventions"
+    },
+    {
+        image:'logo_award_02.svg',
+        title:'2020 Excellence Award',
+        description:'Watergen GENNY won the 2020 Energy Efficiency Product Excellence Award'
+    },
+    {
+        image:'logo_award_03.svg',
+        title:'Innovation Award',
+        description:"Watergen's Solar GENNY was selected as the CES 2020 Innovation Award winner in the sustainability, eco-design and smart energy categories"
+    },
+    {
+        image:'logo_award_04.svg',
+        title:'Best innovation',
+        description:'Watergen was selected as the winner of CES 2019 Best Innovation Award and Genny Home/Office Water Generator'
+    },
+    {
+        image:'logo_award_05.svg',
+        title:'Best innovation',
+        description:'GENNY was named one of the best innovations of 2019 by Time magazine'
+    },
+    {
+        image:'logo_award_06.svg',
+        title:'Technology Pioneer',
+        description:'Watergen was selected as a technology pioneer at the 2018 World Economic Forum'
+    },
+    {
+        image:'logo_award_07.svg',
+        title:'Good housekeeping service',
+        description:"GENNY was selected as the Good Housekeeping CES Editor's Pick Award"
+    },
+    {
+        image:'logo_award_08.svg',
+        title:'Internet of Things Award',
+        description:'GENNY Application was awarded for developing a breakthrough water production system IoT platform worldwide'
+    }
+]

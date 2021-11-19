@@ -1,4 +1,4 @@
-import { StyledLayoutContainer, StyledSection } from "../components/styled-shared";
+import { StyledLayoutContainer, StyledSection, StyledCarouselContainer } from "../components/styled-shared";
 import { Button } from "../components/button/Button";
 import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -52,27 +52,6 @@ export const StyledCardMedia = styled.div`
 
     @media screen and (max-width: 1024px) {
         width:27vw;
-    }
-`
-
-export const StyledCarouselContainer = styled.div`
-    // width:1300px; 
-    margin:auto auto;
-
-    > div:first-child{
-        // width:1140px;
-        margin:auto auto; 
-        overflow:visible !important;
-    }
-
-    .react-multiple-carousel__arrow--right {
-        right: calc(-0% + 1px);
-        z-index:1000;
-    }
-
-    .react-multiple-carousel__arrow--left {
-        left: calc(-0% + 1px);
-        z-index:1000;
     }
 `
 

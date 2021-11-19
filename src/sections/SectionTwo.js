@@ -73,7 +73,7 @@ export function SectionTwo() {
                         prevIcon={<FontAwesomeIcon className="m-0" color="black" size="2x" icon={faAngleLeft} />}
                         nextIcon={<FontAwesomeIcon color="black" size="2x" icon={faAngleRight} />}
                         style={{width: '0 !important'}}
-                        data-aos="fade-up"
+                        data-aos="fade-down"
                         data-aos-delay="500"
                         data-aos-anchor-placement="top-center"
                     >

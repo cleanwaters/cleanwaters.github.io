@@ -1,4 +1,4 @@
-import { StyledLayoutContainer, StyledSection } from "../components/styled-shared";
+import { StyledLayoutContainer, StyledSection, StyledCarouselContainer } from "../components/styled-shared";
 import { Button } from "../components/button/Button";
 import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
@@ -6,37 +6,49 @@ import { Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft, faAngleRight, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { CWCard, StyledCapacityDropIconWrapper } from "./CWCard";
-import { featureIconItems } from "./sections-data";
 import { StyledSectionOneDetails } from "./SectionFive";
+import { awardRecordItems } from "./sections-data";
 
 
 
 export const StyledARCard = styled.div`
-background: #FFFFFF;
-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
-border-radius: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 50px;
+    margin:0px 40px 40px 0px;
 
-p {
-line-height: 33px;
-}
+    p {
+        line-height: 33px;
+    }
+`
+
+export const StyledAwardContainer = styled.div`
+    dislay:flex;
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
 `
 
 export function SectionAR() {
     return (
         <StyledSection>
-            <StyledLayoutContainer className="px-4">
+            <StyledLayoutContainer className="px-5">
                 <StyledSectionOneDetails> <span>Award </span>Record</StyledSectionOneDetails>
-
-                <StyledARCard className="card" style={{ width: "18rem" }}>
-                    <div className="card-body">
-                        <img src={ process.env.PUBLIC_URL + "/images/logo_award_01.png"} className="card-img-top" alt="..." />
-                        <h5 className="card-title mt-5">Influential invention
-                        </h5>
-                        <p className="card-text mb-5">Watergen technology selected as one of most influential inventions</p>
-                    </div>
-                </StyledARCard>
+                    <StyledAwardContainer>
+                        {
+                            awardRecordItems.map((item, i)=>(
+                                <StyledARCard className="card" style={{ width: "17vw" }}>
+                                <div className="card-body">
+                                    <img src={ process.env.PUBLIC_URL + `/images/awards/${item.image}`} className="card-img-top" alt="..." />
+                                    <h5 className="card-title mt-5">{item.title}
+                                    </h5>
+                                    <p className="card-text mb-5">{item.description}</p>
+                                </div>
+                            </StyledARCard>
+                            ))
+                        }
+                    </StyledAwardContainer>
             </StyledLayoutContainer>
-
         </StyledSection>
     )
 }
