@@ -75,11 +75,11 @@ export function SectionSix() {
                                     <StyledIconCard 
                                     data-aos-duration="500" data-aos-delay={item.aos_delay} data-aos="fade-right"
                                     id={i} className="s5-card p-4" 
-                                    style={{height: idHover == i ? '450px' : '210px'}} 
+                                    style={{height: idHover == i ? '450px' : '210px', transition:'height 0.8s'}} 
                                     onMouseEnter={(e)=>openCard(e)} onMouseLeave={(e)=>closeCard(e)}>
                                         <img src={ process.env.PUBLIC_URL + `/images/section6/${item.icon}.svg`} loading="lazy" alt="#" className="s5-image py-2 mb-2" />
                                         <h5 className="my-2">{item.title}</h5>
-                                        <p style={{display:idHover == i ? '' : 'none'}}>{item.description}</p>
+                                        <p style={{visibility:idHover == i ? '' : 'hidden', transition:`visibility ${idHover == i ? 3 : 0.6}s`}}>{item.description}</p>
                                     </StyledIconCard>
                                 </div>
 
