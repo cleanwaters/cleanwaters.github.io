@@ -28,9 +28,9 @@ export const StyledQWContainer = styled.div`
 
 export function SectionQW(){
     return (
-        <StyledSection>
+        <StyledSection style={{marginTop:'120px'}}>
             <StyledLayoutContainer>
-                <StyledQWContainer data-aos="fade-down" data-aos-anchor-placement="top-center">
+                <StyledQWContainer data-aos="fade-down">
                     <StyledSectionOneDetails> <span>The quality </span>of our water</StyledSectionOneDetails>
                     <div>
                         According to the New South Wales Department of Pathology, our water is “super clean” and meets all the standards of the Australian Drinking Water Guidelines.

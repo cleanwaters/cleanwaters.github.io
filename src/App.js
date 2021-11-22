@@ -57,9 +57,10 @@ function App() {
             <SectionTwo />
 
             {/*section 3*/}
+            <SectionQW/>
+
             <SectionThree />
 
-            <SectionQW/>
 
             <SectionFour />
 

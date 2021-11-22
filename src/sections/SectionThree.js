@@ -45,8 +45,8 @@ export function SectionThree() {
     return (
     <StyledSection 
     data-aos="fade-left" 
-    style={{textAlign: 'start', padding:'0px 80px'}}>
-        <StyledLayoutContainer className="px-4" style={{marginTop:'150px'}}>
+    style={{textAlign: 'start', padding:'0px 80px', marginTop:'20px'}}>
+        <StyledLayoutContainer className="px-4">
 
                     {/*<StyledSectionOneDetails> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>*/}
                     {/*<p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>*/}
