@@ -61,7 +61,7 @@ function App() {
             <img style={{marginLeft:'70%', width:'315px', height:'388px'}} src={process.env.PUBLIC_URL + "/images/background/pattern5.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
         </StyledBackgroundPattern>
         <StyledBackgroundPattern style={{top:'6800px', left:'0%'}}>
-            <img style={{width:'465px', height:'545px'}}  src={process.env.PUBLIC_URL + "/images/background/pattern6.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+            <img style={{marginLeft:"-80px", width:'465px', height:'545px'}}  src={process.env.PUBLIC_URL + "/images/background/pattern6.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
         </StyledBackgroundPattern>
         <div className="container-fluid" style={{padding:'1px'}}>
             {/*<Button/>*/}
