@@ -85,7 +85,6 @@ export function SectionTwo() {
     return (
       <StyledSection>
         <StyledLayoutContainer className="px-4">
-                    
                     <Controller>
                     <Scene
                       // triggerHook="100"

@@ -33,7 +33,7 @@ export const StyledWhatWeDoDetails = styled.div`
     }
 
     > div:first-child{
-        width:50vw;
+        width:800px;
     }
 `
 
@@ -84,7 +84,7 @@ export function SectionThree() {
                             {/*  <p className="ui-text-note"><small>30 days free trial.</small></p>*/}
                             {/*</div>*/}
                         </div>
-                        <img style={{width:'50vw'}} src={process.env.PUBLIC_URL + "/images/air-water.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
+                        <img style={{width:'800px'}} src={process.env.PUBLIC_URL + "/images/air-water.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
                     </StyledWhatWeDoDetails>
 
 

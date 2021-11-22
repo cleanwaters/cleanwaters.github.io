@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-multi-carousel/lib/styles.css";
 import { Navbar } from "./components/Navbar";
+import styled from "styled-components";
 import { SectionOne } from "./sections/SectionOne";
 import { SectionTwo, StyledSectionOneDetails } from "./sections/SectionTwo";
 import { SectionThree } from "./sections/SectionThree";
@@ -19,6 +20,23 @@ import Aos from 'aos';
 import { useEffect } from 'react';
 
 
+
+export const StyledBackgroundPattern = styled.div`
+    position:absolute;
+    width:100vw;
+    margin:0;
+    padding:0;
+
+    > img {
+      width:100vw;
+      left:0;
+      margin:0;
+      padding:0;
+    }
+`
+
+
+
 function App() {
     
     useEffect(()=>{
@@ -26,11 +44,32 @@ function App() {
     }, [])
 
     return (
+        <>
+        <StyledBackgroundPattern style={{top:'920px'}}>
+            <img src={process.env.PUBLIC_URL + "/images/background/pattern1.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+        </StyledBackgroundPattern>
+        <StyledBackgroundPattern style={{top:'600px', left:'0px'}}>
+            <img style={{width:'20%'}} src={process.env.PUBLIC_URL + "/images/background/pattern2.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+        </StyledBackgroundPattern>
+        <StyledBackgroundPattern style={{top:'3900px'}}>
+            <img style={{width:'120%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern3.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+        </StyledBackgroundPattern>
+        <StyledBackgroundPattern style={{top:'4900px', left:'0%'}}>
+            <img style={{width:'100%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern4.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+        </StyledBackgroundPattern>
+        <StyledBackgroundPattern style={{top:'6600px', left:'90'}}>
+            <img style={{marginLeft:'70%', width:'315px', height:'388px'}} src={process.env.PUBLIC_URL + "/images/background/pattern5.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+        </StyledBackgroundPattern>
+        <StyledBackgroundPattern style={{top:'6800px', left:'0%'}}>
+            <img style={{width:'465px', height:'545px'}}  src={process.env.PUBLIC_URL + "/images/background/pattern6.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+        </StyledBackgroundPattern>
         <div className="container-fluid" style={{padding:'1px'}}>
             {/*<Button/>*/}
             {/* <Navbar /> */}
             <SectionOne />
             {/*second section*/}
+
+            
             <SectionTwo />
 
             {/*section 3*/}
@@ -57,6 +96,7 @@ function App() {
             <Footer />
 
         </div>
+        </>
     );
 }
 
