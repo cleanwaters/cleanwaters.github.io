@@ -32,6 +32,7 @@ export const StyledBackgroundPattern = styled.div`
       left:0;
       margin:0;
       padding:0;
+      z-index:-100;
     }
 `
 
@@ -40,7 +41,7 @@ export const StyledBackgroundPattern = styled.div`
 function App() {
     
     useEffect(()=>{
-        Aos.init({ duration: 2000, delay:100, anchorPlacement: 'top-center' })
+        Aos.init({ duration: 500, anchorPlacement: 'top-center' })
     }, [])
 
     return (
@@ -58,6 +59,8 @@ function App() {
             {/*section 3*/}
             <SectionThree />
 
+            <SectionQW/>
+
             <SectionFour />
 
             <SectionFive />
@@ -72,8 +75,6 @@ function App() {
 
             {/*section 9*/}
             <SectionAR />
-
-            <SectionQW/>
 
             {/*section 10*/}
             <Footer />

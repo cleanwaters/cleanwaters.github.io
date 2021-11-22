@@ -45,8 +45,6 @@ export function SectionThree() {
     return (
     <StyledSection 
     data-aos="fade-left" 
-    data-aos-delay="500" 
-    data-aos-anchor-placement="top-center"
     style={{textAlign: 'start', padding:'0px 80px'}}>
         <StyledLayoutContainer className="px-4" style={{marginTop:'150px'}}>
 

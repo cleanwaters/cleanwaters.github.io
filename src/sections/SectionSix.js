@@ -73,7 +73,7 @@ export function SectionSix() {
                             featureIconItems.map((item, i) => (
                                 <div className="col py-2 my-2">
                                     <StyledIconCard 
-                                    data-aos-anchor-placement="top-center" data-aos-duration="500" data-aos-delay={item.aos_delay} data-aos="fade-right"
+                                    data-aos-duration="500" data-aos-delay={item.aos_delay} data-aos="fade-right"
                                     id={i} className="s5-card p-4" 
                                     style={{height: idHover == i ? '450px' : '210px'}} 
                                     onMouseEnter={(e)=>openCard(e)} onMouseLeave={(e)=>closeCard(e)}>

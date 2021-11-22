@@ -92,14 +92,14 @@ export function SectionTwo() {
                       offset="520"
                       duration={800} pin>
                           {(progress)=>(
-                            <div data-aos="fade-in" data-aos-delay="500" >
+                            <div data-aos="fade-in">
                               <StyledBackgroundPattern style={{top:'-280px'}}>
                                     <img src={process.env.PUBLIC_URL + "/images/background/pattern1.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
                                 </StyledBackgroundPattern>
                                 <StyledBackgroundPattern style={{top:'630px', left:'-1020px'}}>
                                   <img style={{width:'20%'}} src={process.env.PUBLIC_URL + "/images/background/pattern2.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
                               </StyledBackgroundPattern>
-                              <StyledSectionOneDetails data-aos="fade-down" data-aos-anchor-placement="top-center"> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>
+                              <StyledSectionOneDetails data-aos="fade-down"> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>
                                 {/*<p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>*/}
                                 
                                 <Carousel
@@ -112,7 +112,7 @@ export function SectionTwo() {
                                     nextIcon={<FontAwesomeIcon color="black" size="2x" icon={faAngleRight} />}
                                     style={{width: '0 !important'}}
                                     data-aos="fade-down"
-                                    data-aos-anchor-placement="top-center"
+                                  
                                 >
                                   {listCarouselItem.map(function(item, i){
                                     return (
