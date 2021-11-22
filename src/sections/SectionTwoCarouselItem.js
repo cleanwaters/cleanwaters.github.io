@@ -17,6 +17,7 @@ export const StyledSectionCarouselP = styled.p`
     font-weight: bold;
     font-size: 32px;
     line-height: 44px;
+    font-family:Nunito;
 
     span {
         color: #0170B9;

@@ -5,24 +5,36 @@ import {Carousel} from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngleLeft, faAngleRight, faCoffee} from '@fortawesome/free-solid-svg-icons'
-import { useEffect } from "react";
-import Aos from "aos";
+
 
 
 export const StyledSectionOneDetails = styled.h2`
-font-weight: bold;
-// font-size: 48px;
-line-height: 61px;
-color: #081F47;
-margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 48px !important;
+    line-height: 61px;
+    color: #081F47;
+    margin-bottom: 1em;
 
-span {
-color: #00C0FF;
-}
+
+    span {
+    color: #00C0FF;
+    }
 `
 
 export const StyledWhatWeDoDetails = styled.div`
     border-left: 1em solid #00C0FF !important;
+    font-family:Nunito;
+
+    > div:first-child > p {
+        font-weight:600;
+        margin:40px 40px 40px 0px;
+        font-family:Nunito;
+        font-size:20px;
+    }
+
+    > div:first-child{
+        width:50vw;
+    }
 `
 
 export function SectionThree() {
@@ -35,7 +47,7 @@ export function SectionThree() {
     data-aos="fade-left" 
     data-aos-delay="500" 
     data-aos-anchor-placement="top-center"
-    style={{textAlign: 'start'}}>
+    style={{textAlign: 'start', padding:'0px 80px'}}>
         <StyledLayoutContainer className="px-4" style={{marginTop:'150px'}}>
 
                     {/*<StyledSectionOneDetails> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>*/}
@@ -72,7 +84,7 @@ export function SectionThree() {
                             {/*  <p className="ui-text-note"><small>30 days free trial.</small></p>*/}
                             {/*</div>*/}
                         </div>
-                        <img src={process.env.PUBLIC_URL + "/images/air-water.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
+                        <img style={{width:'50vw'}} src={process.env.PUBLIC_URL + "/images/air-water.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
                     </StyledWhatWeDoDetails>
 
 

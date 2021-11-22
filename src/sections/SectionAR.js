@@ -27,6 +27,7 @@ export const StyledAwardContainer = styled.div`
     width:100%;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    font-family:'Nunito';
 `
 
 export function SectionAR() {

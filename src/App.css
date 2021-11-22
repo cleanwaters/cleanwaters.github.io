@@ -166,6 +166,8 @@ TABLE OF CONTENT
   h4,
   p,
   ul { margin-top: 0; }
+
+  h2 { font-family:'Dosis' !important; font-size:48px !important; }
   
   h1,
   h2,
@@ -1137,5 +1139,5 @@ color: #00C0FF;
   height:100%;
   /*  object-fit is not supported on IE  */
   object-fit: cover;
-  opacity:0.8;
+  opacity:0.5;
 }

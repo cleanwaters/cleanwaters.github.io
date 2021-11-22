@@ -24,7 +24,7 @@ import { Tween, Timeline } from 'react-gsap';
 
 export const StyledSectionOneDetails = styled.h2`
   font-weight: bold;
-  // font-size: 48px;
+  font-size: 48px;
   line-height: 61px;
   color: #081F47;
   margin-bottom: 1em;
@@ -59,7 +59,7 @@ const listCarouselItem = [
 ]
 
 const StyledBottleAnimation = styled.div`
-    margin:50vh 0px 30vh 0px;
+    margin:60vh 0px 30vh 0px;
 
     > div{
         position:relative;
@@ -89,10 +89,10 @@ export function SectionTwo() {
                     <Controller>
                     <Scene
                       // triggerHook="100"
-                      offset="430"
+                      offset="520"
                       duration={800} pin>
                           {(progress)=>(
-                            <div>
+                            <div data-aos="fade-in" data-aos-delay="500" >
                               <StyledSectionOneDetails data-aos="fade-down" data-aos-anchor-placement="top-center"> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>
                                 {/*<p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>*/}
 

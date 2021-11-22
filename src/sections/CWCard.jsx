@@ -22,6 +22,7 @@ z-index: 100;
 
 export const StyledListText = styled.ul`
     list-style:none;
+    font-family:Nunito;
 
     li::before {
         content: "•"; 
@@ -45,7 +46,7 @@ export function CWCard({ title, listText, image }) {
     return (
         <StyledCWCard className="card col">
             <div className="card-body">
-                <h5 className="card-title header-title-color my-4">{ title }</h5>
+                <h5 className="card-title header-title-color my-4" style={{fontSize:'36px'}} >{ title }</h5>
                 <img style={{padding:'10px', height:'150px'}} src={ process.env.PUBLIC_URL + `/images/${image}`} loading="lazy" alt="#" className="ui-image-half-right mb-4" />
 
                 <StyledListText>

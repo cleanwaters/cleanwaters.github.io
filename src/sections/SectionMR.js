@@ -49,6 +49,7 @@ export const StyledCardMedia = styled.div`
     text-align:left;
     margin:auto auto;
     margin:0px 20px;
+    font-family:'Nunito';
 
     @media screen and (max-width: 1024px) {
         width:27vw;

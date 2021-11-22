@@ -12,7 +12,7 @@ import { useState } from "react";
 
 export const StyledSectionOneDetails = styled.h2`
 font-weight: bold;
-// font-size: 48px;
+font-size: 48px;
 line-height: 61px;
 color: #081F47;
 margin-bottom: 1em;
@@ -27,6 +27,7 @@ background: #FFFFFF;
 box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
 border-radius: 16px;
 // padding: 28px 14px;
+font-family:'Nunito';
 
 p {
 line-height: 33px;
