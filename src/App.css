@@ -167,7 +167,7 @@ TABLE OF CONTENT
   p,
   ul { margin-top: 0; }
 
-  h2 { font-family:'Dosis' !important; font-size:48px !important; }
+  h2 { font-family:'Dosis' !important; font-size:48px !important; z-index:100 !important}
   
   h1,
   h2,

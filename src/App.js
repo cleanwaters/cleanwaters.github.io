@@ -26,13 +26,13 @@ export const StyledBackgroundPattern = styled.div`
     width:100vw;
     margin:0;
     padding:0;
+    z-index:-300;
 
     > img {
       width:100vw;
       left:0;
       margin:0;
       padding:0;
-      z-index:-100;
     }
 `
 
@@ -81,16 +81,16 @@ function App() {
             <Footer />
 
         </div>
-        <StyledBackgroundPattern style={{top:'3900px'}}>
+        <StyledBackgroundPattern style={{top:'4500px'}}>
             <img style={{width:'120%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern3.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
         </StyledBackgroundPattern>
-        <StyledBackgroundPattern style={{top:'4900px', left:'0%'}}>
+        <StyledBackgroundPattern style={{top:'5600px', left:'0%'}}>
             <img style={{width:'100%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern4.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
         </StyledBackgroundPattern>
-        <StyledBackgroundPattern style={{top:'6600px', left:'90'}}>
+        <StyledBackgroundPattern style={{top:'7200px', left:'90'}}>
             <img style={{marginLeft:'70%', width:'315px', height:'388px'}} src={process.env.PUBLIC_URL + "/images/background/pattern5.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
         </StyledBackgroundPattern>
-        <StyledBackgroundPattern style={{top:'6800px', left:'0%'}}>
+        <StyledBackgroundPattern style={{top:'7400px', left:'0%'}}>
             <img style={{marginLeft:"-80px", width:'465px', height:'545px'}}  src={process.env.PUBLIC_URL + "/images/background/pattern6.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
         </StyledBackgroundPattern>
         </div>

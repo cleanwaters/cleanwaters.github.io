@@ -24,12 +24,14 @@ export const StyledSectionOneDetails = styled.h2`
 export const StyledWhatWeDoDetails = styled.div`
     border-left: 1em solid #00C0FF !important;
     font-family:Nunito;
+    z-index:200;
 
     > div:first-child > p {
         font-weight:600;
         margin:40px 40px 40px 0px;
         font-family:Nunito;
         font-size:20px;
+        z-index:200;
     }
 
     > div:first-child{
