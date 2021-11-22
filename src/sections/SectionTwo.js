@@ -19,6 +19,7 @@ import {faAngleLeft, faAngleRight, faCoffee} from '@fortawesome/free-solid-svg-i
 
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
+import { StyledBackgroundPattern } from "../App";
 
 
 
@@ -92,9 +93,12 @@ export function SectionTwo() {
                       duration={800} pin>
                           {(progress)=>(
                             <div data-aos="fade-in" data-aos-delay="500" >
+                              <StyledBackgroundPattern style={{top:'-280px'}}>
+                                    <img src={process.env.PUBLIC_URL + "/images/background/pattern1.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+                                </StyledBackgroundPattern>
                               <StyledSectionOneDetails data-aos="fade-down" data-aos-anchor-placement="top-center"> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>
                                 {/*<p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>*/}
-
+                                
                                 <Carousel
                                     // activeIndex={2}
                                     variant="dark"
