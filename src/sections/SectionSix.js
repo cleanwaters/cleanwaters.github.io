@@ -12,7 +12,7 @@ import { useState } from "react";
 
 export const StyledSectionOneDetails = styled.h2`
 font-weight: bold;
-font-size: 48px;
+// font-size: 48px;
 line-height: 61px;
 color: #081F47;
 margin-bottom: 1em;
@@ -27,7 +27,6 @@ background: #FFFFFF;
 box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
 border-radius: 16px;
 // padding: 28px 14px;
-font-family:'Nunito';
 
 p {
 line-height: 33px;
@@ -71,15 +70,21 @@ export function SectionSix() {
 
                         {
                             featureIconItems.map((item, i) => (
-                                <div className="col py-2 my-2">
+                                <div 
+                                data-aos-duration="500" data-aos-delay={item.aos_delay} data-aos="fade-right"
+                                className="col py-2 my-2">
                                     <StyledIconCard 
-                                    data-aos-duration="500" data-aos-delay={item.aos_delay} data-aos="fade-right"
                                     id={i} className="s5-card p-4" 
                                     style={{height: idHover == i ? '450px' : '210px', transition:'height 0.8s'}} 
                                     onMouseEnter={(e)=>openCard(e)} onMouseLeave={(e)=>closeCard(e)}>
                                         <img src={ process.env.PUBLIC_URL + `/images/section6/${item.icon}.svg`} loading="lazy" alt="#" className="s5-image py-2 mb-2" />
                                         <h5 className="my-2">{item.title}</h5>
-                                        <p style={{visibility:idHover == i ? '' : 'hidden', transition:`visibility ${idHover == i ? 3 : 0.6}s`}}>{item.description}</p>
+                                        <p style={
+                                            {
+                                                visibility:idHover == i ? 'visible' : 'hidden',
+                                                opacity:idHover == i ? '1' : '0',
+                                                transition: 'visibility 0s, opacity 1s linear'
+                                            }}>{item.description}</p>
                                     </StyledIconCard>
                                 </div>
 
