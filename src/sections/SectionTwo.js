@@ -96,6 +96,9 @@ export function SectionTwo() {
                               <StyledBackgroundPattern style={{top:'-280px'}}>
                                     <img src={process.env.PUBLIC_URL + "/images/background/pattern1.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
                                 </StyledBackgroundPattern>
+                                <StyledBackgroundPattern style={{top:'910px', left:'-620px'}}>
+                                  <img style={{width:'20%'}} src={process.env.PUBLIC_URL + "/images/background/pattern2.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+                              </StyledBackgroundPattern>
                               <StyledSectionOneDetails data-aos="fade-down" data-aos-anchor-placement="top-center"> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>
                                 {/*<p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>*/}
                                 

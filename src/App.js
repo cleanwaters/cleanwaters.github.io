@@ -45,9 +45,6 @@ function App() {
 
     return (
         <>
-        <StyledBackgroundPattern style={{top:'1900px', left:'0px'}}>
-            <img style={{width:'20%'}} src={process.env.PUBLIC_URL + "/images/background/pattern2.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
-        </StyledBackgroundPattern>
         <StyledBackgroundPattern style={{top:'3900px'}}>
             <img style={{width:'120%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern3.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
         </StyledBackgroundPattern>
