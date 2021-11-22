@@ -29,7 +29,7 @@ margin-bottom:40px !important;
 
 export const StyledSectionOneDetails = styled.div`
   // padding: 20em 7em;
-  margin:22em 0 0 7em;
+  margin:25em 0 0 7em;
 `
 
 
