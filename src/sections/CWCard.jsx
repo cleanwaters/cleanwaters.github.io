@@ -6,8 +6,7 @@ export const StyledCWCard = styled.div`
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
     border-radius: 50px;
     margin-top: 76px;
-    min-height: 70vh;
-    height:800px;
+    height:55em;
     padding:0px 20px;
 
 `

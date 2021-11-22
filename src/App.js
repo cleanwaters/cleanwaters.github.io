@@ -41,7 +41,7 @@ export const StyledBackgroundPattern = styled.div`
 function App() {
     
     useEffect(()=>{
-        Aos.init({ duration: 500, anchorPlacement: 'top-center' })
+        Aos.init({ duration: 500, delay:"50" })
     }, [])
 
     return (
