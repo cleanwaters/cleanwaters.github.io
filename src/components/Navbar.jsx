@@ -1,27 +1,75 @@
-import {navUrls} from "./navbar-items-data";
-import {StyledNavLink, StyledNavWrapper, styledNavWrapper} from "./styled-shared";
+import styled from "styled-components";
+
+
+const StyledNavbar = styled.div`
+  position:absolute;
+  top:50px;
+  color:white;
+  width:100%;
+  text-align:center;
+  z-index:4;
+
+  // Text
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+
+  > div {
+    display:flex;
+    align-items:center;
+
+    background: #FFFFFF;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 150px;
+    width: 80vw;
+    height: 94px;
+    margin: auto auto;
+  }
+
+  > div > div:first-child{
+    width:10%;
+  }
+
+  > div > div:nth-child(2){
+    display:flex;
+    justify-content:center;
+    width:90%;
+    text-align:center;
+    
+    position:relative;
+    right:5vw;
+  }
+
+  > div > div:nth-child(2) > div {
+    margin:0 40px;
+    color:#0170B9;
+  }
+
+  > div > div:nth-child(2) > div:hover {
+    text-decoration:underline;
+    cursor:pointer;
+  }
+`
+
 
 export function Navbar() {
     return (
-        <StyledNavWrapper className="navbar navbar-expand-lg mt-4 mb-4">
+        <StyledNavbar>
+        <div>
+          <div>
             <img src={process.env.PUBLIC_URL + "/images/nav-logo.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
-            <div className="collapse navbar-collapse">
-                {/*<div className="navbar-nav">*/}
-                {/*    <a className="nav-link active" href="#">Home <span className="sr-only">(current)</span></a>*/}
-                {/*    <a className="nav-link" href="#">Features</a>*/}
-                {/*    <a className="nav-link" href="#">Pricing</a>*/}
-                {/*    <a className="nav-link disabled">Disabled</a>*/}
-                {/*</div>*/}
-            </div>
-                <div className="navbar-nav">
-                    {navUrls.map(navurl => (
-                        <StyledNavLink className="nav-link m-4" href={navurl.url}>{navurl.title}</StyledNavLink>
-                    ))}
-                    {/*<a className="nav-link active" href="#">Home <span className="sr-only">(current)</span></a>*/}
-                    {/*<a className="nav-link" href="#">Features</a>*/}
-                    {/*<a className="nav-link" href="#">Pricing</a>*/}
-                    {/*<a className="nav-link disabled">Disabled</a>*/}
-                </div>
-        </StyledNavWrapper>
+          </div>
+          <div>
+            <div>Home</div>
+            <div>Our Solution</div>
+            <div>Case Studies</div>
+            <div>About Us</div>
+            <div>Our Partners</div>
+            <div>Contact</div>
+          </div>
+        </div>
+      </StyledNavbar>
     )
 }
