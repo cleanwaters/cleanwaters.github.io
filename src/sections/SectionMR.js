@@ -45,7 +45,7 @@ line-height: 33px;
 
 export const StyledCardMedia = styled.div`
     width:17vw;
-    height:555px;
+    height:560px;
     text-align:left;
     margin:auto auto;
     margin:0px 20px;
@@ -89,7 +89,7 @@ export function SectionMR() {
                                         <h5 className="card-title">{item.title}
                                         </h5>
                                         <p className="card-text">{item.description}</p>
-                                        <a href={item.link} target="_blank">Read more</a>
+                                        <a style={{color:"#007bff"}} href={item.link} target="_blank">Read more</a>
                                     </div>
                                 </StyledCardMedia>
                             ))
