@@ -45,14 +45,27 @@ line-height: 33px;
 
 export const StyledCardMedia = styled.div`
     width:17vw;
-    height:520px;
+    height:555px;
     text-align:left;
     margin:auto auto;
     margin:0px 20px;
     font-family:'Nunito';
 
     @media screen and (max-width: 1024px) {
-        width:27vw;
+        width:30vw;
+    }
+
+    > img {
+        // width:385px;
+        height:320px;
+    }
+
+    > div > .card-title {
+        height:68px;
+    }
+
+    > div > .card-text {
+        height: 72px;
     }
 `
 
@@ -67,7 +80,7 @@ export function SectionMR() {
                         {
                             MediaReportItems.map((item, i)=>(
                                 <StyledCardMedia
-                                data-aos-anchor-placement="top-center" data-aos-delay="800" data-aos-duration="1000" data-aos-delay={`${300*i+1}`} data-aos="flip-left"
+                                data-aos-delay="500" data-aos-duration="1000" data-aos-delay={`${300*i+1}`} data-aos="flip-left"
                                 className="card"
                                 key={i}
                                 >

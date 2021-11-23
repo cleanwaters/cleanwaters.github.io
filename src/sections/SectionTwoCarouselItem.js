@@ -6,7 +6,7 @@ import { Carousel } from "react-bootstrap";
 
 export const StyledSectionCardDefault = styled.div`
     background: #FFFFFF;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
     border-radius: 50px;
     height:220px;
     

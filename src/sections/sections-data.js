@@ -72,14 +72,44 @@ export const MediaReportItems = [
         description:'lastic pollution is one of the greatest threats to our oceans.'
     },
     {
-        image:'image2.svg',
-        title:'NGOs and charities bringing drinking water to the world',
-        description:'Helping solve water shortages has been a foucs of many charities and '
+        image:'WATERGEN-BLOG-6-300x172.jpeg',
+        title:'Water-bearing Women: More Than Mythology',
+        description:'In ancient literature, young women are portrayed as the water bearers and are often encountered at the community...'
     },
     {
-        image:'image3.svg',
-        title:'Drinking water from the air',
-        description:'We can expect atmospheric water generation system to become a fixture'
+        image:'scarcity fact.jpg',
+        title:'Water scarcity Facts',
+        description:'Some interesting facts regarding water scarcity'
+    },
+    {
+        image:'sacramento.jpeg',
+        title:'Sacramento and San Francisco Break Rain-Free Records',
+        description:'Winter is supposed to be the rainy season in california, and yet january was a dry month...'
+    },
+    {
+        image:'water wtaer.jpg',
+        title:'"Water, water, everywhere, Though not a drop to drink"',
+        description:'Hard to believe, but fresh drinking water is a rare commodity and is becoming ever more scarce.'
+    },
+    {
+        image:'water stress.jpeg',
+        title:'Water stress, Day Zero, and Why Should we Care',
+        description:"In 2007, the writing was on the wall: Cape Town, South Africa's beautiful southern city on the sea..."
+    },
+    {
+        image:'us cities.jpeg',
+        title:'US Cities that My Face "Day Zero"',
+        description:'Every Thursday, the US Drought Monitor releases a map to Illustrate areas of drought throughout...'
+    },
+    {
+        image:'your body needs.jpg',
+        title:'Your Body Needs Water to Survive',
+        description:'Did you know that a person is mostly made up of water? Abiyt 60% of the average adult total weight...'
+    },
+    {
+        image:'polluted water.jpg',
+        title:'Polluted Water - how will Texas solve its water quality crisis?',
+        description:'Home to about 29 million people and streadily growing, Texas has some major drinking water quality...'
     }
 ]
 
