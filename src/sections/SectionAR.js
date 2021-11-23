@@ -40,7 +40,7 @@ export function SectionAR() {
                             awardRecordItems.map((item, i)=>(
                                 <StyledARCard
                                 key={i}
-                                data-aos-duration="2000" data-aos-delay={`${100*(i+1)}`} data-aos="flip-up"
+                                data-aos-duration="2000" data-aos-delay={`${100*(i+1) - (400)*(Math.floor(i)/5)}`} data-aos="flip-up"
                                 className="card" style={{ width: "17vw" }}>
                                 <div className="card-body">
                                     <img src={ process.env.PUBLIC_URL + `/images/awards/${item.image}`} className="card-img-top" alt="..." />
