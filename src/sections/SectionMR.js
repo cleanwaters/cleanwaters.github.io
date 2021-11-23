@@ -58,6 +58,8 @@ export const StyledCardMedia = styled.div`
     > img {
         // width:385px;
         height:320px;
+        width:100%;
+        object-fit: cover;
     }
 
     > div > .card-title {
