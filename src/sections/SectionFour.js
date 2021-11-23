@@ -32,7 +32,7 @@ export const StyledCardTopRightText = styled.div`
         font-size:12px;
         margin:0 0;
         position:relative;
-        left:12.5%;
+        left:14%;
     }
 
     div:nth-child(2) {
@@ -110,7 +110,7 @@ export function SectionFour() {
                                                 <img src={process.env.PUBLIC_URL + "/images/capacity-drop.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
                                                 <StyledCardTopRightText>
                                                     <div>Capacity</div>
-                                                    <div style={{left:'13%'}}>{item.capacity} L</div>
+                                                    <div style={{left:'15%'}}>{item.capacity} L</div>
                                                 </StyledCardTopRightText>
                                             </div>
                                         </StyledCapacityDropIconWrapper>
