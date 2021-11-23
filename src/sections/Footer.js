@@ -4,10 +4,7 @@ import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleLeft, faAngleRight, faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { CWCard, StyledCapacityDropIconWrapper } from "./CWCard";
-import { featureIconItems } from "./sections-data";
-import { StyledSectionOneDetails } from "./SectionFive";
+import { FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 
 
 
@@ -60,6 +57,9 @@ export function Footer() {
                                     <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01" />
                                 </svg>
                             </a>
+                        </div>
+                        <div>
+                            <FaLinkedinIn style={{color:'rgb(174, 174, 174)'}}/>
                         </div>
                     </div>
                 </div>
