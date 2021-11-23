@@ -89,7 +89,7 @@ export function SectionMR() {
                                         <h5 className="card-title">{item.title}
                                         </h5>
                                         <p className="card-text">{item.description}</p>
-                                        <a href={item.link}>Read more</a>
+                                        <a href={item.link} target="_blank">Read more</a>
                                     </div>
                                 </StyledCardMedia>
                             ))
