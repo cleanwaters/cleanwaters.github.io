@@ -72,7 +72,7 @@ export const MediaReportItems = [
     {
         image:'WATERGEN-BLOG-6-300x172.jpeg',
         title:'Water-bearing Women: More Than Mythology',
-        description:'In ancient literature, young women are portrayed as the water bearers and are often encountered...',
+        description:'In ancient literature, young women are portrayed as the water bearers and are often...',
         link: 'https://www.watergen.com/blog/water-bearing-women-more-than-mythology/'
     },
     {
@@ -90,31 +90,31 @@ export const MediaReportItems = [
     {
         image:'water wtaer.jpg',
         title:'"Water, water, everywhere, Though not a drop to drink"',
-        description:'Hard to believe, but fresh drinking water is a rare commodity and is becoming ever more scarce.',
+        description:'Hard to believe, but fresh drinking water is a rare commodity and is becoming ever more...',
         link: 'https://www.watergen.com/blog/water-water-everywhere-though-not-a-drop-to-drink/'
     },
     {
         image:'water stress.jpeg',
         title:'Water stress, Day Zero, and Why Should we Care',
-        description:"In 2007, the writing was on the wall: Cape Town, South Africa's beautiful southern city on the sea...",
+        description:"In 2007, the writing was on the wall: Cape Town, South Africa's beautiful southern city...",
         link: 'https://www.watergen.com/blog/water-stress-day-zero-and-why-should-we-care/'
     },
     {
         image:'us cities.jpeg',
         title:'US Cities that My Face "Day Zero"',
-        description:'Every Thursday, the US Drought Monitor releases a map to Illustrate areas of drought throughout...',
+        description:'Every Thursday, the US Drought Monitor releases a map to Illustrate areas of drought...',
         link: 'https://www.watergen.com/blog/us-cities-that-may-face-day-zero/'
     },
     {
         image:'your body needs.jpg',
         title:'Your Body Needs Water to Survive',
-        description:'Did you know that a person is mostly made up of water? Abiyt 60% of the average adult total weight...',
+        description:'Did you know that a person is mostly made up of water? Abiyt 60% of the average adult...',
         link: 'https://www.watergen.com/blog/your-body-needs-water-to-survive/'
     },
     {
         image:'polluted water.jpg',
         title:'Polluted Water - how will Texas solve its water quality crisis?',
-        description:'Home to about 29 million people and streadily growing, Texas has some major drinking water quality...',
+        description:'Home to about 29 million people and streadily growing, Texas has some major drinking...',
         link: 'https://www.watergen.com/blog/deteriorating-infrastructure-polluted-water-how-will-texas-solve-its-water-quality-crisis/'
     }
 ]
