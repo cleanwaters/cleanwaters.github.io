@@ -59,7 +59,9 @@ export function Footer() {
                             </a>
                         </div>
                         <div>
-                            <FaLinkedinIn style={{color:'rgb(174, 174, 174)'}}/>
+                            <a href="https://www.linkedin.com/company/clean-waters-australia" target="_blank">
+                                <FaLinkedinIn style={{color:'rgb(174, 174, 174)'}}/>
+                            </a>
                         </div>
                     </div>
                 </div>
