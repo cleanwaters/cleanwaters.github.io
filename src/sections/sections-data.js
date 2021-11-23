@@ -60,57 +60,62 @@ export const MediaReportItems = [
     {
         image:'image2.svg',
         title:'NGOs and charities bringing drinking water to the world',
-        description:'Helping solve water shortages has been a foucs of many charities and '
+        description:'Helping solve water shortages has been a foucs of many charities and...',
+        link : 'https://www.watergen.com/blog/ngos-and-charities-bringing-drinking-water-to-the-world/'
     },
     {
         image:'image3.svg',
         title:'Drinking water from the air',
-        description:'We can expect atmospheric water generation system to become a fixture'
-    },
-    {
-        image:'mr-trash.png',
-        title:'Our Oceans are Drowning… in Plastic',
-        description:'lastic pollution is one of the greatest threats to our oceans.'
+        description:'We can expect atmospheric water generation system to become a fixture',
+        link: 'https://www.watergen.com/blog/drinking-water-from-the-air/'
     },
     {
         image:'WATERGEN-BLOG-6-300x172.jpeg',
         title:'Water-bearing Women: More Than Mythology',
-        description:'In ancient literature, young women are portrayed as the water bearers and are often encountered at the community...'
+        description:'In ancient literature, young women are portrayed as the water bearers and are often encountered...',
+        link: 'https://www.watergen.com/blog/water-bearing-women-more-than-mythology/'
     },
     {
         image:'scarcity fact.jpg',
         title:'Water scarcity Facts',
-        description:'Some interesting facts regarding water scarcity'
+        description:'Some interesting facts regarding water scarcity',
+        link: 'https://www.watergen.com/facts/'
     },
     {
         image:'sacramento.jpeg',
         title:'Sacramento and San Francisco Break Rain-Free Records',
-        description:'Winter is supposed to be the rainy season in california, and yet january was a dry month...'
+        description:'Winter is supposed to be the rainy season in california, and yet january was a dry month...',
+        link: 'https://www.watergen.com/blog/sacramento-and-san-francisco-break-rain-free-records/'
     },
     {
         image:'water wtaer.jpg',
         title:'"Water, water, everywhere, Though not a drop to drink"',
-        description:'Hard to believe, but fresh drinking water is a rare commodity and is becoming ever more scarce.'
+        description:'Hard to believe, but fresh drinking water is a rare commodity and is becoming ever more scarce.',
+        link: 'https://www.watergen.com/blog/water-water-everywhere-though-not-a-drop-to-drink/'
     },
     {
         image:'water stress.jpeg',
         title:'Water stress, Day Zero, and Why Should we Care',
-        description:"In 2007, the writing was on the wall: Cape Town, South Africa's beautiful southern city on the sea..."
+        description:"In 2007, the writing was on the wall: Cape Town, South Africa's beautiful southern city on the sea...",
+        link: 'https://www.watergen.com/blog/water-stress-day-zero-and-why-should-we-care/'
     },
     {
         image:'us cities.jpeg',
         title:'US Cities that My Face "Day Zero"',
-        description:'Every Thursday, the US Drought Monitor releases a map to Illustrate areas of drought throughout...'
+        description:'Every Thursday, the US Drought Monitor releases a map to Illustrate areas of drought throughout...',
+        link: 'https://www.watergen.com/blog/us-cities-that-may-face-day-zero/'
     },
     {
         image:'your body needs.jpg',
         title:'Your Body Needs Water to Survive',
-        description:'Did you know that a person is mostly made up of water? Abiyt 60% of the average adult total weight...'
+        description:'Did you know that a person is mostly made up of water? Abiyt 60% of the average adult total weight...',
+        link: 'https://www.watergen.com/blog/your-body-needs-water-to-survive/'
     },
     {
         image:'polluted water.jpg',
         title:'Polluted Water - how will Texas solve its water quality crisis?',
-        description:'Home to about 29 million people and streadily growing, Texas has some major drinking water quality...'
+        description:'Home to about 29 million people and streadily growing, Texas has some major drinking water quality...',
+        link: 'https://www.watergen.com/blog/deteriorating-infrastructure-polluted-water-how-will-texas-solve-its-water-quality-crisis/'
     }
 ]
 
