@@ -22,18 +22,22 @@ color: #00C0FF;
 
 export const StyledCardTopRightText = styled.div`
     position:absolute;
-    right:9px;
-    top:70px;
-    z-index:200;
+    top:50%;
+    z-index:300;
+    width:100%;
     font-family:Dosis;
     color:white;
 
     div:first-child {
         font-size:12px;
+        margin:0 0;
+        position:relative;
+        left:12.5%;
     }
 
     div:nth-child(2) {
         font-size:20px;
+        position:relative;
     }
 `
 
@@ -46,7 +50,7 @@ const targetMarketProduct = [
         title : 'Mobile Box',
         targets : ['Outdoor recreation community – hard to generate water on the go', 'Defence and Special Forces – water access, no matter the location or nature of deployment'],
         capacity : 20,
-        image : 'mobilebox.svg'
+        image : 'mobilebox.svg',
     },
     {
         title : 'Genny',
@@ -102,11 +106,13 @@ export function SectionFour() {
                                     <div data-aos="fade-in" data-aos-delay={150*(i+1)} style={{ position: 'relative', padding: '32px' }}>
                                         
                                         <StyledCapacityDropIconWrapper>
-                                            <StyledCardTopRightText>
-                                                <div>Capacity</div>
-                                                <div>{item.capacity} L</div>
-                                            </StyledCardTopRightText>
-                                            <img src={process.env.PUBLIC_URL + "/images/capacity-drop.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
+                                            <div>
+                                                <img src={process.env.PUBLIC_URL + "/images/capacity-drop.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
+                                                <StyledCardTopRightText>
+                                                    <div>Capacity</div>
+                                                    <div style={{left:'13%'}}>{item.capacity} L</div>
+                                                </StyledCardTopRightText>
+                                            </div>
                                         </StyledCapacityDropIconWrapper>
 
                                         <CWCard

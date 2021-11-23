@@ -69,7 +69,7 @@ export function SectionThree() {
                             </p>
 
                             <p>
-                                here is no need to install any water infrastructure or pipelines, there is no transportation and storage, no more waste of plastic bottles
+                                There is no need to install any water infrastructure or pipelines, there is no transportation and storage, no more waste of plastic bottles
 
                             </p>
 
