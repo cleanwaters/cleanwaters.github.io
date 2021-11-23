@@ -42,6 +42,12 @@ function App() {
     
     useEffect(()=>{
         Aos.init({ duration: 500, delay:"50" })
+
+        window.onbeforeunload = function () {
+            window.scrollTo({
+                left:0
+            })
+        }
     }, [])
 
     return (
