@@ -54,7 +54,8 @@ export const MediaReportItems = [
     {
         image:'mr-trash.png',
         title:'Our Oceans are Drowning… in Plastic',
-        description:'lastic pollution is one of the greatest threats to our oceans.'
+        description:'lastic pollution is one of the greatest threats to our oceans.',
+        link:'https://www.watergen.com/blog/our-oceans-are-drowning-in-plastic/'
     },
     {
         image:'image2.svg',
