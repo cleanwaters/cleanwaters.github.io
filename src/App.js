@@ -45,8 +45,8 @@ function App() {
 
     return (
         <div>
-            <Navbar/>
             <BrowserRouter>
+            <Navbar/>
                 <Routes>
                     <Route
                     exact={true}

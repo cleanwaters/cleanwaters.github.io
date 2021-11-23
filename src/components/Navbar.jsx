@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 
 const StyledNavbar = styled.div`
   position:absolute;
@@ -42,9 +44,9 @@ const StyledNavbar = styled.div`
     right:5vw;
   }
 
-  > div > div:nth-child(2) > div {
+  > div > div:nth-child(2) > div, a {
     margin:0 40px;
-    color:#0170B9;
+    color:#0170B9 !important;
   }
 
   > div > div:nth-child(2) > div:hover {
@@ -62,12 +64,12 @@ export function Navbar() {
             <img src={process.env.PUBLIC_URL + "/images/nav-logo.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
           </div>
           <div>
-            <div>Home</div>
+            <div><Link to="/">Home</Link></div>
             <div>Our Solution</div>
             <div>Case Studies</div>
             <div>About Us</div>
             <div>Our Partners</div>
-            <div>Contact</div>
+            <div><Link to="/contact">Contact</Link></div>
           </div>
         </div>
       </StyledNavbar>
