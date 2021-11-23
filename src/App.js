@@ -9,6 +9,9 @@ import Aos from 'aos';
 import { useEffect } from 'react';
 import LandingPage from './pages/LandingPage';
 
+import { BrowserRouter, Routes , Route } from 'react-router-dom';
+import { Contact } from './pages/Contact';
+
 
 export const StyledBackgroundPattern = styled.div`
     position:absolute;
@@ -43,7 +46,20 @@ function App() {
     return (
         <div>
             <Navbar/>
-            <LandingPage/>
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                    exact={true}
+                    path='/'
+                    element={<LandingPage/>}
+                    />
+                    <Route
+                    exact={true}
+                    path='/contact'
+                    element={<Contact/>}
+                    />
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }

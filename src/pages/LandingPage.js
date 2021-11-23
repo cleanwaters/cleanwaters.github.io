@@ -6,7 +6,7 @@ import { SectionFive } from "../sections/SectionFive";
 import { SectionSix } from "../sections/SectionSix";
 import { SectionMR } from "../sections/SectionMR";
 import {SectionAR} from "../sections/SectionAR";
-import {Footer} from "../sections/Footer";
+import { Footer } from "../sections/Footer";
 import { SectionQW } from '../sections/SectionQW';
 import { StyledBackgroundPattern } from "../App";
 import Video from '../sections/Video';
