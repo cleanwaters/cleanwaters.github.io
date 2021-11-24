@@ -266,7 +266,7 @@ export function SectionTwo() {
                                       </Tween>
                                     </Timeline>                                  
                                   </Timeline>
-                              </StyledBottleAnimation>
+                                </StyledBottleAnimation>
                             </div>
                               
                           )}

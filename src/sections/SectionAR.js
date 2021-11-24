@@ -26,7 +26,25 @@ export const StyledAwardContainer = styled.div`
     dislay:flex;
     width:100%;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: auto auto;
+    }
+
+    @media screen and (min-width: 992px) {
+        grid-template-columns: auto auto auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: auto auto auto auto;
+    }
+    
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: auto auto auto auto auto;
+    }
+
+    
     font-family:'Nunito';
 `
 
@@ -41,7 +59,7 @@ export function SectionAR() {
                                 <StyledARCard
                                 key={i}
                                 data-aos-duration="2000" data-aos-delay={`${100*(i+1) - (400)*(Math.floor(i)/5)}`} data-aos="flip-up"
-                                className="card" style={{ width: "17vw" }}>
+                                className="card">
                                 <div className="card-body">
                                     <img src={ process.env.PUBLIC_URL + `/images/awards/${item.image}`} className="card-img-top" alt="..." />
                                     <h5 className="card-title mt-5">{item.title}

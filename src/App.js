@@ -44,7 +44,7 @@ function App() {
     }, [])
 
     return (
-        <div>
+        <div style={{overflowX:'hidden', width:'100vw'}}>
             <BrowserRouter>
             <Navbar/>
                 <Routes>

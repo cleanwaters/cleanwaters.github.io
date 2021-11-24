@@ -5,6 +5,7 @@ import {Carousel} from "react-bootstrap";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faAngleLeft, faAngleRight, faCoffee} from '@fortawesome/free-solid-svg-icons'
+import { useState } from "react";
 
 
 
@@ -37,12 +38,16 @@ export const StyledWhatWeDoDetails = styled.div`
     > div:first-child{
         width:800px;
     }
+
+    @media (max-width: 992px) {
+        > img {
+          display: none;
+        }
+    }
 `
 
 export function SectionThree() {
-    // useEffect(()=>{
-    //     Aos.init({ duration:2000 })
-    // }, [])
+    const [ hide, setHide ] = useState(false)
 
     return (
     <StyledSection 
@@ -84,7 +89,7 @@ export function SectionThree() {
                             {/*  <p className="ui-text-note"><small>30 days free trial.</small></p>*/}
                             {/*</div>*/}
                         </div>
-                        <img style={{width:'800px'}} src={process.env.PUBLIC_URL + "/images/air-water.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
+                        <img style={{width:'45vw'}} src={process.env.PUBLIC_URL + "/images/air-water.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
                     </StyledWhatWeDoDetails>
 
 

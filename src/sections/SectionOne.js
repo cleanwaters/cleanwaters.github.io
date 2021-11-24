@@ -29,7 +29,7 @@ margin-bottom:40px !important;
 
 export const StyledSectionOneDetails = styled.div`
   // padding: 20em 7em;
-  margin:21em 0 0 7em;
+  margin:20vw 0 0 7em;
 `
 
 
@@ -44,7 +44,7 @@ export function SectionOne() {
       <source src={process.env.PUBLIC_URL + `/videos/production ID_3958714 (online-video-cutter.com).mp4`} type="video/mp4"/>
       </video>
       {/* <Navbar/> */}
-      <StyledSectionOneDetails data-aos="fade-up" style={{ zIndex:4, position: 'relative', width:'43%'}}>
+      <StyledSectionOneDetails data-aos="fade-up" style={{ zIndex:4, position: 'relative', width:'50vw'}}>
             <StyledHeaderH1 className="header-title-color" style={{fontSize:'48px'}}>Clean Water</StyledHeaderH1>
             <StyledSectionOneP className="mb-3">
               We use Air as a natural raw material to make top-quality drinking water through our

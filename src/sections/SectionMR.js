@@ -12,20 +12,19 @@ import { MediaReportItems } from "./sections-data";
 
 const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 7
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1400 },
       items: 5
     },
+    desktop: {
+        breakpoint: { max: 1400, min: 1200 },
+        items: 4
+    },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 3
+      breakpoint: { max: 1200, min: 992 },
+      items: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 992, min: 464 },
       items: 1
     }
 };
@@ -44,16 +43,16 @@ line-height: 33px;
 `
 
 export const StyledCardMedia = styled.div`
-    width:17vw;
+    // width:17vw;
     height:560px;
     text-align:left;
     margin:auto auto;
     margin:0px 20px;
     font-family:'Nunito';
 
-    @media screen and (max-width: 1024px) {
-        width:30vw;
-    }
+    // @media screen and (max-width: 1024px) {
+    //     width:30vw;
+    // }
 
     > img {
         // width:385px;

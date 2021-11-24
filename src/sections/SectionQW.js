@@ -6,7 +6,7 @@ import { StyledSectionOneDetails } from "./SectionFive";
 
 export const StyledQWContainer = styled.div`
     > div:nth-child(2){
-        width:1246px;
+        width:75vw;
         font-size:32px;
         height:252px;
         background: #FFFFFF;
