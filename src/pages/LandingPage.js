@@ -52,16 +52,16 @@ export default function LandingPage(){
                 <Footer/>
             {/* </div> */}
             <StyledBackgroundPattern style={{top:'4500px'}}>
-                <img style={{width:'120%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern3.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+                <img style={{width:'120%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern3.svg"} loading="lazy" alt="image" className="img-fluid" />
             </StyledBackgroundPattern>
             <StyledBackgroundPattern style={{top:'5600px', left:'0%'}}>
-                <img style={{width:'100%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern4.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+                <img style={{width:'100%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern4.svg"} loading="lazy" alt="image" className="img-fluid" />
             </StyledBackgroundPattern>
             <StyledBackgroundPattern style={{top:'7200px', left:'90'}}>
-                <img style={{marginLeft:'70%', width:'315px', height:'388px'}} src={process.env.PUBLIC_URL + "/images/background/pattern5.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+                <img style={{marginLeft:'70%', width:'315px', height:'388px'}} src={process.env.PUBLIC_URL + "/images/background/pattern5.svg"} loading="lazy" alt="image" className="img-fluid" />
             </StyledBackgroundPattern>
             <StyledBackgroundPattern style={{top:'7400px', left:'0%'}}>
-                <img style={{marginLeft:"-80px", width:'465px', height:'545px'}}  src={process.env.PUBLIC_URL + "/images/background/pattern6.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
+                <img style={{marginLeft:"-80px", width:'465px', height:'545px'}}  src={process.env.PUBLIC_URL + "/images/background/pattern6.svg"} loading="lazy" alt="image" className="img-fluid" />
             </StyledBackgroundPattern>
         </>
     )
