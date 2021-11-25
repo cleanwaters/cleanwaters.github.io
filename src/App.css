@@ -156,10 +156,10 @@ TABLE OF CONTENT
   3.0 TYPOGRAPHY
   --------------------------------------------------------------*/
   
-  a {
+  /* a {
     color: var(--ui-color-brand);
     text-decoration-color: var(--ui-color-typography-note);
-  }
+  } */
   
   h1,
   h2,
