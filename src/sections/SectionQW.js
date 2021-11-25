@@ -32,7 +32,7 @@ export function SectionQW(){
             <StyledLayoutContainer>
                 <StyledQWContainer data-aos="fade-down">
                     <StyledSectionOneDetails> <span>The quality </span>of our water</StyledSectionOneDetails>
-                    <div>
+                    <div className='accent_text_color'>
                         According to the New South Wales Department of Pathology, our water is “super clean” and meets all the standards of the Australian Drinking Water Guidelines.
                     </div>
                 </StyledQWContainer>

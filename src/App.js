@@ -1,7 +1,9 @@
 import './App.css';
+import './css-styles/LibTypography.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-multi-carousel/lib/styles.css";
 import { Navbar } from "./components/Navbar";
+import { NavbarSecond } from "./components/NavbarSecond";
 
 import 'aos/dist/aos.css';
 import styled from "styled-components";
@@ -9,7 +11,7 @@ import Aos from 'aos';
 import { useEffect } from 'react';
 import LandingPage from './pages/LandingPage';
 
-import { BrowserRouter, Routes , Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Contact } from './pages/Contact';
 
 
@@ -32,33 +34,35 @@ export const StyledBackgroundPattern = styled.div`
 
 
 function App() {
-    
-    useEffect(()=>{
-        Aos.init({ duration: 500, delay:"50" })
+
+    useEffect(() => {
+        Aos.init({ duration: 500, delay: "50" })
 
         window.onbeforeunload = function () {
             window.scrollTo({
-                left:0
+                left: 0
             })
         }
     }, [])
 
     return (
-        <div style={{overflowX:'hidden', width:'100vw'}}>
+        <div style={{ overflowX: 'hidden'}} className="container-fluid p-0">
             <BrowserRouter>
-            <Navbar/>
+                <NavbarSecond />
+
                 <Routes>
                     <Route
-                    exact={true}
-                    path='/'
-                    element={<LandingPage/>}
+                        exact={true}
+                        path='/'
+                        element={<LandingPage />}
                     />
                     <Route
-                    exact={true}
-                    path='/contact'
-                    element={<Contact/>}
+                        exact={true}
+                        path='/contact'
+                        element={<Contact />}
                     />
                 </Routes>
+
             </BrowserRouter>
         </div>
     );
