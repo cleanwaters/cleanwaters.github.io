@@ -25,7 +25,7 @@ const navbarLinks = [
     },
     {
         name: 'Contact',
-        url: '/contact',
+        url: '#/contact',
     },
 ]
 

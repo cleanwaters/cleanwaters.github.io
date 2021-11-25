@@ -11,7 +11,7 @@ import Aos from 'aos';
 import { useEffect } from 'react';
 import LandingPage from './pages/LandingPage';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Contact } from './pages/Contact';
 
 
@@ -47,7 +47,7 @@ function App() {
 
     return (
         <div style={{ overflowX: 'hidden'}} className="container-fluid p-0">
-            <BrowserRouter>
+            <HashRouter>
                 <NavbarSecond />
 
                 <Routes>
@@ -63,7 +63,7 @@ function App() {
                     />
                 </Routes>
 
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
