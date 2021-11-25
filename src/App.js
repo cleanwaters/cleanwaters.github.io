@@ -1,4 +1,5 @@
 import './App.css';
+import './css-styles/LibTypography.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-multi-carousel/lib/styles.css";
 import { Navbar } from "./components/Navbar";
@@ -45,24 +46,22 @@ function App() {
     }, [])
 
     return (
-        <div style={{ overflowX: 'hidden', width: '100vw' }}>
+        <div style={{ overflowX: 'hidden'}} className="container-fluid p-0">
             <BrowserRouter>
-                <div>
-                    <NavbarSecond />
+                <NavbarSecond />
 
-                    <Routes>
-                        <Route
-                            exact={true}
-                            path='/'
-                            element={<LandingPage />}
-                        />
-                        <Route
-                            exact={true}
-                            path='/contact'
-                            element={<Contact />}
-                        />
-                    </Routes>
-                </div>
+                <Routes>
+                    <Route
+                        exact={true}
+                        path='/'
+                        element={<LandingPage />}
+                    />
+                    <Route
+                        exact={true}
+                        path='/contact'
+                        element={<Contact />}
+                    />
+                </Routes>
 
             </BrowserRouter>
         </div>

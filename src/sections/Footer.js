@@ -10,7 +10,6 @@ import { FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 
 export const StyledFooter = styled.div`
     background: #081F46;
-    border-radius: 50px;
     color: white;
     p {
         line-height: 33px;
@@ -26,7 +25,7 @@ export function Footer() {
                 <div className="d-md-flex justify-content-between">
                     <div className="d-md-flex ">
                         <div className="pr-4">
-                            <img src={ process.env.PUBLIC_URL + "/images/nav-logo.svg"} className="card-img-top" alt="..." />
+                            <img src={ process.env.PUBLIC_URL + "/images/nav_logo.jpg"} className="img-fluid" alt="..." />
                         </div>
                         <div>
                             <h3>

@@ -36,8 +36,7 @@ export function NavbarSecond() {
         <Navbar sticky='top' style={{ boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)' }} expand="lg">
             <Container>
                 <Navbar.Brand href="">
-                    <img style={{ width: '3em' }} src={process.env.PUBLIC_URL + "/images/nav_logo.jpg"} loading="lazy" alt="image" className="img-fluid" />
-                    contact
+                    <img style={{ width: '3em' }} src={process.env.PUBLIC_URL + "/images/nav_logo.jpg"} alt="nav_logo" className="img-fluid" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
