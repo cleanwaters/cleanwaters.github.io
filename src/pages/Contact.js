@@ -86,15 +86,15 @@ export function Contact(){
         <StyledContact>
             <StyledSection style={{paddingTop:'0'}}>
                 <StyledLayoutContainer className="px-4">
-                    <StyledSectionOneDetails style={{marginTop:'5em', marginBottom:'52px'}}><span> Contact</span> us</StyledSectionOneDetails>
-                    <div style={{width:'65vw', height:'60vh', margin:'auto auto', borderRaidus:'50px'}}>
-                        <WrappedMap
-                        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDStj6vFwksrpRvU69f5O1xpX9VZ5t-8MY`}
-                        loadingElement={<div style={{ height: `100%`, borderRaidus:'50px' }} />}
-                        containerElement={<div style={{ height: `57vh`, borderRaidus:'50px' }} />}
-                        mapElement={<div style={{ height: `100%`, borderRaidus:'50px' }} />}
-                        />
-                    </div>
+                    <StyledSectionOneDetails style={{marginTop:'2em', marginBottom:'2em'}}><span> Contact</span> us</StyledSectionOneDetails>
+                    {/*<div style={{width:'65vw', height:'60vh', margin:'auto auto', borderRaidus:'50px'}}>*/}
+                    {/*    <WrappedMap*/}
+                    {/*    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDStj6vFwksrpRvU69f5O1xpX9VZ5t-8MY`}*/}
+                    {/*    loadingElement={<div style={{ height: `100%`, borderRaidus:'50px' }} />}*/}
+                    {/*    containerElement={<div style={{ height: `57vh`, borderRaidus:'50px' }} />}*/}
+                    {/*    mapElement={<div style={{ height: `100%`, borderRaidus:'50px' }} />}*/}
+                    {/*    />*/}
+                    {/*</div>*/}
                     <StyledContactForm style={{width:'62vw', margin:'auto auto'}}>
                         <Form ref={form} onSubmit={sendEmail}>
                             <Row className="my-3">

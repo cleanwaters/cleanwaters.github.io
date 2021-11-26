@@ -21,7 +21,7 @@ export const StyledFooter = styled.div`
 export function Footer() {
     return (
         <StyledFooter>
-            <div className=" p-5 mb-5">
+            <div className=" p-5">
                 <div className="d-md-flex justify-content-between">
                     <div className="d-md-flex ">
                         <div className="pr-4">
@@ -29,7 +29,7 @@ export function Footer() {
                         </div>
                         <div>
                             <h3>
-                                Clean waters oceania
+                                Clean Waters Australia
                             </h3>
                             <div className="d-flex justify-content-between">
                                 <p>About us</p>

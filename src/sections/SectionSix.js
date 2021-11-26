@@ -75,8 +75,9 @@ export function SectionSix() {
                                 className="col py-2 my-2">
                                     <StyledIconCard 
                                     id={i} className="s5-card p-4" 
-                                    style={{height: idHover == i ? '450px' : '210px', transition:'height 0.8s'}} 
-                                    onMouseEnter={(e)=>openCard(e)} onMouseLeave={(e)=>closeCard(e)}>
+                                    style={{height: idHover == i ? 'auto' : '210px', transition:'height 0.8s'}}
+                                    onMouseEnter={(e)=>openCard(e)} onMouseLeave={(e)=>closeCard(e)}
+                                    >
                                         <img src={ process.env.PUBLIC_URL + `/images/section6/${item.icon}.svg`} loading="lazy" alt="#" className="s5-image py-2 mb-2" />
                                         <h5 className="my-2">{item.title}</h5>
                                         <p style={
