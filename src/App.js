@@ -46,9 +46,10 @@ function App() {
     }, [])
 
     return (
-        <div style={{ overflowX: 'hidden'}} className="container-fluid p-0">
+        <div className="container-fluid p-0">
+            <NavbarSecond />
+
             <HashRouter>
-                <NavbarSecond />
 
                 <Routes>
                     <Route

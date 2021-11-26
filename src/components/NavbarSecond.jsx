@@ -33,7 +33,8 @@ const navbarLinks = [
 
 export function NavbarSecond() {
     return (
-        <Navbar sticky='top' style={{ boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)' }} expand="lg">
+        <Navbar sticky='top' style={{ boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)' }} expand="lg" className="sticky-top">
+            {/*todo scrolling not working*/}
             <Container>
                 <Navbar.Brand href="">
                     <img style={{ width: '3em' }} src={process.env.PUBLIC_URL + "/images/nav_logo.jpg"} alt="nav_logo" className="img-fluid" />

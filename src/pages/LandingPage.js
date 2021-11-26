@@ -12,6 +12,7 @@ import { StyledBackgroundPattern } from "../App";
 import Video from '../sections/Video';
 
 import React from "react";
+import {SectionTwoBottleAnimation} from "../sections/SectionTwoBottleAnimation";
 
 
 export default function LandingPage(){
@@ -26,6 +27,7 @@ export default function LandingPage(){
 
                 
                 <SectionTwo />
+                {/*<SectionTwoBottleAnimation />*/}
 
                 {/*section 3*/}
                 <SectionQW/>
