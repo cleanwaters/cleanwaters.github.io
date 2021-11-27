@@ -29,7 +29,7 @@ export const StyledSectionOneDetails = styled.h2`
 `
 
 
-const listCarouselItem = [
+export const sectionTwoCarouselItems = [
   {
     image: 'genny.svg',
     product: 'Genny',
@@ -53,7 +53,7 @@ const listCarouselItem = [
 ]
 
 const StyledBottleAnimation = styled.div`
-    margin:60vh 0px 30vh 0px;
+    margin:60vh 0px 30vh 0;
 
     > div{
         position:relative;
@@ -77,171 +77,169 @@ const StyledBottleAnimation = styled.div`
 
 export function SectionTwoBottleAnimation() {
   return (
-    <StyledSection>
-      <StyledLayoutContainer className="px-4">
-        {/*<SectionTwo />*/}
+      <StyledSection className="container-fluid">
         <Controller>
-          <Scene
-            // triggerHook="100"
-            duration={800} pin>
-            {(progress) => (
-              <div data-aos="fade-in">
-                <StyledBackgroundPattern style={{ top: '-280px' }}>
-                  <img src={process.env.PUBLIC_URL + "/images/background/pattern1.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
-                </StyledBackgroundPattern>
-                <StyledBackgroundPattern style={{ top: '630px', left: '-1020px' }}>
-                  <img style={{ width: '20%' }} src={process.env.PUBLIC_URL + "/images/background/pattern2.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
-                </StyledBackgroundPattern>
-                <StyledSectionOneDetails data-aos="fade-down"> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>
+        <Scene
+          // triggerHook="100"
+          offset="520"
+          duration={800} pin>
+              {(progress)=>(
+                <div data-aos="fade-in">
+                  {/*<StyledBackgroundPattern style={{top:'-280px'}}>*/}
+                  {/*      <img src={process.env.PUBLIC_URL + "/images/background/pattern1.svg"} loading="lazy" alt="image" className="ui-image-half-right" />*/}
+                  {/*  </StyledBackgroundPattern>*/}
+                  {/*  <StyledBackgroundPattern style={{top:'630px', left:'-1020px'}}>*/}
+                  {/*    <img style={{width:'20%'}} src={process.env.PUBLIC_URL + "/images/background/pattern2.svg"} loading="lazy" alt="image" className="ui-image-half-right" />*/}
+                  {/*</StyledBackgroundPattern>*/}
+                  {/*<StyledSectionOneDetails data-aos="fade-down"> <span> How many plastic bottles</span> can you save?</StyledSectionOneDetails>*/}
+                    {/*<p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>*/}
 
-                <StyledBottleAnimation>
-                  <Timeline totalProgress={progress} paused>
-                    <Tween
-                      from={{ opacity: '0.8', top: '0' }}
-                      to={{ opacity: '0.1', top: '27px' }}
-                    >
-                      <div style={{ display: '' }}>
-                        <img
-                          style={{ left: '12vw', bottom: '80px' }}
+                    <StyledBottleAnimation>
+                      <Timeline totalProgress={progress} paused>
+                      <Tween
+                      from={{opacity:'0.8', top:'0'}}
+                      to={{opacity:'0.1', top:'27px'}}
+                      >
+                      <div style={{display:''}}>
+                          <img
+                          style={{left:'12vw', bottom:'80px'}}
                           src={process.env.PUBLIC_URL + "/images/bottles/2xl.svg"} loading="lazy" alt="#" />
-                        <img
-                          style={{ left: '79vw', bottom: '80px' }}
+                          <img
+                          style={{left:'79vw', bottom:'80px'}}
                           src={process.env.PUBLIC_URL + "/images/bottles/2xl.svg"} loading="lazy" alt="#" />
-                        <img
-                          style={{ left: '36vw', bottom: '80px' }}
+                          <img
+                          style={{left:'36vw', bottom:'80px'}}
                           src={process.env.PUBLIC_URL + "/images/bottles/half.svg"} loading="lazy" alt="#" />
-                        <img
-                          style={{ left: '65vw', bottom: '127px' }}
+                          <img
+                          style={{left:'65vw', bottom:'127px'}}
                           src={process.env.PUBLIC_URL + "/images/bottles/half.svg"} loading="lazy" alt="#" />
-                        <img
-                          style={{ left: '57.5vw', bottom: '241px' }}
+                          <img
+                          style={{left:'57.5vw', bottom:'241px'}}
                           src={process.env.PUBLIC_URL + "/images/bottles/2xl.svg"} loading="lazy" alt="#" />
-                        <img
-                          style={{ left: '23.5vw', bottom: '80px' }}
+                          <img
+                          style={{left:'23.5vw', bottom:'80px'}}
                           src={process.env.PUBLIC_URL + "/images/bottles/3md.svg"} loading="lazy" alt="#" />
-                        <img
-                          style={{ left: '1vw', bottom: '80px' }}
+                          <img
+                          style={{left:'1vw', bottom:'80px'}}
                           src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
-                        <img
-                          style={{ left: '6vw', bottom: '167px' }}
+                          <img
+                          style={{left:'6vw', bottom:'167px'}}
                           src={process.env.PUBLIC_URL + "/images/bottles/trianglemd.svg"} loading="lazy" alt="#" />
-                        <img
-                          style={{ left: '52.5vw', bottom: '80px' }}
+                          <img
+                          style={{left:'52.5vw', bottom:'80px'}}
                           src={process.env.PUBLIC_URL + "/images/bottles/trianglemd.svg"} loading="lazy" alt="#" />
-                        <img
-                          style={{ left: '22.5vw', bottom: '207px' }}
+                          <img
+                          style={{left:'22.5vw', bottom:'207px'}}
                           src={process.env.PUBLIC_URL + "/images/bottles/2xl.svg"} loading="lazy" alt="#" />
                       </div>
-                    </Tween>
-                    <Timeline
-                      target={
-                        <div style={{ display: '' }}>
-                          {/* Second Line */}
-                          <img
-                            style={{ left: '24vw', bottom: '-10px' }}
+                      </Tween>
+                      <Timeline
+                        target={
+                            <div style={{display:''}}>
+                            {/* Second Line */}
+                            <img
+                            style={{left:'24vw', bottom:'-10px'}}
                             src={process.env.PUBLIC_URL + "/images/bottles/5small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '34vw', bottom: '-10px' }}
+                            <img
+                            style={{left:'34vw', bottom:'-10px'}}
                             src={process.env.PUBLIC_URL + "/images/bottles/5small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '7.5vw', bottom: '-17px' }}
+                            <img
+                            style={{left:'7.5vw', bottom:'-17px'}}
                             src={process.env.PUBLIC_URL + "/images/bottles/4.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '49vw', bottom: '-17px' }}
+                            <img
+                            style={{left:'49vw', bottom:'-17px'}}
                             src={process.env.PUBLIC_URL + "/images/bottles/4.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '54vw', bottom: '-10px' }}
+                            <img
+                            style={{left:'54vw', bottom:'-10px'}}
                             src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '71.5vw', bottom: '-15px' }}
+                            <img
+                            style={{left:'71.5vw', bottom:'-15px'}}
                             src={process.env.PUBLIC_URL + "/images/bottles/2xl.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '87vw', bottom: '-15px' }}
+                            <img
+                            style={{left:'87vw', bottom:'-15px'}}
                             src={process.env.PUBLIC_URL + "/images/bottles/2md.svg"} loading="lazy" alt="#" />
 
-                          {/* First Line */}
-                          <img
-                            style={{ left: '32.5vw' }}
+                            {/* First Line */}
+                            <img
+                            style={{left:'32.5vw'}}
                             src={process.env.PUBLIC_URL + "/images/bottles/2small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '40vw' }}
+                            <img
+                            style={{left:'40vw'}}
                             src={process.env.PUBLIC_URL + "/images/bottles/2small.svg"} loading="lazy" alt="#" />
 
-                          {/* Second Line */}
-                          <img
-                            style={{ left: '30vw', bottom: '80px' }}
+                            {/* Second Line */}
+                            <img
+                            style={{left:'30vw', bottom:'80px'}}
                             src={process.env.PUBLIC_URL + "/images/bottles/trianglemd.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '57.6vw', bottom: '40px' }}
+                            <img
+                            style={{left:'57.6vw', bottom:'40px'}}
                             src={process.env.PUBLIC_URL + "/images/bottles/3mdxl.svg"} loading="lazy" alt="#" />
                         </div>
-                      }
-                    >
-                      <Tween
-                        from={{ opacity: '1', top: '0px' }}
-                        to={{ opacity: '0.2', top: '27px' }}
-                      />
-                      <Tween
-                        from={{ opacity: '1', top: '0px' }}
-                        to={{ opacity: '0.2', top: '27px' }}
-                      >
-                        <div>
-                          <img
-                            style={{ left: '0' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/rowsmall.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '36vw' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/2small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '45vw' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '1vw', bottom: '-10px' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '13vw', bottom: '-10px' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '53vw' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '45vw', bottom: '-10px' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/2md.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '60vw', top: '-38px' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/2md.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '65vw', bottom: '-10px' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/3md.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '20vw', bottom: '-10px' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/3.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '65vw' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/5small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '75vw' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/5small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '85vw' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/5small.svg"} loading="lazy" alt="#" />
-                          <img
-                            style={{ left: '80vw', bottom: '-10px' }}
-                            src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
-                        </div>
-                      </Tween>
-                    </Timeline>
-                  </Timeline>
-                </StyledBottleAnimation>
-              </div>
+                          }
+                        >
+                          <Tween
+                          from={{opacity:'1', top:'0px'}}
+                          to={{opacity:'0.2', top:'27px'}}
+                          />
+                          <Tween
+                          from={{opacity:'1', top:'0px'}}
+                          to={{opacity:'0.2', top:'27px'}}
+                          >
+                          <div>
+                              <img
+                              style={{left:'0'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/rowsmall.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'36vw'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/2small.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'45vw'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'1vw', bottom:'-10px'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'13vw', bottom:'-10px'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'53vw'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'45vw', bottom:'-10px'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/2md.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'60vw', top:'-38px'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/2md.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'65vw', bottom:'-10px'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/3md.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'20vw', bottom:'-10px'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/3.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'65vw'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/5small.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'75vw'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/5small.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'85vw'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/5small.svg"} loading="lazy" alt="#" />
+                              <img
+                              style={{left:'80vw', bottom:'-10px'}}
+                              src={process.env.PUBLIC_URL + "/images/bottles/4small.svg"} loading="lazy" alt="#" />
+                          </div>
+                          </Tween>
+                        </Timeline>
+                      </Timeline>
+                    </StyledBottleAnimation>
+                </div>
 
-            )}
+              )}
           </Scene>
-        </Controller>
+      </Controller>
 
-      </StyledLayoutContainer>
-
-    </StyledSection>
+      </StyledSection>
   )
 }
 

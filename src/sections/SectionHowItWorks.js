@@ -6,6 +6,8 @@ import { Carousel } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleLeft, faAngleRight, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { CWCard, StyledCapacityDropIconWrapper } from "./CWCard";
+import Video from "./Video";
+import React from "react";
 
 
 export const StyledSectionOneDetails = styled.h2`
@@ -93,43 +95,12 @@ const targetMarketProduct = [
     }
 ]
 
-export function SectionFour() {
+export function SectionHowItWorks() {
     return (
         <StyledSection className="px-5">
-                <StyledSectionOneDetails data-aos-anchor-placement="top-center"> <span> Target Market and </span> Product Line</StyledSectionOneDetails>
-                <div className="row" >
-                    <div className="container" style={{maxWidth:'1470px'}}>
-                        <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mx-2">
-                            {
-                                targetMarketProduct.map((item, i) => (
-                                    <div data-aos="fade-in" data-aos-delay={150*(i+1)} style={{ position: 'relative', padding: '32px' }}>
-                                        
-                                        <StyledCapacityDropIconWrapper>
-                                            <div>
-                                                <img src={process.env.PUBLIC_URL + "/images/capacity-drop.svg"} loading="lazy" alt="#" className="ui-image-half-right" />
-                                                <StyledCardTopRightText>
-                                                    <div>Capacity</div>
-                                                    <div style={{left:'1vw'}}>{item.capacity} L</div>
-                                                </StyledCardTopRightText>
-                                            </div>
-                                        </StyledCapacityDropIconWrapper>
-
-                                        <CWCard
-                                        title={item.title}
-                                        listText={item.targets}
-                                        image={`section4/${item.image}`}
-                                        >
-
-                                        </CWCard>
-                                    </div>
-
-                                ))
-                            }
-                        </div>
-                    </div>
-
-
-                </div>
+            <Video
+            video={'Watergen - how it works_.mp4'}
+            />
         </StyledSection>
     )
 }

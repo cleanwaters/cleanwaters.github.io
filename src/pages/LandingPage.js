@@ -14,6 +14,7 @@ import Video from '../sections/Video';
 import React from "react";
 import {SectionTwoBottleAnimation} from "../sections/SectionTwoBottleAnimation";
 import {SectionOneGif} from "../sections/SectionOneGif";
+import SectionTwoCarousel from "../sections/SectionTwoCarousel";
 
 
 export default function LandingPage(){
@@ -28,6 +29,7 @@ export default function LandingPage(){
 
                 
                 <SectionTwo />
+                {/*<SectionTwoCarousel />*/}
                 {/*<SectionTwoBottleAnimation />*/}
 
                 {/*section 3*/}
@@ -39,6 +41,7 @@ export default function LandingPage(){
                 <SectionFour />
 
                 <SectionFive />
+                {/*<SectionHowItWorks />*/}
 
                 <Video
                 video={'Watergen - how it works_.mp4'}

@@ -2,7 +2,6 @@ import './App.css';
 import './css-styles/LibTypography.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-multi-carousel/lib/styles.css";
-import { Navbar } from "./components/Navbar";
 import { NavbarSecond } from "./components/NavbarSecond";
 
 import 'aos/dist/aos.css';

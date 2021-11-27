@@ -9,6 +9,7 @@ import { SectionSix } from "./SectionSix";
 import { SectionMR } from "./SectionMR";
 import {SectionAR} from "./SectionAR";
 import {Footer} from "./Footer";
+import Video from "./Video";
 
 export default {
   title: 'Sections/Home/Section One',
@@ -31,6 +32,7 @@ export const Primary = () => <SectionTwo />;
 export const Three = () => <SectionThree />;
 export const Four = () => <SectionFour />;
 export const Five = () => <SectionFive />;
+export const FiveVideo = () => <Video video={'Watergen - how it works_.mp4'} />;
 export const Six = () => <SectionSix />;
 export const Eight = () => <SectionMR />;
 export const Nine = () => <SectionAR />;
