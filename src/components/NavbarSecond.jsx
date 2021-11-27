@@ -9,7 +9,7 @@ const navbarLinks = [
     },
     {
         name: 'Our Solution',
-        url: '/our-solution',
+        url: '/#/our-solution',
     },
     {
         name: 'Case Studies',

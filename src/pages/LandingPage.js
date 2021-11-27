@@ -55,7 +55,6 @@ export default function LandingPage(){
                 <SectionAR />
 
                 {/*section 10*/}
-                <Footer/>
             {/* </div> */}
             <StyledBackgroundPattern style={{top:'4500px'}}>
                 <img style={{width:'120%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern3.svg"} loading="lazy" alt="image" className="img-fluid" />

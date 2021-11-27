@@ -9,7 +9,6 @@ export const StyledCWCard = styled.div`
     margin-top: 76px;
     // height:55em;
     padding:0px 20px;
-
 `
 
 export const StyledCapacityDropIconWrapper = styled.div`

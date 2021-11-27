@@ -7,11 +7,13 @@ import { NavbarSecond } from "./components/NavbarSecond";
 import 'aos/dist/aos.css';
 import styled from "styled-components";
 import Aos from 'aos';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import LandingPage from './pages/LandingPage';
 
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import {HashRouter, Routes, Route} from 'react-router-dom';
 import { Contact } from './pages/Contact';
+import OurSolutionPage from "./pages/our-solutions/OurSolutionPage";
+import {Footer} from "./sections/Footer";
 
 
 export const StyledBackgroundPattern = styled.div`
@@ -58,12 +60,22 @@ function App() {
                     />
                     <Route
                         exact={true}
+                        path='/our-solution'
+                        element={<OurSolutionPage />}
+                    />
+                    <Route
+                        exact={true}
                         path='/contact'
                         element={<Contact />}
                     />
+
+                    <Route path="*" element={( <div> not found </div>)} />
+
                 </Routes>
 
             </HashRouter>
+            <Footer/>
+
         </div>
     );
 }
