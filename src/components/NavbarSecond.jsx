@@ -33,7 +33,7 @@ const navbarLinks = [
 
 export function NavbarSecond() {
     return (
-        <Navbar sticky='top' style={{ boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)' }} expand="lg" className="sticky-top">
+        <Navbar sticky='top' style={{ boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)', background: 'white' }} expand="lg">
             {/*todo scrolling not working*/}
             <Container>
                 <Navbar.Brand href="">

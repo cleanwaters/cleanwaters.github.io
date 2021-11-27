@@ -13,6 +13,7 @@ import Video from '../sections/Video';
 
 import React from "react";
 import {SectionTwoBottleAnimation} from "../sections/SectionTwoBottleAnimation";
+import {SectionOneGif} from "../sections/SectionOneGif";
 
 
 export default function LandingPage(){
@@ -22,7 +23,7 @@ export default function LandingPage(){
             {/* <div className="container-fluid" style={{padding:'1px'}}> */}
                 
                 
-                <SectionOne />
+                <SectionOneGif />
                 {/*second section*/}
 
                 
