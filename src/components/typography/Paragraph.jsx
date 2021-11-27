@@ -20,6 +20,8 @@ export const StyledSectionOneTitle = styled.h4`
 export const StyledSectionOneP = styled.p`
     color: var(--ui-color-accent);
     font-weight: 600;
+    font-family: Nunito;
+    font-style: normal;
 `
 
 

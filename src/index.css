@@ -5,9 +5,7 @@
 
 /*body {*/
 /*  margin: 0;*/
-/*  font-family: 'Nunito', 'Dosis', 'Segoe UI', 'Roboto', 'Oxygen',*/
-/*    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
-/*    sans-serif;*/
+/*  font-family: Nunito, serif;*/
 /*  -webkit-font-smoothing: antialiased;*/
 /*  -moz-osx-font-smoothing: grayscale;*/
 /*  overflow-x: hidden;*/
@@ -15,6 +13,12 @@
 /*}*/
 
 /*code {*/
-/*  font-family: 'Nunito', 'Dosis', 'Courier New',*/
-/*    monospace;*/
+/*  !*font-family: 'Nunito', 'Dosis', 'Courier New', monospace;*!*/
+/*    font-family: Nunito, serif;*/
+/*    font-style: normal;*/
 /*}*/
+
+p {
+        font-family: Nunito, Serif;
+    font-style: normal;
+}
