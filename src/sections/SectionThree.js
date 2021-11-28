@@ -44,8 +44,8 @@ export function SectionThree() {
 
     return (
     <StyledSection 
-        data-aos="fade-left"
-        className="px-5"
+        data-aos="fade-down"
+        className="px-5 container-fluid"
     >
         <StyledWhatWeDoDetails className="row">
             <div className="col-md-6 px-4 text-left">

@@ -37,7 +37,7 @@ export function SectionOne() {
   })
 
   return (    
-    <div className="jumbotron jumbotron-fluid" style={{height:'100vh', width:'100vw', background:'black'}}>
+    <div className="jumbotron jumbotron-fluid" style={{background:'black'}}>
       <video autoPlay muted loop>
       <source src={process.env.PUBLIC_URL + `/videos/production ID_3958714 (online-video-cutter.com).mp4`} type="video/mp4"/>
       </video>

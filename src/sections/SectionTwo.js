@@ -189,7 +189,7 @@ export function SectionTwo() {
                                         style={{left:'71.5vw', bottom:'-15px'}}
                                         src={process.env.PUBLIC_URL + "/images/bottles/2xl.svg"} loading="lazy" alt="#" />
                                         <img
-                                        style={{left:'87vw', bottom:'-15px'}}
+                                        style={{left:'77vw', bottom:'-15px'}}
                                         src={process.env.PUBLIC_URL + "/images/bottles/2md.svg"} loading="lazy" alt="#" />
 
                                         {/* First Line */}
@@ -256,7 +256,7 @@ export function SectionTwo() {
                                           style={{left:'75vw'}}
                                           src={process.env.PUBLIC_URL + "/images/bottles/5small.svg"} loading="lazy" alt="#" />
                                           <img
-                                          style={{left:'85vw'}}
+                                          style={{left:'75%'}}
                                           src={process.env.PUBLIC_URL + "/images/bottles/5small.svg"} loading="lazy" alt="#" />
                                           <img
                                           style={{left:'80vw', bottom:'-10px'}}

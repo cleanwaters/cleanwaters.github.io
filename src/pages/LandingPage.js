@@ -22,26 +22,17 @@ export default function LandingPage(){
         
         <>
             {/* <div className="container-fluid" style={{padding:'1px'}}> */}
-                
-                
+
                 <SectionOne />
                 {/*second section*/}
-
-                
                 <SectionTwo />
-                {/*<SectionTwoCarousel />*/}
-                {/*<SectionTwoBottleAnimation />*/}
-
                 {/*section 3*/}
                 <SectionQW/>
-
                 <SectionThree />
-
 
                 <SectionFour />
 
                 <SectionFive />
-                {/*<SectionHowItWorks />*/}
 
                 <Video
                 video={'Watergen - how it works_.mp4'}
@@ -51,23 +42,23 @@ export default function LandingPage(){
 
                 <SectionMR />
 
-                {/*section 9*/}
+                {/*/!*section 9*!/*/}
                 <SectionAR />
 
                 {/*section 10*/}
             {/* </div> */}
-            <StyledBackgroundPattern style={{top:'4500px'}}>
-                <img style={{width:'120%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern3.svg"} loading="lazy" alt="image" className="img-fluid" />
-            </StyledBackgroundPattern>
-            <StyledBackgroundPattern style={{top:'5600px', left:'0%'}}>
-                <img style={{width:'100%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern4.svg"} loading="lazy" alt="image" className="img-fluid" />
-            </StyledBackgroundPattern>
-            <StyledBackgroundPattern style={{top:'7200px', left:'90'}}>
-                <img style={{marginLeft:'70%', width:'315px', height:'388px'}} src={process.env.PUBLIC_URL + "/images/background/pattern5.svg"} loading="lazy" alt="image" className="img-fluid" />
-            </StyledBackgroundPattern>
-            <StyledBackgroundPattern style={{top:'7400px', left:'0%'}}>
-                <img style={{marginLeft:"-80px", width:'465px', height:'545px'}}  src={process.env.PUBLIC_URL + "/images/background/pattern6.svg"} loading="lazy" alt="image" className="img-fluid" />
-            </StyledBackgroundPattern>
+            {/*<StyledBackgroundPattern style={{top:'4500px'}}>*/}
+            {/*    <img style={{width:'120%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern3.svg"} loading="lazy" alt="image" className="img-fluid" />*/}
+            {/*</StyledBackgroundPattern>*/}
+            {/*<StyledBackgroundPattern style={{top:'5600px', left:'0%'}}>*/}
+            {/*    <img style={{width:'100%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern4.svg"} loading="lazy" alt="image" className="img-fluid" />*/}
+            {/*</StyledBackgroundPattern>*/}
+            {/*<StyledBackgroundPattern style={{top:'7200px', left:'90'}}>*/}
+            {/*    <img style={{marginLeft:'70%', width:'315px', height:'388px'}} src={process.env.PUBLIC_URL + "/images/background/pattern5.svg"} loading="lazy" alt="image" className="img-fluid" />*/}
+            {/*</StyledBackgroundPattern>*/}
+            {/*<StyledBackgroundPattern style={{top:'7400px', left:'0%'}}>*/}
+            {/*    <img style={{marginLeft:"-80px", width:'465px', height:'545px'}}  src={process.env.PUBLIC_URL + "/images/background/pattern6.svg"} loading="lazy" alt="image" className="img-fluid" />*/}
+            {/*</StyledBackgroundPattern>*/}
         </>
     )
 }
