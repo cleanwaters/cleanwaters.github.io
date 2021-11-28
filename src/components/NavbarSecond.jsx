@@ -13,7 +13,7 @@ const navbarLinks = [
     },
     {
         name: 'Case Studies',
-        url: '/',
+        url: '/#/case-studies',
     },
     {
         name: 'About Us',

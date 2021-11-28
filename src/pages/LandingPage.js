@@ -24,7 +24,7 @@ export default function LandingPage(){
             {/* <div className="container-fluid" style={{padding:'1px'}}> */}
                 
                 
-                <SectionOneGif />
+                <SectionOne />
                 {/*second section*/}
 
                 

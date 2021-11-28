@@ -36,7 +36,7 @@ export function SectionOneGif() {
   return (
     <section className="container-fluid d-md-flex flex-row-reverse align-items-center p-4" style={{background:'#EEF9FF'}}>
       <div className="col-md-6">
-        <img style={{opacity: 0.4}} src={process.env.PUBLIC_URL + "/videos/water_glass.gif"} alt="nav_logo" className="img-fluid" />
+        <img style={{opacity: 0.7}} src={process.env.PUBLIC_URL + "/videos/water_glass.gif"} alt="nav_logo" className="img-fluid" />
       </div>
       <StyledSectionOneDetails>
         <StyledSectionOneTitle className="header-title-color" style={{fontSize:'48px'}}>Clean Water</StyledSectionOneTitle>

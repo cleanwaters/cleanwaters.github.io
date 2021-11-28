@@ -3,3 +3,7 @@
 .accent_text_color {
     color: var(--ui-color-accent);
 }
+
+.primary_text_color {
+    color: var(--ui-color-primary);
+}

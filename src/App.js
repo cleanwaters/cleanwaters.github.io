@@ -14,6 +14,7 @@ import {HashRouter, Routes, Route} from 'react-router-dom';
 import { Contact } from './pages/Contact';
 import OurSolutionPage from "./pages/our-solutions/OurSolutionPage";
 import {Footer} from "./sections/Footer";
+import CaseStudiesPage from "./pages/case-studies/CaseStudiesPage";
 
 
 export const StyledBackgroundPattern = styled.div`
@@ -62,6 +63,11 @@ function App() {
                         exact={true}
                         path='/our-solution'
                         element={<OurSolutionPage />}
+                    />
+                    <Route
+                        exact={true}
+                        path='/case-studies'
+                        element={<CaseStudiesPage />}
                     />
                     <Route
                         exact={true}
