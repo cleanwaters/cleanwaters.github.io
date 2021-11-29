@@ -21,7 +21,7 @@ const navbarLinks = [
     },
     {
         name: 'Our Partners',
-        url: '',
+        url: '/#/our-partners',
     },
     {
         name: 'Contact',
