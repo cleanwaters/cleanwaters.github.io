@@ -25,3 +25,14 @@ export const StyledSectionOneP = styled.p`
 `
 
 
+
+
+
+export const StyledSectionSubtitle = styled.p`
+    color: var(--ui-color-accent);
+    font-weight: 600;
+    font-family: Nunito;
+    font-style: normal;
+`
+
+

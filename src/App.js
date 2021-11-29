@@ -15,6 +15,7 @@ import { Contact } from './pages/Contact';
 import OurSolutionPage from "./pages/our-solutions/OurSolutionPage";
 import {Footer} from "./sections/Footer";
 import CaseStudiesPage from "./pages/case-studies/CaseStudiesPage";
+import AboutUsPage from "./pages/about-us/AboutUsPage";
 
 
 export const StyledBackgroundPattern = styled.div`
@@ -68,6 +69,11 @@ function App() {
                         exact={true}
                         path='/case-studies'
                         element={<CaseStudiesPage />}
+                    />
+                    <Route
+                        exact={true}
+                        path='/about-us'
+                        element={<AboutUsPage />}
                     />
                     <Route
                         exact={true}

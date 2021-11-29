@@ -14,55 +14,55 @@ export const aboutUsData = {
             '',
         ],
         closingSignature: ' CEO & Head of Social Impact – Armen Arakelian',
-        image: 'about_us_section_one.png'
+        image: '/images/aboutus/about_us_section_one.png'
     },
     teamList: [
         // 1
         {
             name: 'Peter Yialas - Executive Chair',
-            image: 'team_1.png'
+            image: '/images/aboutus/team_1.png'
         },
         // 2
         {
             name: 'Will Jefferies - Advisor',
-            image: 'team_2.png'
+            image: '/images/aboutus/team_2.png'
         },
         // 3
         {
             name: 'Warren Mundine - Independent Advisor',
-            image: 'team_3.png'
+            image: '/images/aboutus/team_3.png'
         },
         // 4
         {
             name: 'Pamela Yialas - Communications and PR',
-            image: 'team_4.png'
+            image: '/images/aboutus/team_4.png'
         },
         // 5
         {
             name: 'Brian Vowels - Advisor',
-            image: 'team_5.png'
+            image: '/images/aboutus/team_5.png'
         },
         // 6
         {
             name: 'Alex Wymarra - Independent Advisor',
             subName: 'Representing the Treaty Council Worldwide',
-            image: 'team_6.png'
+            image: '/images/aboutus/team_6.png'
         },
         // 7
         {
             name: 'Bijang Slabb - Brand Ambassador',
-            image: 'team_7.png'
+            image: '/images/aboutus/team_7.png'
         },
         // 8
         {
             name: 'Dr Jennie Mallela - Independent Advisor',
-            image: 'team_8.png'
+            image: '/images/aboutus/team_8.png'
         },
         // 9
         {
             name: 'Antoine Jaja - Independent Advisor',
             subName: 'AKA Jack the Super Prawn',
-            image: 'team_9.png'
+            image: '/images/aboutus/team_9.png'
         },
     ]
 }
