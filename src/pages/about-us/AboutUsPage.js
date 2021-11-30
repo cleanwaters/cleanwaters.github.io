@@ -12,6 +12,7 @@ export default function AboutUsPage(){
         <div className="container-fluid p-0">
             <NavbarSecond />
             <SectionOne aboutUs={aboutUsData} />
+            <div style={{marginBottom: '5em'}}></div>
             <Footer/>
         </div>
     )
