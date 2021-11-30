@@ -26,7 +26,7 @@ const navbarLinks = [
         url: '/#/our-partners',
     },
     {
-        name: 'Contact',
+        name: 'Contact Us',
         url: '/#/contact',
     },
 ]
@@ -36,8 +36,6 @@ export function checkUrlActive(navbarUrl, locationPathName) {
 }
 
 export function NavbarSecond() {
-    const location = useLocation();
-    // console.log('history', location)
     return (
         <Navbar sticky='top' style={{ boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)', background: 'white' }} expand="lg">
             {/*todo scrolling not working*/}

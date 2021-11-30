@@ -32,10 +32,10 @@ export function Footer() {
                             </h3>
                             <div className="d-flex justify-content-between">
                                 <Link style={{color: 'white'}} to='/about-us'>
-                                    About us
+                                    About Us
                                 </Link>
                                 <Link to='/contact' style={{color: 'white'}}>
-                                    Contact
+                                    Contact Us
                                 </Link>
                             </div>
                         </div>

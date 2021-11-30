@@ -88,7 +88,7 @@ export function Contact(){
             <NavbarSecond />
             <StyledSection style={{paddingTop:'0'}}>
                 <StyledLayoutContainer className="px-4">
-                    <StyledSectionOneDetails style={{marginTop:'2em', marginBottom:'2em'}}><span> Contact</span> us</StyledSectionOneDetails>
+                    <StyledSectionOneDetails style={{marginTop:'2em', marginBottom:'2em'}}><span> Contact</span> Us</StyledSectionOneDetails>
                     {/*<div style={{width:'65vw', height:'60vh', margin:'auto auto', borderRaidus:'50px'}}>*/}
                     {/*    <WrappedMap*/}
                     {/*    googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDStj6vFwksrpRvU69f5O1xpX9VZ5t-8MY`}*/}

@@ -29,8 +29,6 @@ export const ourPartnersData = {
                 'Dr Mallela works for the Australian National University and is a keen advocate for science and regularly advises government and industry in her role as an expert scientist. She has co-authored more than 40 research publications with over 130 international co-authors and her research is used by government and conservation managers. ',
                 'Dr Mallela is regularly invited to join international teams of researchers as a scientific expert. Jennie also has a background in science communication. Her popular online video on the causes of coral reef bleaching, released by the Australian National University, received over 100,000 views in the first 10 days. Jennie believes that we have the scientific tools and knowledge to tackle climate change and that we should act now.',
                 'We are excited to have mutual synergies with Dr Mallela and we look forward to being guided by her expert advice in the coming months.',
-                '',
-                '',
             ]
 
         },
@@ -76,9 +74,6 @@ export const ourPartnersData = {
                 'Brian is an experienced financial professional having spent his entire 30 year career in the financial services sector working both locally and internationally in organisations ranging from start-ups to listed entities. His insurance specialization led him into the teaching space where he has spent the last 10 years creating and delivering content for the not-for-profit Financial Services Accountants Association where he serves as Chairman.',
                 'Brian is also Chairman and Trustee of the Australian Cord Blood Foundation whose sole purpose is to support the Sydney Cord Blood Bank in providing life saving transplantation of blood stem cells for the treatment of leukaemia and other life threatening conditions.',
                 'Brian is Fellow of CA ANZ, holds an MBA and is a graduate of the Australian Institute of Company Directors. In addition to his not-for-profit Board positions, Brian is also a Director of a number of other start-ups where he has assisted with private equity funding. With Brian’s vast experience in start-ups and the not-for-profit sector, we know he will be an invaluable asset to the Clean Waters team.',
-                '',
-                '',
-                '',
             ]
         }
     ],

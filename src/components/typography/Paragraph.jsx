@@ -41,6 +41,22 @@ export const StyledP36 = styled.p`
 `
 
 
+
+export const StyledP18 = styled.p`
+    color: var(--ui-color-accent);
+    font-family: Nunito;
+    font-size: 18px;
+`
+
+
+
+export const StyledP24 = styled.p`
+    color: var(--ui-color-accent);
+    font-family: Nunito;
+    font-size: 24px;
+`
+
+
 export const Styled48 = styled.h3`
     color: var(--ui-color-accent);
     font-family: Nunito;
