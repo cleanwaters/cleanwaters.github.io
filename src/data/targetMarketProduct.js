@@ -83,7 +83,7 @@ export const targetMarketProduct = [
         ]
     },
     {
-        title : 'Gen-L',
+        title : 'Watergen On Board',
         targets : [
             'Parks and public spaces',
             'High density property developments',

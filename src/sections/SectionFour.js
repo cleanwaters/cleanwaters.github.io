@@ -6,7 +6,7 @@ import {targetMarketProduct} from "../data/targetMarketProduct";
 
 export const StyledSectionOneDetails = styled.h2`
 font-weight: bold;
-// font-size: 48px;
+font-size: 48px;
 line-height: 61px;
 color: #081F47;
 margin-bottom: 1em;
