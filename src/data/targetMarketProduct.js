@@ -91,7 +91,7 @@ export const targetMarketProduct = [
             'Local government - zero infrastructure water solutions',
         ],
         capacity : 6000,
-        image : 'gen-l.svg',
+        image : 'gen_l.png',
         detailTargets: [
             'Designed for long-distance travelers, Watergen Onboard generates up to 40 liters of water per day from the air',
             'The system can be installed on motorhomes, RVs, caravans, trucks, buses, luxury and VIP vehicles, trains and yachts',

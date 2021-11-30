@@ -1,5 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/App.css';
+import '../src/index.css';
+import '../src/fonts.css';
+import '../src/css-styles/LibTypography.css'
 
 import 'aos/dist/aos.css';
 import { MemoryRouter } from "react-router";

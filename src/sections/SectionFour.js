@@ -23,6 +23,7 @@ export const StyledCardTopRightText = styled.div`
     width:100%;
     font-family:Dosis;
     color:white;
+    right: 12px;
 
     div:first-child {
         font-size:12px;

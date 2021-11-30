@@ -27,6 +27,29 @@ export const StyledSectionOneP = styled.p`
 
 
 
+export const StyledP32 = styled.p`
+    color: var(--ui-color-accent);
+    font-family: Nunito;
+    font-size: 32px;
+`
+
+
+export const StyledP36 = styled.p`
+    color: var(--ui-color-accent);
+    font-family: Nunito;
+    font-size: 36px;
+`
+
+
+export const Styled48 = styled.h3`
+    color: var(--ui-color-accent);
+    font-family: Nunito;
+    font-size: 48px;
+`
+
+
+
+
 
 export const StyledSectionSubtitle = styled.p`
     color: var(--ui-color-accent);
