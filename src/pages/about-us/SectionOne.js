@@ -28,18 +28,19 @@ export default function SectionOne({aboutUs}){
             ><span>About </span> us</StyledSectionOneDetails>
             <StyledSectionSubtitle className="mb-5">{aboutUs.subTitle}</StyledSectionSubtitle>
 
-            <div className={`d-md-flex mt-5`}>
+            <div className={`d-md-flex flex-row-reverse mt-5`}>
+
                 <div className="col-md-6">
+                    <img src={aboutUs.sectionOne.image} className="img-fluid" />
+                </div>
+
+                <div className="col-md-6 align-self-center ">
                     {
                         aboutUs.sectionOne.details.map(pText => (
                             <StyledSectionOneP>{pText}</StyledSectionOneP>
                         ))
                     }
-
-                </div>
-
-                <div className="col-md-6">
-                    <img src={aboutUs.sectionOne.image} className="img-fluid" />
+                    <StyledSectionOneP>{aboutUs.sectionOne.closingSignature}</StyledSectionOneP>
                 </div>
             </div>
 
