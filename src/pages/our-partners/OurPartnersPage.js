@@ -5,6 +5,8 @@ import {ourPartnersData} from "../../data/ourPatnersData";
 import {Nav} from "react-bootstrap";
 import {StyledSectionOneP} from "../../components/typography/Paragraph";
 import {StyledSectionLightP} from "../about-us/SectionOne";
+import {NavbarSecond} from "../../components/NavbarSecond";
+import {Footer} from "../../sections/Footer";
 // import SectionOne from "./SectionOne";
 // import {aboutUsData} from "../../data/aboutUsData";
 // import OSSectionOne from "./OSSectionOne";
@@ -16,6 +18,7 @@ export default function OurPartnersPage({ourPartners}){
     const [selectedArticle, setSelectedArticle] = useState(ourPartnersData.articleTabs[0])
     return(
         <div className="container-fluid p-0">
+            <NavbarSecond />
             <section className="text-center d-flex justify-content-center align-items-center"
                      style={{
                         color: 'white',
@@ -76,10 +79,10 @@ export default function OurPartnersPage({ourPartners}){
             </div>
 
             <section
-                className="text-center d-flex justify-content-center align-items-center"
+                className="text-center d-flex justify-content-center align-items-center p-4"
                 style={{
                         color: 'white',
-                        height: '380px',
+                        minHeight: '380px',
                         backgroundImage: `linear-gradient(
                           rgba(0, 0, 0, 0.5), 
                           rgba(0, 0, 0, 0.5)
@@ -93,6 +96,7 @@ export default function OurPartnersPage({ourPartners}){
                     <p>{ourPartnersData.lastSection.text}</p>
                 </div>
             </section>
+            <Footer/>
         </div>
     )
 }

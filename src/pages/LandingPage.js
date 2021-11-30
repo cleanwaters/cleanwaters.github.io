@@ -15,13 +15,16 @@ import React from "react";
 import {SectionTwoBottleAnimation} from "../sections/SectionTwoBottleAnimation";
 import {SectionOneGif} from "../sections/SectionOneGif";
 import SectionTwoCarousel from "../sections/SectionTwoCarousel";
+import {NavbarSecond} from "../components/NavbarSecond";
 
 
 export default function LandingPage(){
     return(
         
-        <>
+        <div className="container-fluid p-0">
             {/* <div className="container-fluid" style={{padding:'1px'}}> */}
+                <NavbarSecond />
+
 
                 <SectionOne />
                 {/*second section*/}
@@ -59,6 +62,7 @@ export default function LandingPage(){
             {/*<StyledBackgroundPattern style={{top:'7400px', left:'0%'}}>*/}
             {/*    <img style={{marginLeft:"-80px", width:'465px', height:'545px'}}  src={process.env.PUBLIC_URL + "/images/background/pattern6.svg"} loading="lazy" alt="image" className="img-fluid" />*/}
             {/*</StyledBackgroundPattern>*/}
-        </>
+            <Footer/>
+        </div>
     )
 }

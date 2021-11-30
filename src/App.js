@@ -50,51 +50,41 @@ function App() {
     }, [])
 
     return (
-        <div className="container-fluid p-0">
-            <NavbarSecond />
+        <Routes>
+            <Route
+                exact={true}
+                path='/'
+                element={<LandingPage />}
+            />
+            <Route
+                exact={true}
+                path='/our-solution'
+                element={<OurSolutionPage />}
+            />
+            <Route
+                exact={true}
+                path='/case-studies'
+                element={<CaseStudiesPage />}
+            />
+            <Route
+                exact={true}
+                path='/about-us'
+                element={<AboutUsPage />}
+            />
+            <Route
+                exact={true}
+                path='/our-partners'
+                element={<OurPartnersPage />}
+            />
+            <Route
+                exact={true}
+                path='/contact'
+                element={<Contact />}
+            />
 
-            <HashRouter>
+            <Route path="*" element={( <div> not found </div>)} />
 
-                <Routes>
-                    <Route
-                        exact={true}
-                        path='/'
-                        element={<LandingPage />}
-                    />
-                    <Route
-                        exact={true}
-                        path='/our-solution'
-                        element={<OurSolutionPage />}
-                    />
-                    <Route
-                        exact={true}
-                        path='/case-studies'
-                        element={<CaseStudiesPage />}
-                    />
-                    <Route
-                        exact={true}
-                        path='/about-us'
-                        element={<AboutUsPage />}
-                    />
-                    <Route
-                        exact={true}
-                        path='/our-partners'
-                        element={<OurPartnersPage />}
-                    />
-                    <Route
-                        exact={true}
-                        path='/contact'
-                        element={<Contact />}
-                    />
-
-                    <Route path="*" element={( <div> not found </div>)} />
-
-                </Routes>
-
-            </HashRouter>
-            <Footer/>
-
-        </div>
+        </Routes>
     );
 }
 

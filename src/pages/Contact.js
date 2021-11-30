@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 
 import emailjs from "emailjs-com"
 import { useRef } from "react";
+import {NavbarSecond} from "../components/NavbarSecond";
 
 const ButtonMailto = ({ mailto, label }) => {
     return (
@@ -83,7 +84,8 @@ export function Contact(){
 
 
     return(
-        <StyledContact>
+        <div>
+            <NavbarSecond />
             <StyledSection style={{paddingTop:'0'}}>
                 <StyledLayoutContainer className="px-4">
                     <StyledSectionOneDetails style={{marginTop:'2em', marginBottom:'2em'}}><span> Contact</span> us</StyledSectionOneDetails>
@@ -135,6 +137,6 @@ export function Contact(){
                 </StyledLayoutContainer>
             </StyledSection>
             <Footer/>
-        </StyledContact>
+        </div>
     )
 }
