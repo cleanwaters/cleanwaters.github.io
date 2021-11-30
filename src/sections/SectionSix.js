@@ -42,8 +42,12 @@ export function SectionSix() {
 
     function openCard(e){
         e.stopPropagation()
+        console.log('openCard', e.target.id)
         const target = e.target
         const classNames = target.className
+        if (!e.target.id) {
+            return
+        }
 
         if(classNames.includes('s5-card')){
             setIdHover(target.id)
@@ -54,6 +58,7 @@ export function SectionSix() {
 
     function closeCard(e){
         e.stopPropagation()
+        console.log('closeCard', e.target.id)
         setIdHover(null)
         // const target = e.target
         // target.style.height = '210px';
@@ -66,7 +71,7 @@ export function SectionSix() {
             <StyledLayoutContainer className="px-4">
                 {/*<StyledSectionOneDetails> <span>How it </span>works?</StyledSectionOneDetails>*/}
                 <div className="container" style={{maxWidth:'1100px'}}>
-                    <div className="row row-cols-3">
+                    <div className="row row-cols-md-3">
 
                         {
                             featureIconItems.map((item, i) => (
@@ -77,7 +82,7 @@ export function SectionSix() {
                                     <StyledIconCard 
                                     id={i} className="s5-card p-4" 
                                     style={{height: idHover == i ? 'auto' : '210px', transition:'height 0.8s'}}
-                                    onMouseEnter={(e)=>openCard(e)} onMouseLeave={(e)=>closeCard(e)}
+                                    onMouseMove={(e)=>openCard(e)} onMouseLeave={(e)=>closeCard(e)}
                                     >
                                         <img src={ process.env.PUBLIC_URL + `/images/section6/${item.icon}.svg`} loading="lazy" alt="#" className="s5-image py-2 mb-2" />
                                         <h5 className="my-2">{item.title}</h5>
