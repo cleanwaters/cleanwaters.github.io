@@ -50,7 +50,7 @@ export function SectionFour() {
                         <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mx-2">
                             {
                                 targetMarketProduct.map((item, i) => (
-                                    <div data-aos="fade-in" data-aos-delay={150*(i+1)} style={{ position: 'relative', padding: '32px' }}>
+                                    <div data-aos="fade-in" data-aos-delay={150*(i+1)} style={{ position: 'relative', padding: '32px' }} key={i}>
                                         
                                         <StyledCapacityDropIconWrapper>
                                             <div>

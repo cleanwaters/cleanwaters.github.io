@@ -70,7 +70,8 @@ export function SectionSix() {
 
                         {
                             featureIconItems.map((item, i) => (
-                                <div 
+                                <div
+                                    key={i}
                                 data-aos-duration="400" data-aos-delay={item.aos_delay} data-aos="fade-right"
                                 className="col py-2 my-2">
                                     <StyledIconCard 

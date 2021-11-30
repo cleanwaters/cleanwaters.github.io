@@ -1,5 +1,7 @@
 import { Nav, Navbar, Container } from "react-bootstrap";
-import { } from "./Navbar";
+import "./Navbar.css";
+import {useLocation} from "react-router-dom";
+import {NavbarItem} from "./NavbarItem";
 
 
 const navbarLinks = [
@@ -25,13 +27,17 @@ const navbarLinks = [
     },
     {
         name: 'Contact',
-        url: '#/contact',
+        url: '/#/contact',
     },
 ]
 
-
+export function checkUrlActive(navbarUrl, locationPathName) {
+    return navbarUrl.includes(locationPathName)
+}
 
 export function NavbarSecond() {
+    const location = useLocation();
+    // console.log('history', location)
     return (
         <Navbar sticky='top' style={{ boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)', background: 'white' }} expand="lg">
             {/*todo scrolling not working*/}
@@ -44,7 +50,7 @@ export function NavbarSecond() {
                     <Nav className="m-auto">
                         {
                             navbarLinks.map((navbarItem, index) => (
-                                <Nav.Link className="px-3" key={index} style={{ color: '#0170B9' }} href={navbarItem.url}>{navbarItem.name}</Nav.Link>
+                                <NavbarItem navbarItem={navbarItem} key={index} />
                             ))
                         }
                     </Nav>
