@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { StyledLibP } from "../components/typography/Paragraph";
+import {StyledLibP, StyledP36} from "../components/typography/Paragraph";
+import React from "react";
 
 
 export const StyledCWCard = styled.div`
@@ -52,7 +53,10 @@ export function CWCard({ title, listText, image }) {
     return (
         <StyledCWCard className="card col">
             <div className="card-body">
-                <h5 className="card-title header-title-color my-4" style={{ fontSize: '36px' }} >{title}</h5>
+                {/*<h5 className="card-title header-title-color my-4" style={{ fontSize: '36px' }} >{title}</h5>*/}
+
+                <StyledP36 className="text_bold text_color_primary my-4" style={{ fontSize: '36px', color: '#0170B9' }} >{title}</StyledP36>
+
                 <img style={{ padding: '10px', height: '150px', width: '300px' }} src={process.env.PUBLIC_URL + `/images/${image}`} loading="lazy" alt="#" className="img-fluid" />
 
                 <StyledListText className="mb-4">
