@@ -42,7 +42,8 @@ export function SectionOne() {
       <source src={process.env.PUBLIC_URL + `/videos/production ID_3958714 (online-video-cutter.com).mp4`} type="video/mp4"/>
       </video>
       {/* <Navbar/> */}
-      <StyledSectionOneDetails data-aos="fade-up" style={{ zIndex:4, position: 'relative', width:'50vw'}}>
+      <div data-aos="fade-up" style={{ zIndex:4, position: 'relative', marginTop: '20vw'}}  className="d-md-flex p-4">
+      <div className="col-md-6">
             <StyledHeaderH1 className="header-title-color" style={{fontSize:'48px'}}>Clean Water</StyledHeaderH1>
             <StyledSectionOneP className="mb-3">
               We use Air as a natural raw material to make top-quality drinking water through our
@@ -53,7 +54,8 @@ export function SectionOne() {
               <Button size="large" label="Our product" style={{ color:'white', fontFamily:'Nunito', marginRight: '1em', padding:'1.2em 3.6em', background:'#046EB6' }} />
               <Button size="large" label="About us" style={{ color:'white', fontFamily:'Nunito', borderColor:'white', padding:'1.2em 3.6em' }}/>
             </div>
-      </StyledSectionOneDetails>
+      </div>
+      </div>
     </div>
   )
 }

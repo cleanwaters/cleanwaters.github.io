@@ -27,26 +27,25 @@ export default function LandingPage(){
 
 
                 <SectionOne />
-                {/*second section*/}
-                <SectionTwo />
-                {/*section 3*/}
-                <SectionQW/>
-                <SectionThree />
 
-                <SectionFour />
+                {/*<SectionTwo />*/}
 
-                <SectionFive />
+                {/*<SectionQW/>*/}
+                {/*<SectionThree />*/}
 
-                <Video
-                video={'Watergen - how it works_.mp4'}
-                />
+                {/*<SectionFour />*/}
 
-                <SectionSix />
+                {/*<SectionFive />*/}
 
-                <SectionMR />
+                {/*<Video*/}
+                {/*video={'Watergen - how it works_.mp4'}*/}
+                {/*/>*/}
 
-                {/*/!*section 9*!/*/}
-                <SectionAR />
+                {/*<SectionSix />*/}
+
+                {/*<SectionMR />*/}
+
+                {/*<SectionAR />*/}
 
                 {/*section 10*/}
             {/* </div> */}

@@ -59,7 +59,7 @@ export function CWCard({ title, listText, image }) {
 
                 <img style={{ padding: '10px', height: '150px', width: '300px' }} src={process.env.PUBLIC_URL + `/images/${image}`} loading="lazy" alt="#" className="img-fluid" />
 
-                <StyledListText className="mb-4">
+                <StyledListText className="my-4">
                     {listText.map(function (item, i) {
                         return (
                             <li key={i}>
