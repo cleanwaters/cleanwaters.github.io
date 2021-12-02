@@ -37,7 +37,7 @@ export default function SectionTwoCarouselItem({ image, product, text }) {
         <div className='align-self-center px-3'>
           <img
             style={{ height: '8em' }}
-            src={process.env.PUBLIC_URL + `/images/${image}`}
+            src={process.env.PUBLIC_URL + `${image}`}
             loading='lazy'
             alt='#'
             className='img-fluid'

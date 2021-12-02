@@ -38,7 +38,7 @@ export function SectionQW() {
           </StyledSectionOneDetails>
           <div className='accent_text_color'>
             According to the New South Wales Department of Pathology, our water
-            is “super clean” and meets all the standards of the Australian
+            is “super clean” and exceeds all the standards of the Australian
             Drinking Water Guidelines.
           </div>
         </StyledQWContainer>

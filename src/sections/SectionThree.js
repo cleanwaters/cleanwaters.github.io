@@ -1,93 +1,84 @@
-import {StyledLayoutContainer, StyledSection} from "../components/styled-shared";
-import {StyledLibP} from "../components/typography/Paragraph";
-import styled from "styled-components";
+import {
+  StyledLayoutContainer,
+  StyledSection,
+} from '../components/styled-shared';
+import { StyledLibP, StyledP20 } from '../components/typography/Paragraph';
+import styled from 'styled-components';
 
-import { useState } from "react";
-
-
+import { useState } from 'react';
 
 export const StyledSectionOneDetails = styled.h2`
-    font-weight: bold;
-    font-size: 48px !important;
-    line-height: 61px;
-    color: #081F47;
-    margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 48px !important;
+  line-height: 61px;
+  color: #081f47;
+  margin-bottom: 1em;
 
-
-    span {
-    color: #00C0FF;
-    }
-`
+  span {
+    color: #00c0ff;
+  }
+`;
 
 export const StyledWhatWeDoDetails = styled.div`
-    border-left: 1em solid #00C0FF !important;
-    font-family:Nunito;
-    z-index:200;
-
-    > div:first-child{
-        width:800px;
-    }
-
-    @media (max-width: 992px) {
-        > img {
-          display: none;
-        }
-    }
-
-    p {
-        color: var(--ui-color-accent);
-    }
-`
+  border-left: 1em solid #00c0ff !important;
+`;
 
 export function SectionThree() {
-    const [ hide, setHide ] = useState(false)
+  const [hide, setHide] = useState(false);
 
-    return (
-    <StyledSection 
-        data-aos="fade-down"
-        className="px-5 container-fluid"
-    >
-        <StyledWhatWeDoDetails className="row">
-            <div className="col-md-6 px-4 text-left">
-                <StyledSectionOneDetails> <span> What we</span> do?</StyledSectionOneDetails>
-                <StyledLibP>
-                    Clean Waters Oceania provides a sustainable supply of fresh, clean and healthy water to households, communities, governments and NGOs.
-                </StyledLibP>
-                <StyledLibP>
-                    To do this we offer our customers Watergen’s world-class and award-winning GENius atmospheric water generators that generate between 10 and 6000 litres of clean water from the air every day.
+  return (
+    <StyledSection data-aos='fade-down' className='px-4 container-fluid'>
+      <div className='d-md-flex flex-row-reverse'>
+        <div
+          className=''
+          style={{
+            background: `url(${
+              process.env.PUBLIC_URL + '/images/air-water.svg'
+            })`,
+            width: '100%',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'right center',
+            minHeight: '20em',
+          }}
+        >
+          {/*<img src={process.env.PUBLIC_URL + "/images/air-water.svg"} alt="#" className="image-fluid" />*/}
+        </div>
 
-                </StyledLibP>
+        <StyledWhatWeDoDetails className='col-md-8 text-left pl-4'>
+          <StyledSectionOneDetails>
+            {' '}
+            <span> What we</span> do?
+          </StyledSectionOneDetails>
+          <StyledP20 className='text_weight_600'>
+            Clean Waters Oceania provides a sustainable supply of fresh, clean
+            and healthy water to households, communities, governments and NGOs.
+          </StyledP20>
+          <StyledP20 className='text_weight_600'>
+            To do this we offer our customers Watergen’s world-class and
+            award-winning GENius atmospheric water generators that generate
+            between 10 and 6000 litres of clean water from the air every day.
+          </StyledP20>
 
-                <StyledLibP>
-                    It is a fully zero emissions, zero infrastructure sustainable water generation solution, the first of its kind in Australia and the South Pacific.
-                </StyledLibP>
+          <StyledP20 className='text_weight_600'>
+            It is a fully zero emissions, zero infrastructure sustainable water
+            generation solution, the first of its kind in Australia and the
+            South Pacific.
+          </StyledP20>
 
-                <StyledLibP>
-                    There is no need to install any water infrastructure or pipelines, there is no transportation and storage, no more waste of plastic bottles.
+          <StyledP20 className='text_weight_600'>
+            There is no need to install any water infrastructure or pipelines,
+            there is no transportation and storage, no more waste of plastic
+            bottles.
+          </StyledP20>
 
-                </StyledLibP>
-
-                <StyledLibP>
-                    Less emissions, less cost, less plastic, more drinking water.
-
-                </StyledLibP>
-
-
-                {/*<div className="ui-component-cta ui-layout-flex">*/}
-                {/*  <a href="#" role="link" aria-label="#" className="ui-component-button ui-component-button-normal ui-component-button-primary">Get Started for Free</a>*/}
-                {/*  <p className="ui-text-note"><small>30 days free trial.</small></p>*/}
-                {/*</div>*/}
-            </div>
-
-            <div className="col-md-6 col-sm-12 py-4">
-                <img style={{width:'100%'}}  src={process.env.PUBLIC_URL + "/images/air-water.svg"} alt="#" className="image-fluid" />
-            </div>
+          <StyledP20 className='text_weight_600'>
+            Less emissions, less cost, less plastic, more drinking water.
+          </StyledP20>
         </StyledWhatWeDoDetails>
-      </StyledSection>
-    )
+      </div>
+    </StyledSection>
+  );
 }
-
-
-
 
 // #EEF9FF

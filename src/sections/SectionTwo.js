@@ -42,24 +42,19 @@ export const StyledSectionOneDetails = styled.h2`
 
 const listCarouselItem = [
   {
-    image: 'genny.svg',
+    image: '/images/genny.svg',
     product: 'Genny',
     text: 'Saves up to 18,250 plastic bottles of water a year',
   },
   {
-    image: 'genm1.svg',
+    image: '/images/gen-m1.jpeg',
     product: 'Gen M1',
     text: 'Saves up to 134,000 plastic bottles of water a year',
   },
   {
-    image: 'genm.svg',
+    image: '/images/gen_m.png',
     product: 'Gen M',
     text: 'Saves up to 547,500 plastic bottles of water a year',
-  },
-  {
-    image: 'genl.svg',
-    product: 'Gen L',
-    text: 'Saves up to 3,650,000 plastic bottles of water a year',
   },
 ];
 
@@ -105,7 +100,6 @@ export function SectionTwo() {
               {/*    <img style={{width:'20%'}} src={process.env.PUBLIC_URL + "/images/background/pattern2.svg"} loading="lazy" alt="image" className="ui-image-half-right" />*/}
               {/*</StyledBackgroundPattern>*/}
               <StyledSectionOneDetails>
-                {' '}
                 <span> How many plastic bottles</span> can you save?
               </StyledSectionOneDetails>
               {/*<p className="ui-text-intro">Lorem ipsum dolor sit amet.</p>*/}
