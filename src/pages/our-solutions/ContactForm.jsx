@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import { Button } from '../../components/button/Button';
+import emailjs from 'emailjs-com';
 
 // A custom validation function. This must return an object
 // which keys are symmetrical to our values/initialValues
@@ -43,14 +44,31 @@ export default function ContactForm() {
     },
     validate,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      const formValues = {
+        from_name: values.firstName,
+        from_email: values.email,
+        contact: values.contactNumber,
+        message: values.message,
+      };
+
+      // alert(JSON.stringify(formValues, null, 2));
+
+      emailjs.send('service_2bsqjso', 'template_y3f6ycz', formValues).then(
+        (result) => {
+          console.log(result.text);
+          alert(JSON.stringify('Message sent successfully'));
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     },
   });
 
   return (
-    <form onSubmit={formik.handleSubmit}>
-      <div className='form-row text-left py-4'>
-        <div className='col'>
+    <form onSubmit={formik.handleSubmit} className='text-left'>
+      <div className='form d-md-flex'>
+        <div className='col  py-4'>
           <input
             type='text'
             className='form-control'
@@ -65,7 +83,7 @@ export default function ContactForm() {
           ) : null}
         </div>
 
-        <div className='col'>
+        <div className='col  py-4'>
           {/*<input type="text" className="form-control" placeholder="Last name"/>*/}
           <input
             id='email'
@@ -80,7 +98,7 @@ export default function ContactForm() {
             <div style={{ color: '#dc3545' }}>{formik.errors.email}</div>
           ) : null}
         </div>
-        <div className='col'>
+        <div className='col  py-4'>
           {/*<input type="text" className="form-control" placeholder="Last name"/>*/}
           <input
             id='contactNumber'
@@ -98,7 +116,7 @@ export default function ContactForm() {
           ) : null}
         </div>
       </div>
-      <div className='form-row'>
+      <div className='form d-md-flex'>
         <div className='col-md-8'>
           <textarea
             className='form-control'
@@ -112,7 +130,7 @@ export default function ContactForm() {
           ) : null}
         </div>
 
-        <div className='col-md-4'>
+        <div className='col-md-4 text-center'>
           <Button
             label='Send'
             backgroundColor='#0170B9'
@@ -121,36 +139,6 @@ export default function ContactForm() {
           />
         </div>
       </div>
-
-      {/*<label htmlFor="firstName">First Name</label>*/}
-      {/*<input*/}
-      {/*  id="firstName"*/}
-      {/*  name="firstName"*/}
-      {/*  type="text"*/}
-      {/*  onChange={formik.handleChange}*/}
-      {/*  value={formik.values.firstName}*/}
-      {/*/>*/}
-      {/*{formik.errors.firstName ? <div>{formik.errors.firstName}</div> : null}*/}
-
-      {/*<label htmlFor="lastName">Last Name</label>*/}
-      {/*<input*/}
-      {/*  id="lastName"*/}
-      {/*  name="lastName"*/}
-      {/*  type="text"*/}
-      {/*  onChange={formik.handleChange}*/}
-      {/*  value={formik.values.lastName}*/}
-      {/*/>*/}
-      {/*{formik.errors.lastName ? <div>{formik.errors.lastName}</div> : null}*/}
-
-      {/*<label htmlFor="email">Email Address</label>*/}
-      {/*<input*/}
-      {/*  id="email"*/}
-      {/*  name="email"*/}
-      {/*  type="email"*/}
-      {/*  onChange={formik.handleChange}*/}
-      {/*  value={formik.values.email}*/}
-      {/*/>*/}
-      {/*{formik.errors.email ? <div>{formik.errors.email}</div> : null}*/}
     </form>
   );
 }

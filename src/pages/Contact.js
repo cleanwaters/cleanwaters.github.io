@@ -68,29 +68,27 @@ const StyledContactForm = styled.div`
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 export function Contact() {
-  const form = useRef();
-
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        'clean_water',
-        'template_xaxgdpi',
-        form.current,
-        'user_0IR6b2RHWqOPPeblkysxV'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-
-    e.target.reset();
-  }
+  // function sendEmail(e) {
+  //   e.preventDefault();
+  //   console.log('sendEmail')
+  //
+  //   emailjs
+  //     .send(
+  //       'service_2bsqjso',
+  //       'template_y3f6ycz',
+  //         {from_name: 'dfghdf', to_name: 'sad'}
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  //
+  //   e.target.reset();
+  // }
 
   return (
     <div>
@@ -111,53 +109,54 @@ export function Contact() {
           {/*    />*/}
           {/*</div>*/}
           <ContactForm />
-          <StyledContactForm style={{ width: '62vw', margin: 'auto auto' }}>
-            <Form ref={form} onSubmit={sendEmail}>
-              <Row className='my-3'>
-                <Form.Group as={Col} controlId='formGridEmail'>
-                  <Form.Control type='text' placeholder='Name' name='name' />
-                </Form.Group>
 
-                <Form.Group as={Col} controlId='formGridPassword'>
-                  <Form.Control type='email' placeholder='Email' name='email' />
-                </Form.Group>
+          {/*<StyledContactForm style={{ width: '62vw', margin: 'auto auto' }}>*/}
+          {/*  <Form ref={form} onSubmit={sendEmail}>*/}
+          {/*    <Row className='my-3'>*/}
+          {/*      <Form.Group as={Col} controlId='formGridEmail'>*/}
+          {/*        <Form.Control type='text' placeholder='Name' name='to_name' />*/}
+          {/*      </Form.Group>*/}
 
-                <Form.Group as={Col} controlId='formGridPassword'>
-                  <Form.Control
-                    type='text'
-                    placeholder='Contact number'
-                    name='contact_number'
-                  />
-                </Form.Group>
-              </Row>
-              <Row className='my-3'>
-                <Form.Group as={Col} md='8' controlId='formGridPassword'>
-                  <Form.Control
-                    as='textarea'
-                    placeholder='Message'
-                    style={{ height: '245px' }}
-                    name='message'
-                  />
-                </Form.Group>
-                <Form.Group as={Col} md='4' controlId='formGridPassword'>
-                  <Button
-                    style={{
-                      position: 'relative',
-                      top: '45%',
-                      width: '60%',
-                      height: '25%',
-                      borderRadius: '50px',
-                      backgroundColor: '#0170B9',
-                    }}
-                    variant='primary'
-                    type='submit'
-                  >
-                    Send
-                  </Button>
-                </Form.Group>
-              </Row>
-            </Form>
-          </StyledContactForm>
+          {/*      <Form.Group as={Col} controlId='formGridPassword'>*/}
+          {/*        <Form.Control type='email' placeholder='Email' name='from_name' />*/}
+          {/*      </Form.Group>*/}
+
+          {/*      <Form.Group as={Col} controlId='formGridPassword'>*/}
+          {/*        <Form.Control*/}
+          {/*          type='text'*/}
+          {/*          placeholder='Contact number'*/}
+          {/*          name='from_name'*/}
+          {/*        />*/}
+          {/*      </Form.Group>*/}
+          {/*    </Row>*/}
+          {/*    <Row className='my-3'>*/}
+          {/*      <Form.Group as={Col} md='8' controlId='formGridPassword'>*/}
+          {/*        <Form.Control*/}
+          {/*          as='textarea'*/}
+          {/*          placeholder='Message'*/}
+          {/*          style={{ height: '245px' }}*/}
+          {/*          name='message'*/}
+          {/*        />*/}
+          {/*      </Form.Group>*/}
+          {/*      <Form.Group as={Col} md='4' controlId='formGridPassword'>*/}
+          {/*        <Button*/}
+          {/*          style={{*/}
+          {/*            position: 'relative',*/}
+          {/*            top: '45%',*/}
+          {/*            width: '60%',*/}
+          {/*            height: '25%',*/}
+          {/*            borderRadius: '50px',*/}
+          {/*            backgroundColor: '#0170B9',*/}
+          {/*          }}*/}
+          {/*          variant='primary'*/}
+          {/*          type='submit'*/}
+          {/*        >*/}
+          {/*          Send*/}
+          {/*        </Button>*/}
+          {/*      </Form.Group>*/}
+          {/*    </Row>*/}
+          {/*  </Form>*/}
+          {/*</StyledContactForm>*/}
         </StyledLayoutContainer>
       </StyledSection>
       <Footer />

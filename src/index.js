@@ -4,13 +4,16 @@ import './fonts.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {HashRouter} from "react-router-dom";
+import { HashRouter } from 'react-router-dom';
+import { init } from 'emailjs-com';
+
+init('user_YOal1A06Ld3Z1idexRm6U');
 
 ReactDOM.render(
   <React.StrictMode>
-      <HashRouter>
-    <App />
-      </HashRouter>
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
