@@ -36,100 +36,98 @@ TABLE OF CONTENT
 --------------------------------------------------------------*/
 
 :root {
-
-    /*------------------------------------------------------------
+  /*------------------------------------------------------------
     |
     | 1.1 COLOR
     |
     ------------------------------------------------------------*/
 
-    --ui-color-brand: #353535;
+  --ui-color-brand: #353535;
 
-    /* COLOR PALETTE */
+  /* COLOR PALETTE */
 
-    --ui-color-n-000: #fff;
-    --ui-color-n-050: #f5f5f5;
-    --ui-color-n-100: #ebebeb;
-    --ui-color-n-300: #aeaeae;
-    --ui-color-n-500: #353535;
-    --ui-color-n-700: #282828;
-    --ui-color-n-900: #1a1a1a;
+  --ui-color-n-000: #fff;
+  --ui-color-n-050: #f5f5f5;
+  --ui-color-n-100: #ebebeb;
+  --ui-color-n-300: #aeaeae;
+  --ui-color-n-500: #353535;
+  --ui-color-n-700: #282828;
+  --ui-color-n-900: #1a1a1a;
 
-    /* BACKGROUND COLOR */
+  /* BACKGROUND COLOR */
 
-    --ui-color-background-primary  : var(--ui-color-n-000);
-    --ui-color-background-secondary: var(--ui-color-n-050);
-    --ui-color-background-tertiary : var(--ui-color-n-100);
-    --ui-color-accent : #081F46;
-    --ui-color-primary : #0170B9;
+  --ui-color-background-primary: var(--ui-color-n-000);
+  --ui-color-background-secondary: var(--ui-color-n-050);
+  --ui-color-background-tertiary: var(--ui-color-n-100);
+  --ui-color-accent: #081f46;
+  --ui-color-primary: #0170b9;
 
-    /* BORDER COLOR */
+  /* BORDER COLOR */
 
-    --ui-color-border: var(--ui-color-n-100);
+  --ui-color-border: var(--ui-color-n-100);
 
-    /* TYPOGRAPHY COLOR */
+  /* TYPOGRAPHY COLOR */
 
-    --ui-color-typography-heading: var(--ui-color-n-500);
-    --ui-color-typography-body   : var(--ui-color-n-900);
-    --ui-color-typography-note   : var(--ui-color-n-300);
-    --ui-color-typography-button : var(--ui-color-n-000);
+  --ui-color-typography-heading: var(--ui-color-n-500);
+  --ui-color-typography-body: var(--ui-color-n-900);
+  --ui-color-typography-note: var(--ui-color-n-300);
+  --ui-color-typography-button: var(--ui-color-n-000);
 
-    /*------------------------------------------------------------
+  /*------------------------------------------------------------
     |
     | 1.2 TYPOGRAPHY
     |
     ------------------------------------------------------------*/
 
-    --ui-typography-typeface: "Inter", sans-serif;
+  --ui-typography-typeface: 'Inter', sans-serif;
 
-    /* FONT SIZE */
+  /* FONT SIZE */
 
-    --ui-typography-h1: 1.9375rem;
-    --ui-typography-h2: 1.5625rem;
-    --ui-typography-h3: 1.25rem;
-    --ui-typography-h4: 1rem;
-    --ui-typography-p : 1rem;
-    --ui-typography-s : .8125rem;
+  --ui-typography-h1: 1.9375rem;
+  --ui-typography-h2: 1.5625rem;
+  --ui-typography-h3: 1.25rem;
+  --ui-typography-h4: 1rem;
+  --ui-typography-p: 1rem;
+  --ui-typography-s: 0.8125rem;
 
-    /* LEADING */
+  /* LEADING */
 
-    --ui-typography-h1-leading: 1.2;
-    --ui-typography-h2-leading: 1.2;
-    --ui-typography-h4-leading: 1.25;
-    --ui-typography-p-leading : 1.5;
+  --ui-typography-h1-leading: 1.2;
+  --ui-typography-h2-leading: 1.2;
+  --ui-typography-h4-leading: 1.25;
+  --ui-typography-p-leading: 1.5;
 
-    /* MARGIN */
+  /* MARGIN */
 
-    --ui-typography-margin-heading: .75rem;
-    --ui-typography-margin-body   : 1.125rem;
+  --ui-typography-margin-heading: 0.75rem;
+  --ui-typography-margin-body: 1.125rem;
 
-    /*------------------------------------------------------------
+  /*------------------------------------------------------------
     |
     | 1.3 LAYOUT
     |
     ------------------------------------------------------------*/
 
-    --ui-layout-container: 1.25rem;
-    --ui-layout-grid     : 3.625rem;
-    --ui-layout-gutter   : 1rem;
+  --ui-layout-container: 1.25rem;
+  --ui-layout-grid: 3.625rem;
+  --ui-layout-gutter: 1rem;
 
-    /* GAP */
+  /* GAP */
 
-    --ui-gap-header  : 1rem;
-    --ui-gap-cta     : .75rem;
-    --ui-gap-hero    : 2rem;
-    --ui-gap-customer: 2rem;
-    --ui-gap-card    : 1.25rem;
-    --ui-gap-pricing : 2rem;
-    --ui-gap-faq     : 1.5rem;
+  --ui-gap-header: 1rem;
+  --ui-gap-cta: 0.75rem;
+  --ui-gap-hero: 2rem;
+  --ui-gap-customer: 2rem;
+  --ui-gap-card: 1.25rem;
+  --ui-gap-pricing: 2rem;
+  --ui-gap-faq: 1.5rem;
 
-    /* BORDER RADIUS */
+  /* BORDER RADIUS */
 
-    --ui-radius-avatar: 5rem;
-    --ui-radius-button: 5rem;
-    --ui-radius-card  : .5rem;
-
-  }
+  --ui-radius-avatar: 5rem;
+  --ui-radius-button: 5rem;
+  --ui-radius-card: 0.5rem;
+}
 
 /*  !*--------------------------------------------------------------*/
 /*  2.0 FOUNDATION*/
@@ -1114,32 +1112,33 @@ TABLE OF CONTENT
 
 /*  }*/
 
-
 /*.header-title-color {*/
 /*    color: #0170B9;*/
 /*  font-weight: bold;*/
 /*}*/
 
-
 /*span.text-blue {*/
 /*color: #00C0FF;*/
 /*}*/
-
 
 .jumbotron {
   position: relative;
   overflow: hidden;
 }
 
-
 .jumbotron video {
   position: absolute;
   z-index: 1;
   top: 0;
-  right:0;
-  width:100%;
-  height:100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
   /*  object-fit is not supported on IE  */
   object-fit: cover;
-  opacity:0.5;
+  opacity: 0.5;
+}
+
+.black_white_image {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
