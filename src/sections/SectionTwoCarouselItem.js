@@ -29,18 +29,14 @@ export default function SectionTwoCarouselItem({ image, product, text }) {
   return (
     // <Carousel.Item>
     <StyledSectionCardDefault className='card'>
-      <div
-        className='card-body d-flex align-items-center'
-        style={{ height: '10em' }}
-      >
+      <div className='card-body d-md-flex align-items-center text-center'>
         {/*<div className="d-flex align-items-center" style={{height: '100%'}}>*/}
         <div className='align-self-center px-3'>
           <img
-            style={{ height: '8em' }}
+            style={{ height: '8em', width: 'auto' }}
             src={process.env.PUBLIC_URL + `${image}`}
             loading='lazy'
             alt='#'
-            className='img-fluid'
           />
         </div>
 

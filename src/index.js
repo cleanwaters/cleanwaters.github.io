@@ -6,12 +6,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter } from 'react-router-dom';
 import { init } from 'emailjs-com';
+import ScrollToTop from './components/ScrollToTop';
 
 init('user_YOal1A06Ld3Z1idexRm6U');
 
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>
+      <ScrollToTop />
       <App />
     </HashRouter>
   </React.StrictMode>,

@@ -44,12 +44,15 @@ export const StyledWhatWeDoDetails = styled.div`
 export function SectionFour() {
   return (
     <section className='px-5d'>
-      <StyledSectionOneDetails data-aos-anchor-placement='top-center'>
+      <StyledSectionOneDetails
+        data-aos-anchor-placement='top-center'
+        className='text-center'
+      >
         <span> Target Market and </span> Product Line
       </StyledSectionOneDetails>
 
       <div className='container-fluid'>
-        <div className='row'>
+        <div className='row px-2'>
           {targetMarketProduct.map((item, i) => (
             <div
               data-aos='fade-in'

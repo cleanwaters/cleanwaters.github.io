@@ -9,6 +9,7 @@ import {
   StyledH34,
   StyledP14,
   StyledP20,
+  StyledP24,
 } from '../components/typography/Paragraph';
 
 export const StyledQWContainer = styled.div`
@@ -42,11 +43,11 @@ export function SectionQW() {
           <StyledSectionOneDetails>
             <span>The quality </span>of our water
           </StyledSectionOneDetails>
-          <StyledP20 className='accent_text_color'>
+          <StyledP24 className='accent_text_color text_weight_600'>
             According to the New South Wales Department of Pathology, our water
             is “super clean” and exceeds all the standards of the Australian
             Drinking Water Guidelines.
-          </StyledP20>
+          </StyledP24>
         </StyledQWContainer>
       </StyledLayoutContainer>
     </StyledSection>

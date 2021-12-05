@@ -43,7 +43,7 @@ export function SectionOne() {
       <div
         data-aos='fade-up'
         style={{ zIndex: 4, position: 'relative', marginTop: '20vw' }}
-        className='d-md-flex p-4'
+        className='d-md-flex'
       >
         <div className='col-md-6'>
           <StyledHeaderH1
@@ -65,7 +65,6 @@ export function SectionOne() {
                 color: 'white',
                 fontFamily: 'Nunito',
                 marginRight: '1em',
-                padding: '1.2em 3.6em',
                 background: '#046EB6',
               }}
             />
@@ -77,7 +76,6 @@ export function SectionOne() {
                 color: 'white',
                 fontFamily: 'Nunito',
                 borderColor: 'white',
-                padding: '1.2em 3.6em',
               }}
             />
           </div>

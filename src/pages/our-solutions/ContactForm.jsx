@@ -77,6 +77,11 @@ export default function ContactForm() {
             placeholder='Name'
             onChange={formik.handleChange}
             value={formik.values.firstName}
+            style={{
+              boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)',
+              border: 0,
+              borderRadius: '8px',
+            }}
           />
           {formik.errors.firstName ? (
             <div style={{ color: '#dc3545' }}>{formik.errors.firstName}</div>
@@ -93,6 +98,11 @@ export default function ContactForm() {
             placeholder='Email'
             onChange={formik.handleChange}
             value={formik.values.email}
+            style={{
+              boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)',
+              border: 0,
+              borderRadius: '8px',
+            }}
           />
           {formik.errors.email ? (
             <div style={{ color: '#dc3545' }}>{formik.errors.email}</div>
@@ -108,6 +118,11 @@ export default function ContactForm() {
             placeholder='Contact'
             onChange={formik.handleChange}
             value={formik.values.contactNumber}
+            style={{
+              boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)',
+              border: 0,
+              borderRadius: '8px',
+            }}
           />
           {formik.errors.contactNumber ? (
             <div style={{ color: '#dc3545' }}>
@@ -124,13 +139,18 @@ export default function ContactForm() {
             onChange={formik.handleChange}
             value={formik.values.message}
             rows='3'
+            style={{
+              boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)',
+              border: 0,
+              borderRadius: '8px',
+            }}
           />
           {formik.errors.message ? (
             <div style={{ color: '#dc3545' }}>{formik.errors.message}</div>
           ) : null}
         </div>
 
-        <div className='col-md-4 text-center'>
+        <div className='col-md-4 text-center my-4'>
           <Button
             label='Send'
             backgroundColor='#0170B9'

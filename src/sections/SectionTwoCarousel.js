@@ -41,7 +41,7 @@ export const StyledSectionCarouselP = styled.p`
 
 export default function SectionTwoCarousel({}) {
   return (
-    <section className='container-fluid my-5'>
+    <section className='container-fluid my-5s'>
       <Carousel
         // activeIndex={2}
         variant='dark'
