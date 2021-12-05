@@ -33,29 +33,6 @@ export const StyledSectionOneDetails = styled.h2`
   }
 `;
 
-export const sectionTwoCarouselItems = [
-  {
-    image: 'genny.svg',
-    product: 'Genny',
-    text: 'Saves up to 18,250 plastic bottles of water a year',
-  },
-  {
-    image: 'genm1.svg',
-    product: 'Gen M1',
-    text: 'Saves up to 134,000 plastic bottles of water a year',
-  },
-  {
-    image: 'genm.jpeg',
-    product: 'Gen M',
-    text: 'Saves up to 547,500 plastic bottles of water a year',
-  },
-  {
-    image: 'genl.svg',
-    product: 'Gen L',
-    text: 'Saves up to 3,650,000 plastic bottles of water a year',
-  },
-];
-
 const StyledBottleAnimation = styled.div`
   margin: 60vh 0 30vh 0;
 

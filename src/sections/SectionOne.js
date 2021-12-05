@@ -1,6 +1,7 @@
 import { Button } from '../components/button/Button';
 import styled from 'styled-components';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const StyledHeaderH1 = styled.h1`
   font-weight: 800;
@@ -27,6 +28,7 @@ export const StyledSectionOneDetails = styled.div`
 `;
 
 export function SectionOne() {
+  let navigate = useNavigate();
   useEffect(() => {});
 
   return (
@@ -58,6 +60,7 @@ export function SectionOne() {
             <Button
               size='large'
               label='Our product'
+              onClick={() => navigate('/our-solution')}
               style={{
                 color: 'white',
                 fontFamily: 'Nunito',
@@ -69,6 +72,7 @@ export function SectionOne() {
             <Button
               size='large'
               label='About us'
+              onClick={() => navigate('/about-us')}
               style={{
                 color: 'white',
                 fontFamily: 'Nunito',

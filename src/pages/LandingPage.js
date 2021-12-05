@@ -16,6 +16,8 @@ import { SectionTwoBottleAnimation } from '../sections/SectionTwoBottleAnimation
 import { SectionOneGif } from '../sections/SectionOneGif';
 import SectionTwoCarousel from '../sections/SectionTwoCarousel';
 import { NavbarSecond } from '../components/NavbarSecond';
+import { SectionTwoWithBackground } from '../sections/SectionTwoWithBackground';
+import { ScrollMagicExampleBottles } from '../sections/ScrollMagicExampleBottles';
 
 export default function LandingPage() {
   return (
@@ -24,13 +26,14 @@ export default function LandingPage() {
       <NavbarSecond />
 
       <SectionOne />
-      {/*second section*/}
-      <SectionTwo />
-      {/*section 3*/}
-      <SectionQW />
+      {/*<SectionTwoCarousel />*/}
+
+      {/*<SectionTwoWithBackground />*/}
+      <ScrollMagicExampleBottles beforeTimeline={<SectionTwoCarousel />} />
+      {/*<SectionQW />*/}
       <SectionThree />
 
-      <SectionFour />
+      {/*<SectionFour />*/}
 
       <SectionFive />
 

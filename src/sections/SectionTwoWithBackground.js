@@ -40,7 +40,7 @@ export const StyledSectionOneDetails = styled.h2`
   }
 `;
 
-export const listCarouselItem = [
+const listCarouselItem = [
   {
     image: '/images/genny.svg',
     product: 'Genny',
@@ -81,7 +81,7 @@ const StyledBottleAnimation = styled.div`
   }
 `;
 
-export function SectionTwo() {
+export function SectionTwoWithBackground() {
   return (
     <StyledSection className='container-fluid'>
       <Controller>
