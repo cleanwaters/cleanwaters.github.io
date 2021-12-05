@@ -5,6 +5,11 @@ import {
   StyledLayoutContainer,
 } from '../components/styled-shared';
 import { StyledSectionOneDetails } from './SectionFive';
+import {
+  StyledH34,
+  StyledP14,
+  StyledP20,
+} from '../components/typography/Paragraph';
 
 export const StyledQWContainer = styled.div`
   > div:nth-child(2) {
@@ -29,18 +34,19 @@ export const StyledQWContainer = styled.div`
 
 export function SectionQW() {
   return (
-    <StyledSection style={{ marginTop: '120px' }}>
-      <StyledLayoutContainer>
-        <StyledQWContainer data-aos='fade-down'>
+    <StyledSection style={{ marginTop: '20px' }}>
+      {/*className='d-md-flex text-left justify-content-center align-items-center p-4'*/}
+
+      <StyledLayoutContainer className='d-md-flex text-left justify-content-center align-items-center p-md-4 text-center'>
+        <StyledQWContainer data-aos='fade-down' className='col-md-8'>
           <StyledSectionOneDetails>
-            {' '}
             <span>The quality </span>of our water
           </StyledSectionOneDetails>
-          <div className='accent_text_color'>
+          <StyledP20 className='accent_text_color'>
             According to the New South Wales Department of Pathology, our water
             is “super clean” and exceeds all the standards of the Australian
             Drinking Water Guidelines.
-          </div>
+          </StyledP20>
         </StyledQWContainer>
       </StyledLayoutContainer>
     </StyledSection>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { SectionOne } from './SectionOne';
-import { SectionTwo } from './SectionTwo';
+import { SectionTwo, StyledSectionOneDetails } from './SectionTwo';
 import { SectionThree } from './SectionThree';
 import { SectionFour } from './SectionFour';
 import { SectionFive } from './SectionFive';
@@ -11,6 +11,9 @@ import { SectionAR } from './SectionAR';
 import { Footer } from './Footer';
 import Video from './Video';
 import { BottleAnimations, BottleAnimations2 } from './BottleAnimations';
+import { SectionQW } from './SectionQW';
+import { ScrollMagicExampleBottles } from './ScrollMagicExampleBottles';
+import SectionTwoCarousel from './SectionTwoCarousel';
 
 export default {
   title: 'Sections/Home/Section One',
@@ -29,6 +32,23 @@ export const Basic = Template.bind({});
 //   return (<SectionTwo />)
 // };
 export const Primary = () => <SectionTwo />;
+export const QW = () => <SectionQW />;
+export const MagicBottles = () => (
+  <div>
+    <div style={{ height: '100vh' }}></div>
+    <ScrollMagicExampleBottles
+      beforeTimeline={
+        <div className='container-fluid'>
+          <StyledSectionOneDetails className='text-center'>
+            <span> How many plastic bottles</span> can you save?
+          </StyledSectionOneDetails>
+          <SectionTwoCarousel />
+        </div>
+      }
+    />
+  </div>
+);
+
 export const Three = () => <SectionThree />;
 export const Four = () => <SectionFour />;
 export const Five = () => <SectionFive />;

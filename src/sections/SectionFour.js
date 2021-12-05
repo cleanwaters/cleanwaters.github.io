@@ -43,44 +43,42 @@ export const StyledWhatWeDoDetails = styled.div`
 
 export function SectionFour() {
   return (
-    <section className='px-5'>
+    <section className='px-5d'>
       <StyledSectionOneDetails data-aos-anchor-placement='top-center'>
-        {' '}
         <span> Target Market and </span> Product Line
       </StyledSectionOneDetails>
-      <div className='row'>
-        <div className='container'>
-          <div className='d-md-flex'>
-            {targetMarketProduct.map((item, i) => (
-              <div
-                data-aos='fade-in'
-                data-aos-delay={150 * (i + 1)}
-                style={{ position: 'relative', padding: '32px' }}
-                key={i}
-              >
-                <StyledCapacityDropIconWrapper>
-                  <div>
-                    <img
-                      src={process.env.PUBLIC_URL + '/images/capacity-drop.svg'}
-                      loading='lazy'
-                      alt='#'
-                      className='ui-image-half-right'
-                    />
-                    <StyledCardTopRightText>
-                      <div>Capacity</div>
-                      <div style={{ left: '1vw' }}>{item.capacity} L</div>
-                    </StyledCardTopRightText>
-                  </div>
-                </StyledCapacityDropIconWrapper>
 
-                <CWCard
-                  title={item.title}
-                  listText={item.targets}
-                  image={item.image}
-                ></CWCard>
-              </div>
-            ))}
-          </div>
+      <div className='container-fluid'>
+        <div className='row'>
+          {targetMarketProduct.map((item, i) => (
+            <div
+              data-aos='fade-in'
+              data-aos-delay={150 * (i + 1)}
+              key={i}
+              className='col-md-4'
+            >
+              <StyledCapacityDropIconWrapper>
+                <div>
+                  <img
+                    src={process.env.PUBLIC_URL + '/images/capacity-drop.svg'}
+                    loading='lazy'
+                    alt='#'
+                    className='ui-image-half-right'
+                  />
+                  <StyledCardTopRightText>
+                    <div>Capacity</div>
+                    <div style={{ left: '1vw' }}>{item.capacity} L</div>
+                  </StyledCardTopRightText>
+                </div>
+              </StyledCapacityDropIconWrapper>
+
+              <CWCard
+                title={item.title}
+                listText={item.targets}
+                image={item.image}
+              ></CWCard>
+            </div>
+          ))}
         </div>
       </div>
     </section>

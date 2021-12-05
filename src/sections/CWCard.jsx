@@ -49,7 +49,7 @@ export const StyledListText = styled.ul`
 export function CWCard({ title, listText, image }) {
   return (
     <StyledCWCard className='card col'>
-      <div className='card-body'>
+      <div className='card-body text-center'>
         {/*<h5 className="card-title header-title-color my-4" style={{ fontSize: '36px' }} >{title}</h5>*/}
 
         <StyledP36

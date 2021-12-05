@@ -16,6 +16,7 @@ import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 import { NavbarSecond } from '../components/NavbarSecond';
 import ContactForm from './our-solutions/ContactForm';
+import Page from '../components/Page';
 
 const ButtonMailto = ({ mailto, label }) => {
   return (
@@ -91,7 +92,7 @@ export function Contact() {
   // }
 
   return (
-    <div>
+    <Page>
       <NavbarSecond />
       <StyledSection style={{ paddingTop: '0' }}>
         <StyledLayoutContainer className='px-4'>
@@ -160,6 +161,6 @@ export function Contact() {
         </StyledLayoutContainer>
       </StyledSection>
       <Footer />
-    </div>
+    </Page>
   );
 }

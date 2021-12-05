@@ -12,13 +12,9 @@ export const ScrollMagicExampleBottles = ({ beforeTimeline }) => {
           pin
         >
           {(progress) => (
-            <div className='mtff-4'>
-              <div
-                style={{ height: '50vh' }}
-                className='d-flex align-items-end'
-              >
-                <div>{beforeTimeline}</div>
-              </div>
+            <div>
+              <div className='d-flex align-items-end'></div>
+              <div>{beforeTimeline}</div>
 
               <Timeline totalProgress={progress} paused>
                 <Tween
@@ -150,6 +146,7 @@ export const ScrollMagicExampleBottles = ({ beforeTimeline }) => {
           )}
         </Scene>
       </div>
+      <div style={{ height: '5em' }}></div>
     </Controller>
   );
 };

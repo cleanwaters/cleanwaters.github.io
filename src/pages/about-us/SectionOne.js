@@ -17,14 +17,7 @@ export const StyledSectionLightP = styled.p`
 
 export default function SectionOne({ aboutUs }) {
   return (
-    <section
-      style={{
-        backgroundImage: `url(/images/background/Ellipse13.svg)`,
-        minHeight: '100vh',
-        backgroundRepeat: 'no-repeat, repeat',
-      }}
-      className='mt-5 container-fluid text-left pt-5 text-center'
-    >
+    <section className='mt-5 container-fluid text-left pt-5 text-center'>
       <StyledSectionOneDetails
         data-aos-anchor-placement='top-center'
         style={{ margin: 0 }}

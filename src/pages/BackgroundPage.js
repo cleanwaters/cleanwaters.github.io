@@ -20,46 +20,10 @@ import { SectionTwoWithBackground } from '../sections/SectionTwoWithBackground';
 import { ScrollMagicExampleBottles } from '../sections/ScrollMagicExampleBottles';
 import Page from '../components/Page';
 
-export default function LandingPage() {
+export default function BackgroundPage() {
   return (
     <Page>
-      {/* <div className="container-fluid" style={{padding:'1px'}}> */}
-      <NavbarSecond />
-
-      <SectionOne />
-      {/*<SectionTwoCarousel />*/}
-
-      {/*<SectionTwoWithBackground />*/}
-
-      <div style={{ height: '20px' }}></div>
-      <ScrollMagicExampleBottles
-        beforeTimeline={
-          <div className='container-fluid'>
-            <StyledSectionOneDetails className='text-center'>
-              <span> How many plastic bottles</span> can you save?
-            </StyledSectionOneDetails>
-            <SectionTwoCarousel />
-          </div>
-        }
-      />
-      <SectionQW />
-      <SectionThree />
-
-      {/*todo fix*/}
-      <SectionFour />
-
-      <SectionFive />
-
-      <Video video={'Watergen - how it works_.mp4'} />
-
-      <SectionSix />
-
-      <SectionMR />
-
-      {/*/!*section 9*!/*/}
-      <SectionAR />
-
-      <Footer />
+      <div style={{ height: '200vh' }}>sdfgdfgdfgdfgdfg</div>
     </Page>
   );
 }

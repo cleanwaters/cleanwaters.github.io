@@ -10,13 +10,33 @@ import {
 } from '../../components/typography/Paragraph';
 import { NavbarSecond } from '../../components/NavbarSecond';
 import { Footer } from '../../sections/Footer';
+import Page from '../../components/Page';
+import styled from 'styled-components';
+import { SectionOneImage } from './SectionOne';
+
+export const StyledSectionImage = styled.div`
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background: white;
+  @media screen and (max-width: 768px) {
+    min-height: 250px;
+    margin: 16px 0;
+  }
+`;
+const imageStyle = {
+  width: '100%',
+  height: '100%',
+  backgroundSize: 'contain',
+  backgroundPosition: 'center center',
+};
 
 export default function OurPartnersPage({ ourPartners }) {
   const [selectedArticle, setSelectedArticle] = useState(
     ourPartnersData.articleTabs[0]
   );
   return (
-    <div className='container-fluid p-0'>
+    <Page>
       <NavbarSecond />
       <section
         className='text-center d-flex justify-content-center align-items-center'
@@ -27,7 +47,6 @@ export default function OurPartnersPage({ ourPartners }) {
                           rgba(0, 0, 0, 0.5), 
                           rgba(0, 0, 0, 0.5)
                         ),url(${ourPartnersData.headerImage})`,
-          backgroundRepeat: 'no-repeat, repeat',
         }}
       >
         <div className='mx-md-5'>
@@ -39,10 +58,12 @@ export default function OurPartnersPage({ ourPartners }) {
       </section>
 
       <section>
-        <div className='d-md-flex justify-content-around px-5'>
+        <div className='d-md-flex justify-content-around'>
           {ourPartnersData.partnerLogos.map((logo) => (
-            <div style={{ width: '360px' }} className='py-5f'>
-              <img src={logo.image} loading='lazy' className='img-fluid' />
+            <div style={{ width: '360px' }} className='d-flex  px-4'>
+              <div className='align-self-center'>
+                <img src={logo.image} loading='lazy' className='img-fluid' />
+              </div>
             </div>
           ))}
         </div>
@@ -68,17 +89,22 @@ export default function OurPartnersPage({ ourPartners }) {
 
       <div
         className='d-md-flex text-left justify-content-center align-items-center p-4'
-        style={{ minHeight: '80vh' }}
+        style={{ minHeight: '50vh' }}
       >
         <div className='d-md-flex text-left flex-row-reverse'>
-          <div className='col-md-6'>
-            <img
-              src={selectedArticle.image}
-              className='img-fluid'
-              height={'150px'}
-            />
+          <div className='col-md-4 d-flex justify-content-center align-items-center p-5'>
+            <img src={selectedArticle.image} className='img-fluid' />
           </div>
-          <div className='col-md-6'>
+
+          {/*{*/}
+          {/*    !!selectedArticle ? (*/}
+
+          {/*            <SectionOneImage selectedArticle={selectedArticle} />*/}
+
+          {/*    ) : null*/}
+          {/*}*/}
+
+          <div className='col-md-8'>
             <StyledP36 className='mb-2 text_bold'>
               {selectedArticle.articleTitle}
             </StyledP36>
@@ -112,6 +138,6 @@ export default function OurPartnersPage({ ourPartners }) {
         </div>
       </section>
       <Footer />
-    </div>
+    </Page>
   );
 }
