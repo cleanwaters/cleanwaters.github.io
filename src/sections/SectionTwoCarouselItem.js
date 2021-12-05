@@ -1,46 +1,55 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import { Carousel } from "react-bootstrap";
+import { Carousel } from 'react-bootstrap';
 
+const StyledSectionCardDefault = styled.div`
+  background: #ffffff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+  // height:220px;
 
-export const StyledSectionCardDefault = styled.div`
-    background: #FFFFFF;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
-    border-radius: 50px;
-    height:220px;
-    
-`
-
+  @media screen and (min-width: 768px) {
+    margin: 0 15em;
+  }
+`;
 
 export const StyledSectionCarouselP = styled.p`
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 44px;
-    font-family:Nunito;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  font-family: Nunito;
 
-    span {
-        color: #0170B9;
-    }
-`
+  span {
+    color: #0170b9;
+  }
+`;
 
-export default function SectionTwoCarouselItem({ image, product, text }){
-    return (
-        // <Carousel.Item>
-            <StyledSectionCardDefault className="card" style={{margin: '0 15em'}}>
-                <div className="card-body" style={{position:'relative'}}>
-                    <div className="d-flex">
-                        <img src={process.env.PUBLIC_URL + `/images/${image}`} loading="lazy" alt="#" className="ui-image-half-right img-fluid" />
-                        <div className="flex-grow-1 align-self-center">
-                            <StyledSectionCarouselP>
-                                <span>{product}</span> – {text}
-                            </StyledSectionCarouselP>
-                        </div>
+export default function SectionTwoCarouselItem({ image, product, text }) {
+  return (
+    // <Carousel.Item>
+    <StyledSectionCardDefault className='card'>
+      <div className='card-body d-md-flex align-items-center text-center'>
+        {/*<div className="d-flex align-items-center" style={{height: '100%'}}>*/}
+        <div className='align-self-center px-3'>
+          <img
+            style={{ height: '8em', width: 'auto' }}
+            src={process.env.PUBLIC_URL + `${image}`}
+            loading='lazy'
+            alt='#'
+          />
+        </div>
 
-                    </div>
-                </div>
-            </StyledSectionCardDefault>
+        <div className='flex-grow-1 align-self-center'>
+          <StyledSectionCarouselP>
+            <span>{product}</span> – {text}
+          </StyledSectionCarouselP>
+        </div>
 
-        // </Carousel.Item>
-    )
+        {/*</div>*/}
+      </div>
+    </StyledSectionCardDefault>
+
+    // </Carousel.Item>
+  );
 }

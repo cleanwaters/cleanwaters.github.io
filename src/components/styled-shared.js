@@ -22,6 +22,7 @@ export const StyledSection = styled.section`
     padding-bottom: 5rem;
     padding-top: 5rem;
     text-align: center;
+    fontFamily: Nunito;
 `
 
 export const StyledCarouselContainer = styled.div`

@@ -1,5 +1,7 @@
 import { Nav, Navbar, Container } from "react-bootstrap";
-import { } from "./Navbar";
+import "./Navbar.css";
+import {useLocation} from "react-router-dom";
+import {NavbarItem} from "./NavbarItem";
 
 
 const navbarLinks = [
@@ -9,31 +11,34 @@ const navbarLinks = [
     },
     {
         name: 'Our Solution',
-        url: '/our-solution',
+        url: '/#/our-solution',
     },
     {
         name: 'Case Studies',
-        url: '/',
+        url: '/#/case-studies',
     },
     {
         name: 'About Us',
-        url: '/',
+        url: '/#/about-us',
     },
     {
         name: 'Our Partners',
-        url: '',
+        url: '/#/our-partners',
     },
     {
-        name: 'Contact',
-        url: '/contact',
+        name: 'Contact Us',
+        url: '/#/contact',
     },
 ]
 
-
+export function checkUrlActive(navbarUrl, locationPathName) {
+    return navbarUrl.includes(locationPathName)
+}
 
 export function NavbarSecond() {
     return (
-        <Navbar sticky='top' style={{ boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)' }} expand="lg">
+        <Navbar sticky='top' style={{ boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)', background: 'white' }} expand="lg">
+            {/*todo scrolling not working*/}
             <Container>
                 <Navbar.Brand href="">
                     <img style={{ width: '3em' }} src={process.env.PUBLIC_URL + "/images/nav_logo.jpg"} alt="nav_logo" className="img-fluid" />
@@ -43,7 +48,7 @@ export function NavbarSecond() {
                     <Nav className="m-auto">
                         {
                             navbarLinks.map((navbarItem, index) => (
-                                <Nav.Link className="px-3" key={index} style={{ color: '#0170B9' }} href={navbarItem.url}>{navbarItem.name}</Nav.Link>
+                                <NavbarItem navbarItem={navbarItem} key={index} />
                             ))
                         }
                     </Nav>

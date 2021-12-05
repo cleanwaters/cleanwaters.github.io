@@ -1,5 +1,18 @@
-
-
 .accent_text_color {
-    color: var(--ui-color-accent);
+  color: var(--ui-color-accent);
+}
+
+.primary_text_color {
+  color: var(--ui-color-primary);
+}
+
+.text_color_primary {
+  color: #00c0ff;
+}
+
+.text_bold {
+  font-weight: bold;
+}
+.text_weight_600 {
+  font-weight: 600;
 }

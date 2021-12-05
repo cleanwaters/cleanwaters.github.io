@@ -1,69 +1,65 @@
-import { SectionOne } from "../sections/SectionOne";
-import { SectionTwo, StyledSectionOneDetails } from "../sections/SectionTwo";
-import { SectionThree } from "../sections/SectionThree";
-import { SectionFour } from "../sections/SectionFour";
-import { SectionFive } from "../sections/SectionFive";
-import { SectionSix } from "../sections/SectionSix";
-import { SectionMR } from "../sections/SectionMR";
-import {SectionAR} from "../sections/SectionAR";
-import { Footer } from "../sections/Footer";
+import { SectionOne } from '../sections/SectionOne';
+import { SectionTwo, StyledSectionOneDetails } from '../sections/SectionTwo';
+import { SectionThree } from '../sections/SectionThree';
+import { SectionFour } from '../sections/SectionFour';
+import { SectionFive } from '../sections/SectionFive';
+import { SectionSix } from '../sections/SectionSix';
+import { SectionMR } from '../sections/SectionMR';
+import { SectionAR } from '../sections/SectionAR';
+import { Footer } from '../sections/Footer';
 import { SectionQW } from '../sections/SectionQW';
-import { StyledBackgroundPattern } from "../App";
+import { StyledBackgroundPattern } from '../App';
 import Video from '../sections/Video';
 
-import React from "react";
+import React from 'react';
+import { SectionTwoBottleAnimation } from '../sections/SectionTwoBottleAnimation';
+import { SectionOneGif } from '../sections/SectionOneGif';
+import SectionTwoCarousel from '../sections/SectionTwoCarousel';
+import { NavbarSecond } from '../components/NavbarSecond';
+import { SectionTwoWithBackground } from '../sections/SectionTwoWithBackground';
+import { ScrollMagicExampleBottles } from '../sections/ScrollMagicExampleBottles';
+import Page from '../components/Page';
 
+export default function LandingPage() {
+  return (
+    <Page>
+      {/* <div className="container-fluid" style={{padding:'1px'}}> */}
+      <NavbarSecond />
 
-export default function LandingPage(){
-    return(
-        
-        <>
-            {/* <div className="container-fluid" style={{padding:'1px'}}> */}
-                
-                
-                <SectionOne />
-                {/*second section*/}
+      <SectionOne />
+      {/*<SectionTwoCarousel />*/}
 
-                
-                <SectionTwo />
+      {/*<SectionTwoWithBackground />*/}
 
-                {/*section 3*/}
-                <SectionQW/>
+      <div style={{ height: '20px' }}></div>
+      <ScrollMagicExampleBottles
+        beforeTimeline={
+          <div className='container-fluid'>
+            <StyledSectionOneDetails className='text-center'>
+              <span> How many plastic bottles</span> can you save?
+            </StyledSectionOneDetails>
+            <SectionTwoCarousel />
+          </div>
+        }
+      />
+      <SectionQW />
+      <SectionThree />
 
-                <SectionThree />
+      {/*todo fix*/}
+      <SectionFour />
 
+      <SectionFive />
 
-                <SectionFour />
+      <Video video={'Watergen - how it works_.mp4'} />
 
-                <SectionFive />
+      <SectionSix />
 
-                <Video
-                video={'Watergen - how it works_.mp4'}
-                />
+      <SectionMR />
 
-                <SectionSix />
+      {/*/!*section 9*!/*/}
+      <SectionAR />
 
-                <SectionMR />
-
-                {/*section 9*/}
-                <SectionAR />
-
-                {/*section 10*/}
-                <Footer/>
-                
-            {/* </div> */}
-            {/* <StyledBackgroundPattern style={{top:'4500px'}}>
-                <img style={{width:'120%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern3.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
-            </StyledBackgroundPattern> */}
-            {/* <StyledBackgroundPattern style={{top:'5600px', left:'0%'}}>
-                <img style={{width:'100%', height:'10%'}} src={process.env.PUBLIC_URL + "/images/background/pattern4.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
-            </StyledBackgroundPattern>
-            <StyledBackgroundPattern style={{top:'7200px', left:'90'}}>
-                <img style={{marginLeft:'70%', width:'315px', height:'388px'}} src={process.env.PUBLIC_URL + "/images/background/pattern5.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
-            </StyledBackgroundPattern>
-            <StyledBackgroundPattern style={{top:'7400px', left:'0%'}}>
-                <img style={{marginLeft:"-80px", width:'465px', height:'545px'}}  src={process.env.PUBLIC_URL + "/images/background/pattern6.svg"} loading="lazy" alt="image" className="ui-image-half-right" />
-            </StyledBackgroundPattern> */}
-        </>
-    )
+      <Footer />
+    </Page>
+  );
 }
