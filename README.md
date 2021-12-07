@@ -12,7 +12,9 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 Syntax highlighted code block
 
 # Header 1
+
 ## Header 2
+
 ### Header 3
 
 - Bulleted
@@ -35,3 +37,21 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+### Deploying to gh-pages
+
+deploying takes some steps
+
+1 npm run deploy
+
+2 configure cname
+
+2.1 after deployment, checkout to gh-pages and create new file CNAME
+
+add WWW.CLEANWATERS.COM.AU to the file
+
+2.2 commit and push the gh-pages
+
+git add CNAME
+git commit -m "add CNAME"
+git push
