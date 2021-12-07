@@ -12,13 +12,11 @@ import { StyledBackgroundPattern } from '../App';
 import Video from '../sections/Video';
 
 import React from 'react';
-import { SectionTwoBottleAnimation } from '../sections/SectionTwoBottleAnimation';
-import { SectionOneGif } from '../sections/SectionOneGif';
 import SectionTwoCarousel from '../sections/SectionTwoCarousel';
 import { NavbarSecond } from '../components/NavbarSecond';
-import { SectionTwoWithBackground } from '../sections/SectionTwoWithBackground';
 import { ScrollMagicExampleBottles } from '../sections/ScrollMagicExampleBottles';
 import Page from '../components/Page';
+import { ExampleAccordion2 } from '../sections/ExampleAccordion2';
 
 export default function LandingPage() {
   return (
@@ -52,11 +50,13 @@ export default function LandingPage() {
 
       <Video video={'Watergen - how it works_.mp4'} />
 
-      <SectionSix />
+      {/*<SectionSix />*/}
+      <section className='container py-5'>
+        <ExampleAccordion2 />
+      </section>
 
       <SectionMR />
 
-      {/*/!*section 9*!/*/}
       <SectionAR />
 
       <Footer />
