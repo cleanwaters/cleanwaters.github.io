@@ -9,20 +9,14 @@ const validate = (values) => {
   const errors = {};
   if (!values.firstName) {
     errors.firstName = 'Required';
-  } else if (values.firstName.length > 15) {
-    errors.firstName = 'Must be 15 characters or less';
   }
 
   if (!values.contactNumber) {
     errors.contactNumber = 'Required';
-  } else if (values.contactNumber.length > 20) {
-    errors.contactNumber = 'Must be 20 characters or less';
   }
 
   if (!values.message) {
     errors.message = 'Required';
-  } else if (values.message.length > 20) {
-    errors.message = 'Must be 20 characters or less';
   }
 
   if (!values.email) {
@@ -155,6 +149,7 @@ export default function ContactForm() {
             label='Send'
             backgroundColor='#0170B9'
             primary
+            size={'large'}
             type='submit'
           />
         </div>
