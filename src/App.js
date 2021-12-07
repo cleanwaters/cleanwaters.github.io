@@ -18,6 +18,7 @@ import CaseStudiesPage from './pages/case-studies/CaseStudiesPage';
 import AboutUsPage from './pages/about-us/AboutUsPage';
 import OurPartnersPage from './pages/our-partners/OurPartnersPage';
 import BackgroundPage from './pages/BackgroundPage';
+import SailGP from './pages/sail-gp/SailGP';
 
 export const StyledBackgroundPattern = styled.div`
   position: absolute;
@@ -53,7 +54,7 @@ function App() {
       <Route exact={true} path='/case-studies' element={<CaseStudiesPage />} />
       <Route exact={true} path='/about-us' element={<AboutUsPage />} />
       <Route exact={true} path='/our-partners' element={<OurPartnersPage />} />
-      <Route exact={true} path='/contact' element={<Contact />} />
+      <Route exact={true} path='/sail-gp' element={<SailGP />} />
 
       <Route path='*' element={<div> not found </div>} />
     </Routes>

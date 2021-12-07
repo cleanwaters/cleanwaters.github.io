@@ -18,6 +18,10 @@ const navbarLinks = [
         url: '/#/case-studies',
     },
     {
+        name: 'Sail GP',
+        url: '/#/sail-gp',
+    },
+    {
         name: 'About Us',
         url: '/#/about-us',
     },
