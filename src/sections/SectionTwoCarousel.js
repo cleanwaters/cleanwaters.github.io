@@ -1,25 +1,11 @@
 import SectionTwoCarouselItem from './SectionTwoCarouselItem';
-
-import {
-  StyledLayoutContainer,
-  StyledSection,
-} from '../components/styled-shared';
-import { Button } from '../components/button/Button';
 import styled from 'styled-components';
 import { Carousel } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faAngleLeft,
-  faAngleRight,
-  faCoffee,
-} from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
-import { Controller, Scene } from 'react-scrollmagic';
-import { Tween, Timeline } from 'react-gsap';
-import { StyledBackgroundPattern } from '../App';
-import { listCarouselItem, SectionTwo } from './SectionTwo';
-import { sectionTwoCarouselItems } from './SectionTwoBottleAnimation';
+import { listCarouselItem } from './SectionTwo';
 
 export const StyledSectionCardDefault = styled.div`
   background: #ffffff;
@@ -60,11 +46,12 @@ export default function SectionTwoCarousel({}) {
           <FontAwesomeIcon color='black' size='2x' icon={faAngleRight} />
         }
         style={{ width: '0 !important' }}
+        className='carousel_transition'
         data-aos='fade-down'
       >
         {listCarouselItem.map(function (item, i) {
           return (
-            <Carousel.Item key={i}>
+            <Carousel.Item key={i} className='carousel_transition'>
               <SectionTwoCarouselItem
                 image={item.image}
                 product={item.product}
