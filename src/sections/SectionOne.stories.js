@@ -14,6 +14,8 @@ import { BottleAnimations, BottleAnimations2 } from './BottleAnimations';
 import { SectionQW } from './SectionQW';
 import { ScrollMagicExampleBottles } from './ScrollMagicExampleBottles';
 import SectionTwoCarousel from './SectionTwoCarousel';
+import { ExampleAccordion } from './ExampleAccordion';
+import { ExampleAccordion2 } from './ExampleAccordion2';
 
 export default {
   title: 'Sections/Home/Section One',
@@ -69,3 +71,5 @@ export const BottleAnimationsStory2 = () => (
 export const Eight = () => <SectionMR />;
 export const Nine = () => <SectionAR />;
 export const FooterExample = () => <Footer />;
+export const StoryAccordion = () => <ExampleAccordion />;
+export const StoryAccordion2 = () => <ExampleAccordion2 />;

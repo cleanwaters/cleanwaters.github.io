@@ -55,6 +55,7 @@ function App() {
       <Route exact={true} path='/about-us' element={<AboutUsPage />} />
       <Route exact={true} path='/our-partners' element={<OurPartnersPage />} />
       <Route exact={true} path='/sail-gp' element={<SailGP />} />
+      <Route exact={true} path='/contact' element={<Contact />} />
 
       <Route path='*' element={<div> not found </div>} />
     </Routes>
