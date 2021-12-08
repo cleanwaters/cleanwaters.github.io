@@ -3,10 +3,20 @@ import { Footer } from "../../sections/Footer";
 
 import React from "react";
 import styled from 'styled-components';
+import { Col, Container, Image, Row } from 'react-bootstrap';
 
 
 const StyledJumbotron = styled.div`
-    margin-bottom:80vh;
+    
+    background:black;
+    height:100vh;
+    width:100vw;
+
+    position:relative;
+    top:0;
+    
+
+
     > img {
         width:100%;
         height:100vh;
@@ -16,6 +26,8 @@ const StyledJumbotron = styled.div`
         z-index: 1;
         top: 0;
         right: 0;
+
+        opacity:0.8;
     }
 `
 
@@ -26,6 +38,14 @@ const StyledJumbotronText = styled.div`
     width:35%;
     margin:auto auto;
     text-align:center;
+    
+    position:relative;
+    top:230px;
+
+    @media only screen and (max-width: 992px) {
+        width:75%;
+        top:300px;
+    }
 
     > div {
         margin : 13px 0px;
@@ -50,6 +70,42 @@ const StyledJumbotronText = styled.div`
     }
 `
 
+const StyledRightContent = styled.div`
+    display:flex;
+    flex-direction:column;
+
+    @media only screen and (min-width: 992px) {
+        margin:10px 70px;
+    }
+    
+    > img {
+        margin:10px auto;
+
+    }
+
+    > img:first-child {
+        height:40%;
+        width:50%;
+    }
+
+    > img:nth-child(2) {
+        height:40%;
+        width:30%;
+    }
+`
+
+const StyledContent = styled.div`
+    @media only screen and (min-width: 992px) {
+        display:flex;
+
+        > div {
+            width:50%;
+        }
+    }
+    
+
+`
+
 
 export default function SailGP(){
     return (
@@ -61,8 +117,8 @@ export default function SailGP(){
                     {/* <Navbar/> */}
                     <div
                         data-aos='fade-up'
-                        style={{ zIndex: 4, position: 'relative', marginTop: '10vw' }}
-                        className='d-md-flex'
+                        style={{ zIndex: 4, position: 'relative'}}
+                        // className='d-md-flex'
                     >
                         <StyledJumbotronText>
                             <div>
@@ -85,6 +141,17 @@ export default function SailGP(){
                         </StyledJumbotronText>
                     </div>
                 </StyledJumbotron>
+                <StyledContent>
+                    <div style={{padding:0}} className="md-flex">
+                        <Image style={{width:'100%'}} src={ process.env.PUBLIC_URL + `/images/sailgp/Map Photo.png`} />
+                    </div>
+                    <div>
+                        <StyledRightContent>
+                            <Image src={ process.env.PUBLIC_URL + `/images/sailgp/sail gp logo.png`} />
+                            <Image src={ process.env.PUBLIC_URL + `/images/nav_logo.jpg`} />
+                        </StyledRightContent>
+                    </div>
+                </StyledContent>
             </div>
             <Footer/>
         </div>
