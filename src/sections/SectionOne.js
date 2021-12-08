@@ -123,9 +123,9 @@ export function SectionOne() {
           </div>
         </div>
         <div className='jumbotron jumbotron-fluid' style={{ background: 'black' }}>
-          <video autoPlay muted loop>
-            <source crossorigin playsinline
-              src={process.env.PUBLIC_URL + `/videos/What Is SailGP.mp4`}
+          <video autoPlay muted loop crossorigin playsinline>
+            <source 
+              src={process.env.PUBLIC_URL + `/videos/final_61b0327d19d9b800c2eb09ba_311269.mp4`}
               type='video/mp4'
             />
           </video>
@@ -148,23 +148,13 @@ export function SectionOne() {
               <div className='d-flex'>
                 <Button
                   size='large'
-                  label='Our product'
-                  onClick={() => navigate('/our-solution')}
+                  label='Find out more'
+                  onClick={() => navigate('/sail-gp')}
                   style={{
                     color: 'white',
                     fontFamily: 'Nunito',
                     marginRight: '1em',
                     background: '#046EB6',
-                  }}
-                />
-                <Button
-                  size='large'
-                  label='About us'
-                  onClick={() => navigate('/about-us')}
-                  style={{
-                    color: 'white',
-                    fontFamily: 'Nunito',
-                    borderColor: 'white',
                   }}
                 />
               </div>
