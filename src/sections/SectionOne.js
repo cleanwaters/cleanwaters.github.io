@@ -71,7 +71,46 @@ export function SectionOne() {
 
   return (
     <StyledSectionOne>
-      <Carousel id="section-one-lp" responsive={responsive} showDots={true} autoPlay={true} autoPlaySpeed={6000} infinite={true}>
+      <Carousel id="section-one-lp" responsive={responsive} showDots={true} autoPlay={true} autoPlaySpeed={2500} infinite={true}>
+      <div className='jumbotron jumbotron-fluid' style={{ background: 'black' }}>
+          <video autoPlay muted loop crossorigin playsinline>
+            <source 
+              src={process.env.PUBLIC_URL + `/videos/final_61b0327d19d9b800c2eb09ba_311269.mp4`}
+              type='video/mp4'
+            />
+          </video>
+          {/* <Navbar/> */}
+          <div
+            data-aos='fade-up'
+            style={{ zIndex: 4, position: 'relative', marginTop: '20vw' }}
+            className='d-md-flex'
+          >
+            <div className='col-md-6'>
+              <StyledHeaderH1
+                className='header-title-color'
+                style={{ fontSize: '48px' }}
+              >
+                Clean Waters
+              </StyledHeaderH1>
+              <StyledSectionOneP className='mb-3'>
+                Proud Sponsor of the Sail Grand Prix
+              </StyledSectionOneP>
+              <div className='d-flex'>
+                <Button
+                  size='large'
+                  label='Find out more'
+                  onClick={() => navigate('/sail-gp')}
+                  style={{
+                    color: 'white',
+                    fontFamily: 'Nunito',
+                    marginRight: '1em',
+                    background: '#046EB6',
+                  }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <div className='jumbotron jumbotron-fluid' style={{ background: 'black' }}>
           <video autoPlay muted loop crossorigin playsinline>
             <source
@@ -90,7 +129,7 @@ export function SectionOne() {
                 className='header-title-color'
                 style={{ fontSize: '48px' }}
               >
-                Clean Water
+                Clean Waters
               </StyledHeaderH1>
               <StyledSectionOneP className='mb-3'>
                 We use Air as a natural raw material to make top-quality drinking
@@ -116,45 +155,6 @@ export function SectionOne() {
                     color: 'white',
                     fontFamily: 'Nunito',
                     borderColor: 'white',
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='jumbotron jumbotron-fluid' style={{ background: 'black' }}>
-          <video autoPlay muted loop crossorigin playsinline>
-            <source 
-              src={process.env.PUBLIC_URL + `/videos/final_61b0327d19d9b800c2eb09ba_311269.mp4`}
-              type='video/mp4'
-            />
-          </video>
-          {/* <Navbar/> */}
-          <div
-            data-aos='fade-up'
-            style={{ zIndex: 4, position: 'relative', marginTop: '20vw' }}
-            className='d-md-flex'
-          >
-            <div className='col-md-6'>
-              <StyledHeaderH1
-                className='header-title-color'
-                style={{ fontSize: '48px' }}
-              >
-                Clean Water
-              </StyledHeaderH1>
-              <StyledSectionOneP className='mb-3'>
-                Proud Sponsor of the Sail Grand Prix
-              </StyledSectionOneP>
-              <div className='d-flex'>
-                <Button
-                  size='large'
-                  label='Find out more'
-                  onClick={() => navigate('/sail-gp')}
-                  style={{
-                    color: 'white',
-                    fontFamily: 'Nunito',
-                    marginRight: '1em',
-                    background: '#046EB6',
                   }}
                 />
               </div>
