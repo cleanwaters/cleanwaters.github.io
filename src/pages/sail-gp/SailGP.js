@@ -4,6 +4,8 @@ import { Footer } from "../../sections/Footer";
 import React from "react";
 import styled from 'styled-components';
 import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Button } from '../../components/button/Button';
+import { useNavigate } from 'react-router';
 
 
 const StyledJumbotron = styled.div`
@@ -12,9 +14,12 @@ const StyledJumbotron = styled.div`
     height:100vh;
     width:100vw;
 
+    @media only screen and (min-width: 300px) {
+        height:100vh;
+    }
+
     position:relative;
     top:0;
-    
 
 
     > img {
@@ -35,38 +40,76 @@ const StyledJumbotronText = styled.div`
     color:white;
     font-family: Dosis;
 
-    width:35%;
     margin:auto auto;
     text-align:center;
     
     position:relative;
-    top:230px;
 
-    @media only screen and (max-width: 992px) {
-        width:75%;
-        top:300px;
+    @media only screen and (min-width: 300px) {
+        width:93%;
+        top:5vw;
+
+        > div {
+            margin:6px 0px;
+        }
+
+        > div:first-child {
+            font-weight: 700;
+            font-size:26px;
+            line-height: 42px;
+        }
+
+        > div:nth-child(2), div:nth-child(4) {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    
+        > div:nth-child(3){
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        > div:last-child {
+            margin-top:12px;
+        }
+
+        > div:last-child > div > button, > div:last-child > div > a > button{
+            font-size:12px;
+        }
     }
 
-    > div {
-        margin : 13px 0px;
-    }
+    @media only screen and (min-width: 600px){
+        width:55%;
+        top:20vw;
 
-    > div:first-child {
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 65px;
-        color: white;
-        font-family: Nunito;
+        > div {
+            margin : 13px 0px;
+        }
+    
+        > div:first-child {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 65px;
+            color: white;
+            font-family: Nunito;
+        }
+    
+        > div:nth-child(2), div:nth-child(4) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    
+        > div:nth-child(3){
+            font-weight: 600;
+            font-size: 32px;
+        }
+    
     }
+    
 
-    > div:nth-child(2), div:nth-child(4) {
-        font-size: 18px;
-        line-height: 24px;
-    }
-
-    > div:nth-child(3){
-        font-weight: 600;
-        font-size: 32px;
+    @media only screen and (min-width: 900px){
+        width:35%;
+        top:13vw;
     }
 `
 
@@ -108,6 +151,8 @@ const StyledContent = styled.div`
 
 
 export default function SailGP(){
+    let navigate = useNavigate();
+
     return (
         <div>
             <NavbarSecond />
@@ -137,6 +182,32 @@ export default function SailGP(){
                             </div>
                             <div>
                                 We will be at the Sail GP Village at Barangaroo. All competitors and spectators are welcome. Come taste the purest water from air generated using solar power – truly a world-first!
+                            </div>
+                            <div>
+                                <div>
+                                    <Button
+                                    size='large'
+                                    label='Contact Us'
+                                    onClick={() => navigate('/contact')}
+                                    style={{
+                                        color: 'white',
+                                        fontFamily: 'Nunito',
+                                        marginRight: '1em',
+                                    }}
+                                    />
+                                    <a target="_blank" href="https://sailgp.com/races/australia-sail-grand-prix-event-page/">
+                                    <Button
+                                    size='large'
+                                    label='Find Out More'
+                                    style={{
+                                        color: 'white',
+                                        fontFamily: 'Nunito',
+                                        borderColor: 'white',
+                                        background: '#046EB6',
+                                    }}
+                                    />
+                                    </a>
+                                </div>
                             </div>
                         </StyledJumbotronText>
                     </div>
