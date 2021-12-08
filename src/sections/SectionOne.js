@@ -73,7 +73,7 @@ export function SectionOne() {
     <StyledSectionOne>
       <Carousel id="section-one-lp" responsive={responsive} showDots={true} autoPlay={true} autoPlaySpeed={6000} infinite={true}>
         <div className='jumbotron jumbotron-fluid' style={{ background: 'black' }}>
-          <video autoPlay muted loop>
+          <video autoPlay muted loop crossorigin playsinline>
             <source
               src={process.env.PUBLIC_URL + `/videos/production ID_3958714.mp4`}
               type='video/mp4'
@@ -124,8 +124,8 @@ export function SectionOne() {
         </div>
         <div className='jumbotron jumbotron-fluid' style={{ background: 'black' }}>
           <video autoPlay muted loop>
-            <source
-              src={process.env.PUBLIC_URL + `/videos/what is sailgp123.mp4`}
+            <source crossorigin playsinline
+              src={process.env.PUBLIC_URL + `/videos/What Is SailGP.mp4`}
               type='video/mp4'
             />
           </video>

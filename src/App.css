@@ -1124,6 +1124,7 @@ TABLE OF CONTENT
 .jumbotron {
   position: relative;
   overflow: hidden;
+  height: 91vh;
 }
 
 .jumbotron video {
