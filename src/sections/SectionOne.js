@@ -48,7 +48,7 @@ export function SectionOne() {
 
   return (
     <StyledSectionOne>
-      <Carousel id="section-one-lp" responsive={responsive} showDots={true} autoPlay={true} autoPlaySpeed={3500} infinite={true}>
+      <Carousel id="section-one-lp" responsive={responsive} showDots={true} autoPlay={true} autoPlaySpeed={5000} infinite={true}>
       <LandinPageJumbotron
       video={'final_61b0327d19d9b800c2eb09ba_311269.mp4'}
       paragraph={'Proud Sponsor of the Sail Grand Prix'}

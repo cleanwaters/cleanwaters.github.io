@@ -70,7 +70,7 @@ const StyledJumbotronText = styled.div`
         }
 
         > div:last-child {
-            margin-top:12px;
+            margin-top:8vw;
         }
 
         > div:last-child > div > button, > div:last-child > div > a > button{
@@ -102,6 +102,10 @@ const StyledJumbotronText = styled.div`
         > div:nth-child(3){
             font-weight: 600;
             font-size: 32px;
+        }
+
+        > div:last-child {
+            margin-top:2.3vw;
         }
     
     }
@@ -193,6 +197,7 @@ export default function SailGP(){
                                         color: 'white',
                                         fontFamily: 'Nunito',
                                         marginRight: '1em',
+                                        background: '#046EB6',
                                     }}
                                     />
                                     <a target="_blank" href="https://sailgp.com/races/australia-sail-grand-prix-event-page/">
@@ -203,7 +208,7 @@ export default function SailGP(){
                                         color: 'white',
                                         fontFamily: 'Nunito',
                                         borderColor: 'white',
-                                        background: '#046EB6',
+                                        
                                     }}
                                     />
                                     </a>
