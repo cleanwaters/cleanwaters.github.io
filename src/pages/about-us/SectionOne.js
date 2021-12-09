@@ -55,7 +55,7 @@ export default function SectionOne({ aboutUs }) {
         <div className='row'>
           {aboutUs.teamList.map((teamItem) => (
             <div className='col-md-4'>
-              <StyledCWCard className='my-4 p-5'>
+              <StyledCWCard className='my-4 p-ww'>
                 <img
                   src={teamItem.image}
                   className='img-fluid mb-3 black_white_image'
@@ -63,7 +63,7 @@ export default function SectionOne({ aboutUs }) {
                 />
                 <div style={{ position: 'relative' }}>
                   {teamItem.subName ? (
-                    <>
+                    <div>
                       <StyledSectionOneP className='m-0'>
                         {teamItem.name}
                       </StyledSectionOneP>
@@ -77,9 +77,15 @@ export default function SectionOne({ aboutUs }) {
                       >
                         {teamItem.subName}
                       </StyledSectionLightP>
-                    </>
+
+                      <div style={{ padding: '8px' }}></div>
+                    </div>
                   ) : (
-                    <StyledSectionOneP>{teamItem.name}</StyledSectionOneP>
+                    <div
+                    // style={{}}
+                    >
+                      <StyledSectionOneP>{teamItem.name}</StyledSectionOneP>
+                    </div>
                   )}
                 </div>
               </StyledCWCard>
