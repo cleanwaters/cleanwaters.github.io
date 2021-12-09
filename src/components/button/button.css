@@ -1,5 +1,5 @@
 .storybook-button {
-  border: 1px solid #00C0FF;
+  border: 1px solid #00c0ff;
   box-sizing: border-box;
   border-radius: 50px;
 
@@ -7,17 +7,15 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  background: #00C0FF;
-
+  background: #00c0ff;
 }
 .storybook-button--primary {
   color: white;
 }
 .storybook-button--secondary {
-  color: #00C0FF;
+  color: #00c0ff;
   background-color: transparent;
-  border: 1px solid #00C0FF;
-
+  border: 1px solid #00c0ff;
 }
 .storybook-button--small {
   font-size: 12px;
@@ -30,4 +28,9 @@
 .storybook-button--large {
   font-size: 16px;
   padding: 12px 24px;
+}
+
+.storybook-button--massive {
+  font-size: 16px;
+  padding: 14px 48px;
 }

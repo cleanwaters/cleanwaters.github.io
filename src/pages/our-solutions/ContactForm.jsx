@@ -60,7 +60,7 @@ export default function ContactForm() {
   });
 
   return (
-    <form onSubmit={formik.handleSubmit} className='text-left'>
+    <form onSubmit={formik.handleSubmit} className='text-left container px-5'>
       <div className='form d-md-flex'>
         <div className='col  py-4'>
           <input
@@ -75,6 +75,7 @@ export default function ContactForm() {
               boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)',
               border: 0,
               borderRadius: '8px',
+              height: '72px',
             }}
           />
           {formik.errors.firstName ? (
@@ -96,6 +97,7 @@ export default function ContactForm() {
               boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)',
               border: 0,
               borderRadius: '8px',
+              height: '72px',
             }}
           />
           {formik.errors.email ? (
@@ -116,6 +118,7 @@ export default function ContactForm() {
               boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)',
               border: 0,
               borderRadius: '8px',
+              height: '72px',
             }}
           />
           {formik.errors.contactNumber ? (
@@ -132,11 +135,13 @@ export default function ContactForm() {
             id='message'
             onChange={formik.handleChange}
             value={formik.values.message}
+            placeholder='Enter your message here'
             rows='3'
             style={{
               boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.08)',
               border: 0,
               borderRadius: '8px',
+              height: '200px',
             }}
           />
           {formik.errors.message ? (
@@ -144,14 +149,16 @@ export default function ContactForm() {
           ) : null}
         </div>
 
-        <div className='col-md-4 text-center my-4'>
-          <Button
-            label='Send'
-            backgroundColor='#0170B9'
-            primary
-            size={'large'}
-            type='submit'
-          />
+        <div className='col-md-4 text-center my-4 d-md-flex justify-content-center'>
+          <div className='align-self-end'>
+            <Button
+              label='Send'
+              backgroundColor='#0170B9'
+              primary
+              size={'massive'}
+              type='submit'
+            />
+          </div>
         </div>
       </div>
     </form>
