@@ -58,7 +58,7 @@ export function SectionOne() {
         id='section-one-lp'
         responsive={responsive}
         showDots={true}
-        autoPlay={false}
+        autoPlay={true}
         autoPlaySpeed={5000}
         containerClass='carousel-container'
         infinite={true}

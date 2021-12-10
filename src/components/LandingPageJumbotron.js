@@ -58,6 +58,13 @@ const StyledJumbotron = styled.div`
   }
 `;
 
+const StyledJumbotronDetail = styled.div`
+  padding: 0 8em;
+  @media (max-width: 768px) {
+    padding: 0 1em;
+  }
+`;
+
 export default function LandinPageJumbotron({
   video,
   button,
@@ -78,10 +85,14 @@ export default function LandinPageJumbotron({
       {/* <Navbar/> */}
       <div
         data-aos='fade-up'
-        className='d-md-flex align-items-end'
+        className='d-flex align-items-end pb-4'
         style={{ height: '100%', margin: '0' }}
       >
-        <div className='col-md-6' style={{ padding: '0 8em' }}>
+        <StyledJumbotronDetail
+          className='col-md-6'
+
+          // style={{ padding: '0 8em' }}
+        >
           <StyledHeaderH1
             className='header-title-color'
             style={{ fontSize: '48px' }}
@@ -90,7 +101,7 @@ export default function LandinPageJumbotron({
           </StyledHeaderH1>
           <StyledSectionOneP className='mb-3'>{paragraph}</StyledSectionOneP>
           <div className='d-flex'>{button}</div>
-        </div>
+        </StyledJumbotronDetail>
       </div>
     </StyledJumbotron>
   );
