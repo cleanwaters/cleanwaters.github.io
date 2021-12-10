@@ -78,10 +78,10 @@ export default function LandinPageJumbotron({
       {/* <Navbar/> */}
       <div
         data-aos='fade-up'
-        className='d-md-flex'
-        // style={{padding: '0 6em'}}
+        className='d-md-flex align-items-end'
+        style={{ height: '100%', margin: '0' }}
       >
-        <div className='col-md-6'>
+        <div className='col-md-6' style={{ padding: '0 8em' }}>
           <StyledHeaderH1
             className='header-title-color'
             style={{ fontSize: '48px' }}

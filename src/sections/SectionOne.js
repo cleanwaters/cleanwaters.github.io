@@ -39,6 +39,15 @@ const responsive = {
   },
 };
 
+const CustomRightArrow = ({ onClick, ...rest }) => {
+  const {
+    onMove,
+    carouselState: { currentSlide, deviceType },
+  } = rest;
+  // onMove means if dragging or swiping in progress.
+  return <button onClick={() => onClick()}>right arrow</button>;
+};
+
 export function SectionOne() {
   let navigate = useNavigate();
   useEffect(() => {});
@@ -49,9 +58,13 @@ export function SectionOne() {
         id='section-one-lp'
         responsive={responsive}
         showDots={true}
-        autoPlay={true}
+        autoPlay={false}
         autoPlaySpeed={5000}
+        containerClass='carousel-container'
         infinite={true}
+        removeArrowOnDeviceType={['tablet', 'mobile']}
+        itemClass='carousel-item-padding-40-px'
+        // customRightArrow={<CustomRightArrow />}
       >
         <LandinPageJumbotron
           video={'final_61b0327d19d9b800c2eb09ba_311269.mp4'}
