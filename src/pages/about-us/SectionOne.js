@@ -16,22 +16,17 @@ export const StyledSectionLightP = styled.p`
   text-align: center;
 `;
 
-
 function CustomToggle({ children, eventKey }) {
   const decoratedOnClick = useAccordionButton(eventKey, () =>
     console.log('totally custom!', eventKey)
   );
 
   return (
-    <div 
-    onMouseLeave={decoratedOnClick}
-    onMouseEnter={decoratedOnClick}
-    >
+    <div onMouseLeave={decoratedOnClick} onMouseEnter={decoratedOnClick}>
       {children}
     </div>
   );
 }
-
 
 export default function SectionOne({ aboutUs }) {
   return (
@@ -74,42 +69,50 @@ export default function SectionOne({ aboutUs }) {
           <div className='row'>
             {aboutUs.teamList.map((teamItem, index) => (
               <div className='col-md-4'>
-                <StyledCWCard className='my-4 p-5'>
+                <StyledCWCard className='my-4 p-ww'>
                   <CustomToggle eventKey={index}>
-                  <img
-                    src={teamItem.image}
-                    className='img-fluid mb-3 black_white_image'
-                    height={'150px'}
-                  />
-                  <div style={{ position: 'relative' }}>
-                    <div style={{height:'27px'}}>
-                    {teamItem.subName ? (
-                        <>
-                          <StyledSectionOneP className='m-0'>
-                            {teamItem.name}
-                          </StyledSectionOneP>
-                          <StyledSectionLightP
-                            className='text-center'
-                            style={{
-                              position: 'absolute',
-                              color: '#767676',
-                              width: '100%',
-                            }}
+                    <img
+                      src={teamItem.image}
+                      className='img-fluid mb-3 black_white_image'
+                      height={'150px'}
+                    />
+                    <div style={{ position: 'relative' }}>
+                      <div style={{ height: '27px' }}>
+                        {teamItem.subName ? (
+                          <div>
+                            <StyledSectionOneP className='m-0'>
+                              {teamItem.name}
+                            </StyledSectionOneP>
+                            <StyledSectionLightP
+                              className='text-center'
+                              style={{
+                                position: 'absolute',
+                                color: '#767676',
+                                width: '100%',
+                              }}
+                            >
+                              {teamItem.subName}
+                            </StyledSectionLightP>
+
+                            <div style={{ padding: '8px' }}></div>
+                          </div>
+                        ) : (
+                          <div
+                          // style={{}}
                           >
-                            {teamItem.subName}
-                          </StyledSectionLightP>
-                        </>
-                    ) : (
-                        <StyledSectionOneP>{teamItem.name}</StyledSectionOneP>
-                    )}
+                            <StyledSectionOneP>
+                              {teamItem.name}
+                            </StyledSectionOneP>
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  </div>
                   </CustomToggle>
                   <Accordion.Collapse eventKey={index}>
-                    <div style={{marginTop:'40px'}}>
+                    <div style={{ marginTop: '40px' }}>
                       {teamItem.description}
                     </div>
-                  </Accordion.Collapse>    
+                  </Accordion.Collapse>
                 </StyledCWCard>
               </div>
             ))}
