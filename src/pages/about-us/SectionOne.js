@@ -6,6 +6,7 @@ import {
 } from '../../components/typography/Paragraph';
 import { StyledCWCard } from '../../sections/CWCard';
 import styled from 'styled-components';
+import { Accordion, useAccordionButton } from 'react-bootstrap';
 
 export const StyledSectionLightP = styled.p`
   color: var(--ui-color-accent);
@@ -14,6 +15,18 @@ export const StyledSectionLightP = styled.p`
   font-style: normal;
   text-align: center;
 `;
+
+function CustomToggle({ children, eventKey }) {
+  const decoratedOnClick = useAccordionButton(eventKey, () =>
+    console.log('totally custom!', eventKey)
+  );
+
+  return (
+    <div onMouseLeave={decoratedOnClick} onMouseEnter={decoratedOnClick}>
+      {children}
+    </div>
+  );
+}
 
 export default function SectionOne({ aboutUs }) {
   return (
@@ -52,46 +65,59 @@ export default function SectionOne({ aboutUs }) {
       </div>
 
       <div className='container-fluid mt-5'>
-        <div className='row'>
-          {aboutUs.teamList.map((teamItem) => (
-            <div className='col-md-4'>
-              <StyledCWCard className='my-4 p-ww'>
-                <img
-                  src={teamItem.image}
-                  className='img-fluid mb-3 black_white_image'
-                  height={'150px'}
-                />
-                <div style={{ position: 'relative' }}>
-                  {teamItem.subName ? (
-                    <div>
-                      <StyledSectionOneP className='m-0'>
-                        {teamItem.name}
-                      </StyledSectionOneP>
-                      <StyledSectionLightP
-                        className='text-center'
-                        style={{
-                          position: 'absolute',
-                          color: '#767676',
-                          width: '100%',
-                        }}
-                      >
-                        {teamItem.subName}
-                      </StyledSectionLightP>
+        <Accordion>
+          <div className='row'>
+            {aboutUs.teamList.map((teamItem, index) => (
+              <div className='col-md-4'>
+                <StyledCWCard className='my-4 p-ww'>
+                  <CustomToggle eventKey={index}>
+                    <img
+                      src={teamItem.image}
+                      className='img-fluid mb-3 black_white_image'
+                      height={'150px'}
+                    />
+                    <div style={{ position: 'relative' }}>
+                      <div style={{ height: '27px' }}>
+                        {teamItem.subName ? (
+                          <div>
+                            <StyledSectionOneP className='m-0'>
+                              {teamItem.name}
+                            </StyledSectionOneP>
+                            <StyledSectionLightP
+                              className='text-center'
+                              style={{
+                                position: 'absolute',
+                                color: '#767676',
+                                width: '100%',
+                              }}
+                            >
+                              {teamItem.subName}
+                            </StyledSectionLightP>
 
-                      <div style={{ padding: '8px' }}></div>
+                            <div style={{ padding: '8px' }}></div>
+                          </div>
+                        ) : (
+                          <div
+                          // style={{}}
+                          >
+                            <StyledSectionOneP>
+                              {teamItem.name}
+                            </StyledSectionOneP>
+                          </div>
+                        )}
+                      </div>
                     </div>
-                  ) : (
-                    <div
-                    // style={{}}
-                    >
-                      <StyledSectionOneP>{teamItem.name}</StyledSectionOneP>
+                  </CustomToggle>
+                  <Accordion.Collapse eventKey={index}>
+                    <div style={{ marginTop: '40px' }}>
+                      {teamItem.description}
                     </div>
-                  )}
-                </div>
-              </StyledCWCard>
-            </div>
-          ))}
-        </div>
+                  </Accordion.Collapse>
+                </StyledCWCard>
+              </div>
+            ))}
+          </div>
+        </Accordion>
       </div>
     </section>
   );

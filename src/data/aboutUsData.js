@@ -21,48 +21,60 @@ export const aboutUsData = {
     {
       name: 'Peter Yialas - Executive Chair',
       image: '/images/aboutus/team_1.png',
+      description:
+        'Peter is a highly experienced entrepreneur and business leader with experience across Accenture, CSC and other tier 1 Australian and global organisations. From those beginnings he started DX Solutions in 2008 as co–founder and led it to a successful exit in 2019. DX made the BRW fast 100 in both 2014 and 2015. In 2016 Peter was recognised by CEO Magazine as a top CEO in the IT & Telco sector.',
     },
     // 2
     {
       name: 'Will Jefferies - Advisor',
       image: '/images/aboutus/team_2.png',
+      description:
+        'Highly experienced communicator and political commentator with connections far and wide across the political and mineral resources landscape, both locally and internationally',
     },
     // 3
     {
       name: 'Warren Mundine - Independent Advisor',
       image: '/images/aboutus/team_3.png',
+      description: '',
     },
     // 4
     {
       name: 'Pamela Yialas - Communications and PR',
       image: '/images/aboutus/team_4.png',
+      description: '',
     },
     // 5
     {
       name: 'Brian Vowels - Advisor',
       image: '/images/aboutus/team_5.png',
+      description:
+        'An experienced finance professional having spent my entire 30 year career in the insurance and reinsurance industry working both locally and internationally in organisations ranging from start-ups to listed entities, both on the broking and underwriting side of the business.',
     },
     // 6
     {
       name: 'Alex Wymarra - Independent Advisor',
       subName: 'Representing the Treaty Council Worldwide',
       image: '/images/aboutus/team_6.png',
+      description: '',
     },
     // 7
     {
       name: 'Bijang Slabb - Brand Ambassador',
       image: '/images/aboutus/team_7.png',
+      description: '',
     },
     // 8
     {
       name: 'Dr Jennie Mallela - Independent Advisor',
       image: '/images/aboutus/team_8.png',
+      description: '',
     },
     // 9
     {
       name: 'Antoine Jaja - Independent Advisor',
       subName: 'AKA Jack the Super Prawn',
       image: '/images/aboutus/team_9.png',
+      description: '',
     },
   ],
 };
