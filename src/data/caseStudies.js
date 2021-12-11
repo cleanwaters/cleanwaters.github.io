@@ -11,6 +11,7 @@ export const caseStudiesData = [
       'Pictured below is one of Watergen’s Gen L machines installed on top of a skyscraper with a piping system that enables it to provide water for the building.',
     ],
     images: ['/images/casestudies/study_1_img_full.png'],
+    imageSize: 6,
   },
   {
     // 2
@@ -22,6 +23,7 @@ export const caseStudiesData = [
       'Watergen’s CEO revealed that “this is just the beginning, and that together we will bring even more devices to the region and to Native American communities around the country.”',
     ],
     images: ['/images/casestudies/study_2_img.png'],
+    imageSize: 6,
   },
   {
     // 3
@@ -32,6 +34,7 @@ export const caseStudiesData = [
       'The Gen-M has been set up so bubblers and taps use the water the machine produces from the air.',
     ],
     images: ['/images/casestudies/study_3_img.png'],
+    imageSize: 6,
   },
   {
     // 4
@@ -50,7 +53,7 @@ export const caseStudiesData = [
       'Kyrgyzstan and Tajikstanhave, in recent years, insisted on making hydro–power dams at the headwaters for the two main rivers bringing freshwater supply into Uzbekistan, Amu Darya and SyrDarya. The dams undermined Uzbekistan‘s ability to use both rivers as sources for freshwater',
       'Watergenprovides clean fresh drinking water created from the GEN–M AWG to hundreds of children and staff living in an orphanage in Uzbekistan’s city of Bukhara.',
     ],
-    images: ['/images/casestudies/study_2_img.png'],
+    images: ['/images/casestudies/study_5_img.png'],
   },
   {
     // 6
@@ -60,7 +63,7 @@ export const caseStudiesData = [
       'The shortage condition is associated with the lack of rain causing series drought due to the El Niño phenomenon',
       'Watergeninstalled GEN–M in the International Christian School located in San Miguel de Santo Domingo. It is the first school in Central America and the second in Latin America providing children with fresh drinking water from air',
     ],
-    images: ['/images/casestudies/study_2_img.png'],
+    images: ['/images/casestudies/study_6_img.png'],
   },
   {
     // 7
@@ -101,6 +104,6 @@ export const caseStudiesData = [
       'Maintaining sanitation and preventing disease in relief camps housing more than 800,000 people was a significant challenge',
       'Two GEN–M units were installed in Alappuzha and Pathanamthittadistricts of Kerala by Watergenand TATA Trusts',
     ],
-    images: ['/images/casestudies/study_2_img.png'],
+    images: ['/images/casestudies/study_10_img.png'],
   },
 ];
