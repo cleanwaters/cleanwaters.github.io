@@ -171,7 +171,7 @@ export default function SailGP(){
                     >
                         <StyledJumbotronText>
                             <div>
-                                Clean Waters is a proud sponsor of Sail Grand Prix
+                                Clean Waters is a proud supplier of Sail Grand Prix
                             </div>
                             <div>
                                 <div>
