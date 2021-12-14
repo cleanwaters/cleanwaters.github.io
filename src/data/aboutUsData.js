@@ -35,7 +35,7 @@ export const aboutUsData = {
     {
       name: 'Warren Mundine - Independent Advisor',
       image: '/images/aboutus/team_3.png',
-      description: '',
+      description: '"A highly respected and influential businessman, political strategist and advocate for empowering Australia’s First People, he is passionate about supporting local jobs and opportunities in Australia’s regions. Warren believes that small business is the backbone of Australia’s economy, and has successfully invested his own time and money in generating business opportunities for young Australians. Nyunggai Warren Mundine is a member of the Bundjalung, Gumbaynggirr and Yuin people of NSW."',
     },
     // 4
     {
