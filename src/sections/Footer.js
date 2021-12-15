@@ -34,7 +34,7 @@ export function Footer() {
               />
             </div>
             <div className='align-self-center'>
-              <h3 className='py-4'>Clean Waters Australia</h3>
+              <h3 className='py-4'>Clean Waters Oceania</h3>
               <div className='d-flex justify-content-between'>
                 <Link style={{ color: 'white' }} to='/about-us'>
                   About Us
