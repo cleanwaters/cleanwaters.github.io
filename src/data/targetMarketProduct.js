@@ -5,7 +5,7 @@ export const targetMarketProduct = [
       'Outdoor recreation community – hard to generate water on the go',
       'Defence and Special Forces – water access, no matter the location or nature of deployment',
     ],
-    capacity: 20,
+    capacity: 30,
     image: 'mobilebox.svg',
     detailTargets: [
       'The Mobile Box provides up to 20 liters of fresh drinking water generated from the air',
@@ -43,7 +43,7 @@ export const targetMarketProduct = [
       'Weekenders – homes in the country with limited or intermittent water supply; thousands of these properties across northern and western NSW alone',
       'Landowners/agriculture – poor bore water quality, no town water, but desire for clean drinking water',
     ],
-    capacity: 220,
+    capacity: 250,
     image: 'gen-m1.jpeg',
     detailTargets: [
       'Can produce 220 litres per day',
@@ -67,7 +67,7 @@ export const targetMarketProduct = [
       'Landowners/agriculture – poor bore water quality, no town water, but desire for clean drinking water',
       'Emergency – Drought, fire, flood, disaster zones with need for rapid deployment of emergency water supply',
     ],
-    capacity: 220,
+    capacity: 900,
     image: 'gen_m.png',
     detailTargets: [
       'Highly mobile medium scale water generator for schools, hospitals, commercial. centers and residential. buildings.',
@@ -84,13 +84,20 @@ export const targetMarketProduct = [
   },
   {
     title: 'Watergen On Board',
+    // targets: [
+    //   'Parks and public spaces',
+    //   'High density property developments',
+    //   'Remote mining and infrastructure - supply chain certainty',
+    //   'Local government - zero infrastructure water solutions',
+    // ],
     targets: [
-      'Parks and public spaces',
-      'High density property developments',
-      'Remote mining and infrastructure - supply chain certainty',
-      'Local government - zero infrastructure water solutions',
+      'Designed for long-distance travelers, Watergen Onboard generates up to 40 liters of water per day from the air',
+      'Our system can be installed on motorhomes, RVs, caravans, trucks, buses, luxury and VIP vehicles, trains and yachts',
+      'Our two-part installation includes the roof unit, which generates water from the air, and an internal unit that purifies, stores, and dispenses the water',
+      'Multi-step filtration cascade combined with high-end treatment technologies followed by a germicidal UV lamp. Vital minerals balance the water pH to achieve high purification and tasty drinking water',
+      'Powered by onboard 12V sockets',
     ],
-    capacity: 6000,
+    capacity: 50,
     image: 'gen_l.png',
     detailTargets: [
       'Designed for long-distance travelers, Watergen Onboard generates up to 40 liters of water per day from the air',

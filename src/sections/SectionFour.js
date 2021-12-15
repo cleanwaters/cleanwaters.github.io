@@ -35,6 +35,18 @@ export const StyledCardTopRightText = styled.div`
     font-size: 20px;
     position: relative;
   }
+
+  @media only screen and (min-width: 300px) {
+    div:nth-child(2) {
+      left: 3.3vw;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    div:nth-child(2) {
+      left: 0.6vw;
+    }
+  }
 `;
 
 export const StyledWhatWeDoDetails = styled.div`
@@ -70,7 +82,7 @@ export function SectionFour() {
                   />
                   <StyledCardTopRightText>
                     <div>Capacity</div>
-                    <div style={{ left: '1vw' }}>{item.capacity} L</div>
+                    <div>{item.capacity} L</div>
                   </StyledCardTopRightText>
                 </div>
               </StyledCapacityDropIconWrapper>
