@@ -41,7 +41,7 @@ export const aboutUsData = {
     {
       name: 'Pamela Yialas - Communications and PR',
       image: '/images/aboutus/team_4.png',
-      description: '',
+      description: "Pamela offers a full range of professional services as a consultant specialising in Event and Operation Management. She has worked with some of Australia's largest corporations and has gained an excellent project delivery reputation through global exposure. Pamela prides herself on being dynamic, diligent, and ensuring she is up to date with the latest technology in the events industry and assisting corporations to create strategies to improve productivity and efficiency.",
     },
     // 5
     {
@@ -55,26 +55,26 @@ export const aboutUsData = {
       name: 'Alex Wymarra - Independent Advisor',
       subName: 'Representing the Treaty Council Worldwide',
       image: '/images/aboutus/team_6.png',
-      description: '',
+      description: 'Alex Wymarra is the CEO of The Treaty Council. The Treaty Council is experienced with Indigenous land management and is passionate about helping other Clans and Nations access wealth and economic independence on country and in communities. They empower communities to grow on their own economy while culturally protecting country. The Treaty Council works with Indigenous Clans and Nations culturally, appropriately and is aware every Clan and Nation is different and has different customs, laws, wants and needs for country.',
     },
     // 7
     {
       name: 'Bijang Slabb - Brand Ambassador',
       image: '/images/aboutus/team_7.png',
-      description: '',
+      description: 'Bijang is an Indigenous artist, model and actor who currently works as an ambassador for Myer. He has previously worked with well-known brands such as Bonds, Billabong and Target. Bijang feels most comfortable in the water, growing up at Fingal Beach and nearby the Tweed River.',
     },
     // 8
     {
       name: 'Dr Jennie Mallela - Independent Advisor',
       image: '/images/aboutus/team_8.png',
-      description: '',
+      description: 'Dr Jennie Mallela is an environmental scientist of South American Indigenous heritage. She has two decades of experience working in Australia, Africa and the Caribbean. She conducts research that addresses real-world problems focusing on pollution and climate change. Dr Mallela works for the Australian National University and is a keen advocate for science and regularly advises government and industry in her role as an expert scientist. She has co-authored more than 40 research publications with over 130 international co-authors and her research is used by government and conservation managers.',
     },
     // 9
     {
       name: 'Antoine Jaja - Independent Advisor',
       subName: 'AKA Jack the Super Prawn',
       image: '/images/aboutus/team_9.png',
-      description: '',
+      description: 'The Creator and Author of “Jack the Super Prawn” is Antoine Jaja. Jack the Super Prawn is an appealing vibrant super prawn ocean hero, a fun loving and friendly animated character that is known for creating awareness on the impact of plastic pollution in our environment around the world. Antoine has written several children’s books. Two of the books entitled, Drastic Plastic and Pollution Solution, will be released in paperback in bookstores throughout Australia in 2021.',
     },
   ],
 };
