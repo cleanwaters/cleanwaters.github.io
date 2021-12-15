@@ -75,7 +75,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <p>Copyright © 2021 Clean Waters Australia</p>
+        <p>Copyright © 2021 Clean Waters Oceania</p>
       </div>
     </StyledFooter>
   );

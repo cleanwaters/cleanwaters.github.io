@@ -1147,3 +1147,22 @@ TABLE OF CONTENT
 .carousel_transition {
   transition: transform 0.3s ease-in-out !important;
 }
+
+
+@media only screen and (min-width: 300px) {
+  #sail-gp-image {
+    width:100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #sail-gp-image {
+    width:85%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #sail-gp-image {
+    width:60%;
+  }
+}
