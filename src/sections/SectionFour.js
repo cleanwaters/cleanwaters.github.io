@@ -38,7 +38,7 @@ export const StyledCardTopRightText = styled.div`
 
   @media only screen and (min-width: 300px) {
     div:nth-child(2) {
-      left: 3.3vw;
+      left: 3.2vw;
     }
   }
 
