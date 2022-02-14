@@ -58,7 +58,7 @@ export const targetMarketProduct = [
     ],
   },
   {
-    title: 'Gen-M',
+    title: 'Gen-Pro',
     targets: [
       'Parks and public spaces',
       'Low density property developments',
@@ -91,11 +91,11 @@ export const targetMarketProduct = [
     //   'Local government - zero infrastructure water solutions',
     // ],
     targets: [
-      'Designed for long-distance travelers, Watergen Onboard generates up to 40 liters of water per day from the air',
+      'Designed for long-distance travelers, Watergen Onboard generates up to 50 liters of water per day from the air',
       'Our system can be installed on motorhomes, RVs, caravans, trucks, buses, luxury and VIP vehicles, trains and yachts',
       'Our two-part installation includes the roof unit, which generates water from the air, and an internal unit that purifies, stores, and dispenses the water',
       'Multi-step filtration cascade combined with high-end treatment technologies followed by a germicidal UV lamp. Vital minerals balance the water pH to achieve high purification and tasty drinking water',
-      'Powered by onboard 12V sockets',
+      'Powered by 12V',
     ],
     capacity: 50,
     image: 'gen_l.png',

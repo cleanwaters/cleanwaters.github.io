@@ -60,9 +60,6 @@ export const ExampleAccordion2 = () => {
               <Accordion.Collapse eventKey={index}>
                 <div className='p-4' style={{ color: '#676767' }}>
                   {item.description}
-                  Our products are environmentally friendly, remove dependence
-                  on plastic water bottles and 5-gallon solutions, thus saving
-                  on logistics and storage costs.
                 </div>
               </Accordion.Collapse>
             </div>

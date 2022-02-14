@@ -26,7 +26,13 @@ export const aboutUsData = {
     },
     // 2
     {
-      name: 'Will Jefferies - Advisor',
+      name: 'Ofir',
+      image: '/images/aboutus/team_2.png',
+      description:
+        'Highly experienced communicator and political commentator with connections far and wide across the political and mineral resources landscape, both locally and internationally',
+    },
+    {
+      name: 'Will Jefferies - CFO',
       image: '/images/aboutus/team_2.png',
       description:
         'Highly experienced communicator and political commentator with connections far and wide across the political and mineral resources landscape, both locally and internationally',

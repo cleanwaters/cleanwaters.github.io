@@ -4,7 +4,7 @@ export const featureIconItems = [
     aos_delay: '300',
     title: 'Energy Efficient & Cost-Effective',
     description:
-      'Watergen’s Genuis produce 1 liter of clean drinking water using as little as 0.3 KWH in a wide range of climatic conditions, in temperatures ranging from 15-40℃ and humidity ≥25%RH.',
+      'Watergen’s Genuis produce 1 liter of clean drinking water using as little as 0.3 KWH in a wide range of climatic conditions.',
   },
   {
     icon: 'ecofriendly',
@@ -25,7 +25,7 @@ export const featureIconItems = [
     aos_delay: '400',
     title: 'Scalable Structure',
     description:
-      'GENius can be configured to any size and supports a wide range of water production needs.',
+      'WaterGen devices can be configured to any size and supports a wide range of water production needs.',
   },
   {
     icon: 'premiumdrink',
@@ -53,7 +53,7 @@ export const featureIconItems = [
     aos_delay: '300',
     title: 'Global Industry Recognition and Certification',
     description:
-      'Watergen is the first AWG manufacturer to comply with American standards ASSE LEC 2004. All products comply with EPA, NSF61, and the Federal Drinking Water Standards.',
+      'Watergen is the first AWG manufacturer to comply with American standards ASSE LEC 2004. All products comply with EPA, NSF61, Official AU Certificate, and the Federal Drinking Water Standards.',
   },
 ];
 

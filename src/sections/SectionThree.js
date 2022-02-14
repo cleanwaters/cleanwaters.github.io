@@ -57,7 +57,7 @@ export function SectionThree() {
           <StyledP20 className='text_weight_600'>
             To do this we offer our customers Watergen’s world-class and
             award-winning GENius atmospheric water generators that generate
-            between 10 and 6000 litres of clean water from the air every day.
+            between 30 and 6000 litres of clean water from the air every day.
           </StyledP20>
 
           <StyledP20 className='text_weight_600'>

@@ -42,11 +42,13 @@ export default function OurPartnersPage({ ourPartners }) {
         className='text-center d-flex justify-content-center align-items-center'
         style={{
           color: 'white',
-          minHeight: '60vh',
+          minHeight: '65vh',
           backgroundImage: `linear-gradient(
                           rgba(0, 0, 0, 0.5), 
                           rgba(0, 0, 0, 0.5)
                         ),url(${ourPartnersData.headerImage})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize:'100% 100%'
         }}
       >
         <div className='mx-md-5'>
