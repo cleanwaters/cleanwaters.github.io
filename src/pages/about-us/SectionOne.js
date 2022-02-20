@@ -78,6 +78,7 @@ export default function SectionOne({ aboutUs }) {
                     src={teamItem.image}
                     className='img-fluid mb-3 black_white_image'
                     height={'150px'}
+                    width='150px'
                   />
                   <div style={{ position: 'relative' }}>
                     <div style={{height:'27px'}}>

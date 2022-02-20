@@ -26,10 +26,10 @@ export const aboutUsData = {
     },
     // 2
     {
-      name: 'Ofir',
-      image: '/images/aboutus/team_2.png',
+      name: 'Ofir Cohen - Group CEO',
+      image: '/images/aboutus/ofir.jpeg',
       description:
-        'Highly experienced communicator and political commentator with connections far and wide across the political and mineral resources landscape, both locally and internationally',
+        'Ofir is a global business leader, with over 20 years of experience working with government organisations, defence and large enterprises along with SME’s, successfully leading programs on a national level. He excels at building relationships across complex organisations at a C-level, while articulating the business value of technology solutions. Ofir thrives by innovation and ingenuity, and seek to embrace new technologies to benefit humanity.',
     },
     {
       name: 'Will Jefferies - CFO',

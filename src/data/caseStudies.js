@@ -92,7 +92,7 @@ export const caseStudiesData = [
       'There is not a single Indian city that can provide potable water from its taps',
       'India is at the top of the list of countries with the worst access to clean water close to homes',
       '40% of the India’s city water is lost due to pipe leaks and thefts via unauthorized connections',
-      'Watergenprovided water to tens of thousands of people in New Delhi, and presented Prime Minister Modi with a detailed work–plan that can solve the water crisis in India in a very short period',
+      'Watergen provided water to tens of thousands of people in New Delhi, and presented Prime Minister Modi with a detailed work–plan that can solve the water crisis in India in a very short period',
     ],
     images: ['/images/casestudies/study_9_img.png'],
   },
