@@ -22,10 +22,7 @@ function CustomToggle({ children, eventKey }) {
   );
 
   return (
-    <div 
-    onMouseLeave={decoratedOnClick}
-    onMouseEnter={decoratedOnClick}
-    >
+    <div onMouseLeave={decoratedOnClick} onMouseEnter={decoratedOnClick}>
       {children}
     </div>
   );
@@ -33,23 +30,27 @@ function CustomToggle({ children, eventKey }) {
 
 export default function SectionOne({ aboutUs }) {
   return (
-    <section className='mt-5 container-fluid text-left pt-5 text-center'>
-      <StyledSectionOneDetails
+    <section className='mt container-fluid text-left text-center'>
+      {/* <StyledSectionOneDetails
         data-aos-anchor-placement='top-center'
         style={{ margin: 0 }}
       >
         <span>About </span> us
-      </StyledSectionOneDetails>
-      <StyledSectionSubtitle className='mb-5'>
+      </StyledSectionOneDetails> */}
+      {/* <StyledSectionSubtitle className='mb-5'>
         {aboutUs.subTitle}
-      </StyledSectionSubtitle>
+      </StyledSectionSubtitle> */}
 
-      <div className={`d-md-flex flex-row-reverse my-5 px-md-5`}>
-        <div className='col-md-4'>
-          <img src={aboutUs.sectionOne.image} className='img-fluid' />
-        </div>
+      {/* <div className={`d-md-flex flex-row-reverse my-5 px-md-5`}> */}
+      {/* <div className='col-md-4'>
+          <img
+            src={aboutUs.sectionOne.image}
+            alt='image'
+            className='img-fluid'
+          />
+        </div> */}
 
-        <div className='text-left'>
+      {/* <div className='text-left'>
           <div className='mr-md-5 p-3 pt-5'>
             {aboutUs.sectionOne.details.map((pText) => (
               <StyledSectionOneP
@@ -62,10 +63,9 @@ export default function SectionOne({ aboutUs }) {
                 __html: aboutUs.sectionOne.closingSignature,
               }}
             ></StyledSectionOneP>
-            {/*<div dangerouslySetInnerHTML={{ __html: aboutUs.sectionOne.closingSignature }} />*/}
           </div>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
 
       <div className='container-fluid mt-5'>
         <Accordion>
@@ -74,41 +74,42 @@ export default function SectionOne({ aboutUs }) {
               <div className='col-md-4'>
                 <StyledCWCard className='my-4 p-5'>
                   <CustomToggle eventKey={index}>
-                  <img
-                    src={teamItem.image}
-                    className='img-fluid mb-3 black_white_image'
-                    height={'150px'}
-                    width='150px'
-                  />
-                  <div style={{ position: 'relative' }}>
-                    <div style={{height:'27px'}}>
-                    {teamItem.subName ? (
-                        <>
-                          <StyledSectionOneP className='m-0'>
-                            {teamItem.name}
-                          </StyledSectionOneP>
-                          <StyledSectionLightP
-                            className='text-center'
-                            style={{
-                              position: 'absolute',
-                              color: '#767676',
-                              width: '100%',
-                            }}
-                          >
-                            {teamItem.subName}
-                          </StyledSectionLightP>
-                        </>
-                    ) : (
-                        <StyledSectionOneP>{teamItem.name}</StyledSectionOneP>
-                    )}
+                    <img
+                      src={teamItem.image}
+                      className='mb-3 black_white_image'
+                      height={'150px !important'}
+                      width='150px'
+                      alt={`${teamItem.name}`}
+                    />
+                    <div style={{ position: 'relative' }}>
+                      <div style={{ height: '27px' }}>
+                        {teamItem.subName ? (
+                          <>
+                            <StyledSectionOneP className='m-0'>
+                              {teamItem.name}
+                            </StyledSectionOneP>
+                            <StyledSectionLightP
+                              className='text-center'
+                              style={{
+                                position: 'absolute',
+                                color: '#767676',
+                                width: '100%',
+                              }}
+                            >
+                              {teamItem.subName}
+                            </StyledSectionLightP>
+                          </>
+                        ) : (
+                          <StyledSectionOneP>{teamItem.name}</StyledSectionOneP>
+                        )}
+                      </div>
                     </div>
-                  </div>
                   </CustomToggle>
                   <Accordion.Collapse eventKey={index}>
-                    <div style={{marginTop:'40px'}}>
+                    <div style={{ marginTop: '40px' }}>
                       {teamItem.description}
                     </div>
-                  </Accordion.Collapse>    
+                  </Accordion.Collapse>
                 </StyledCWCard>
               </div>
             ))}
